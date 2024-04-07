@@ -18,3 +18,4 @@ C:\Users\IoanC\Desktop\IP_PROIECT\MediaStore\obj\Debug\net8.0-windows\refint\Med
 C:\Users\IoanC\Desktop\IP_PROIECT\MediaStore\obj\Debug\net8.0-windows\MediaStore.pdb
 C:\Users\IoanC\Desktop\IP_PROIECT\MediaStore\obj\Debug\net8.0-windows\MediaStore.genruntimeconfig.cache
 C:\Users\IoanC\Desktop\IP_PROIECT\MediaStore\obj\Debug\net8.0-windows\ref\MediaStore.dll
+C:\Users\IoanC\Desktop\IP_PROIECT\MediaStore\obj\Debug\net8.0-windows\MediaStore.sourcelink.json

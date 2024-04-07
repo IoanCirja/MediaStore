@@ -1,4 +1,6 @@
-﻿namespace MediaStore
+﻿using System.Windows.Forms;
+
+namespace MediaStore
 {
     partial class Form1
     {
@@ -28,26 +30,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
-            name1 = new TextBox();
             price1 = new TextBox();
             price2 = new TextBox();
-            name2 = new TextBox();
+            name1 = new TextBox();
             pictureBox2 = new PictureBox();
             price3 = new TextBox();
-            name3 = new TextBox();
+            name2 = new TextBox();
             pictureBox3 = new PictureBox();
             price4 = new TextBox();
-            name4 = new TextBox();
+            name3 = new TextBox();
             pictureBox4 = new PictureBox();
             price5 = new TextBox();
-            name5 = new TextBox();
+            name4 = new TextBox();
             pictureBox5 = new PictureBox();
             price6 = new TextBox();
-            name6 = new TextBox();
+            name5 = new TextBox();
             pictureBox6 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
+            Favorites = new ContextMenuStrip(components);
+            name0 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -64,18 +68,7 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
-            // 
-            // name1
-            // 
-            name1.BackColor = SystemColors.Control;
-            name1.BorderStyle = BorderStyle.None;
-            name1.Location = new Point(211, 34);
-            name1.Multiline = true;
-            name1.Name = "name1";
-            name1.Size = new Size(379, 48);
-            name1.TabIndex = 1;
-            name1.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
-            name1.TextChanged += name1_TextChanged;
+            pictureBox1.MouseDown += pictureBox_MouseDown;
             // 
             // price1
             // 
@@ -98,16 +91,16 @@
             price2.Size = new Size(379, 26);
             price2.TabIndex = 11;
             // 
-            // name2
+            // name1
             // 
-            name2.BackColor = SystemColors.Control;
-            name2.BorderStyle = BorderStyle.None;
-            name2.Location = new Point(211, 248);
-            name2.Multiline = true;
-            name2.Name = "name2";
-            name2.Size = new Size(379, 48);
-            name2.TabIndex = 7;
-            name2.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
+            name1.BackColor = SystemColors.Control;
+            name1.BorderStyle = BorderStyle.None;
+            name1.Location = new Point(211, 248);
+            name1.Multiline = true;
+            name1.Name = "name1";
+            name1.Size = new Size(379, 48);
+            name1.TabIndex = 7;
+            name1.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
             // 
             // pictureBox2
             // 
@@ -116,6 +109,7 @@
             pictureBox2.Size = new Size(148, 208);
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
+            pictureBox2.MouseDown += pictureBox_MouseDown;
             // 
             // price3
             // 
@@ -127,16 +121,16 @@
             price3.Size = new Size(379, 26);
             price3.TabIndex = 17;
             // 
-            // name3
+            // name2
             // 
-            name3.BackColor = SystemColors.Control;
-            name3.BorderStyle = BorderStyle.None;
-            name3.Location = new Point(211, 462);
-            name3.Multiline = true;
-            name3.Name = "name3";
-            name3.Size = new Size(379, 48);
-            name3.TabIndex = 13;
-            name3.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
+            name2.BackColor = SystemColors.Control;
+            name2.BorderStyle = BorderStyle.None;
+            name2.Location = new Point(211, 462);
+            name2.Multiline = true;
+            name2.Name = "name2";
+            name2.Size = new Size(379, 48);
+            name2.TabIndex = 13;
+            name2.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
             // 
             // pictureBox3
             // 
@@ -145,6 +139,7 @@
             pictureBox3.Size = new Size(148, 208);
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
+            pictureBox3.MouseDown += pictureBox_MouseDown;
             // 
             // price4
             // 
@@ -156,16 +151,16 @@
             price4.Size = new Size(379, 26);
             price4.TabIndex = 23;
             // 
-            // name4
+            // name3
             // 
-            name4.BackColor = SystemColors.Control;
-            name4.BorderStyle = BorderStyle.None;
-            name4.Location = new Point(750, 34);
-            name4.Multiline = true;
-            name4.Name = "name4";
-            name4.Size = new Size(379, 48);
-            name4.TabIndex = 19;
-            name4.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
+            name3.BackColor = SystemColors.Control;
+            name3.BorderStyle = BorderStyle.None;
+            name3.Location = new Point(750, 34);
+            name3.Multiline = true;
+            name3.Name = "name3";
+            name3.Size = new Size(379, 48);
+            name3.TabIndex = 19;
+            name3.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
             // 
             // pictureBox4
             // 
@@ -174,6 +169,7 @@
             pictureBox4.Size = new Size(148, 208);
             pictureBox4.TabIndex = 18;
             pictureBox4.TabStop = false;
+            pictureBox4.MouseDown += pictureBox_MouseDown;
             // 
             // price5
             // 
@@ -185,16 +181,16 @@
             price5.Size = new Size(379, 26);
             price5.TabIndex = 29;
             // 
-            // name5
+            // name4
             // 
-            name5.BackColor = SystemColors.Control;
-            name5.BorderStyle = BorderStyle.None;
-            name5.Location = new Point(750, 248);
-            name5.Multiline = true;
-            name5.Name = "name5";
-            name5.Size = new Size(379, 48);
-            name5.TabIndex = 25;
-            name5.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
+            name4.BackColor = SystemColors.Control;
+            name4.BorderStyle = BorderStyle.None;
+            name4.Location = new Point(750, 248);
+            name4.Multiline = true;
+            name4.Name = "name4";
+            name4.Size = new Size(379, 48);
+            name4.TabIndex = 25;
+            name4.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
             // 
             // pictureBox5
             // 
@@ -203,6 +199,7 @@
             pictureBox5.Size = new Size(148, 208);
             pictureBox5.TabIndex = 24;
             pictureBox5.TabStop = false;
+            pictureBox5.MouseDown += pictureBox_MouseDown;
             // 
             // price6
             // 
@@ -215,16 +212,16 @@
             price6.TabIndex = 35;
             price6.TextChanged += price6_TextChanged;
             // 
-            // name6
+            // name5
             // 
-            name6.BackColor = SystemColors.Control;
-            name6.BorderStyle = BorderStyle.None;
-            name6.Location = new Point(750, 462);
-            name6.Multiline = true;
-            name6.Name = "name6";
-            name6.Size = new Size(379, 48);
-            name6.TabIndex = 31;
-            name6.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
+            name5.BackColor = SystemColors.Control;
+            name5.BorderStyle = BorderStyle.None;
+            name5.Location = new Point(750, 462);
+            name5.Multiline = true;
+            name5.Name = "name5";
+            name5.Size = new Size(379, 48);
+            name5.TabIndex = 31;
+            name5.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
             // 
             // pictureBox6
             // 
@@ -234,6 +231,7 @@
             pictureBox6.TabIndex = 30;
             pictureBox6.TabStop = false;
             pictureBox6.Click += pictureBox6_Click;
+            pictureBox6.MouseDown += pictureBox_MouseDown;
             // 
             // button1
             // 
@@ -253,6 +251,24 @@
             button2.TabIndex = 37;
             button2.Text = "Prev";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // Favorites
+            // 
+            Favorites.Name = "contextMenuStrip1";
+            Favorites.Size = new Size(61, 4);
+            // 
+            // name0
+            // 
+            name0.BackColor = SystemColors.Control;
+            name0.BorderStyle = BorderStyle.None;
+            name0.Location = new Point(211, 34);
+            name0.Multiline = true;
+            name0.Name = "name0";
+            name0.Size = new Size(379, 48);
+            name0.TabIndex = 1;
+            name0.Text = "sdgaeasdfhscsfhasbdfhadfhadfhdcbgb SDFGH DDFHEDFHFGHSG";
+            name0.TextChanged += name1_TextChanged;
             // 
             // Form1
             // 
@@ -264,22 +280,22 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(price6);
-            Controls.Add(name6);
+            Controls.Add(name5);
             Controls.Add(pictureBox6);
             Controls.Add(price5);
-            Controls.Add(name5);
+            Controls.Add(name4);
             Controls.Add(pictureBox5);
             Controls.Add(price4);
-            Controls.Add(name4);
+            Controls.Add(name3);
             Controls.Add(pictureBox4);
             Controls.Add(price3);
-            Controls.Add(name3);
+            Controls.Add(name2);
             Controls.Add(pictureBox3);
             Controls.Add(price2);
-            Controls.Add(name2);
+            Controls.Add(name1);
             Controls.Add(pictureBox2);
             Controls.Add(price1);
-            Controls.Add(name1);
+            Controls.Add(name0);
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
@@ -294,27 +310,30 @@
             PerformLayout();
         }
 
+
+
         #endregion
 
         private PictureBox pictureBox1;
-        private TextBox name1;
         private TextBox price1;
         private TextBox price2;
-        private TextBox name2;
+        private TextBox name1;
         private PictureBox pictureBox2;
         private TextBox price3;
-        private TextBox name3;
+        private TextBox name2;
         private PictureBox pictureBox3;
         private TextBox price4;
-        private TextBox name4;
+        private TextBox name3;
         private PictureBox pictureBox4;
         private TextBox price5;
-        private TextBox name5;
+        private TextBox name4;
         private PictureBox pictureBox5;
         private TextBox price6;
-        private TextBox name6;
+        private TextBox name5;
         private PictureBox pictureBox6;
         private Button button1;
         private Button button2;
+        private ContextMenuStrip Favorites;
+        private TextBox name0;
     }
 }

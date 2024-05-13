@@ -1,6 +1,6 @@
 ﻿namespace MediaStore
 {
-    partial class loginForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelUserName = new Label();
+            labelEmail = new Label();
             labelPassword = new Label();
-            textBoxUserName = new TextBox();
+            textBoxEmail = new TextBox();
             textBoxPassword = new TextBox();
             buttonRegister = new Button();
             buttonExit = new Button();
@@ -38,49 +38,49 @@
             buttonLogin = new Button();
             SuspendLayout();
             // 
-            // labelUserName
+            // labelEmail
             // 
-            labelUserName.AutoSize = true;
-            labelUserName.Location = new Point(131, 93);
-            labelUserName.Margin = new Padding(2, 0, 2, 0);
-            labelUserName.Name = "labelUserName";
-            labelUserName.Size = new Size(66, 15);
-            labelUserName.TabIndex = 0;
-            labelUserName.Text = "User name:";
+            labelEmail.AutoSize = true;
+            labelEmail.Location = new Point(153, 127);
+            labelEmail.Margin = new Padding(2, 0, 2, 0);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(59, 20);
+            labelEmail.TabIndex = 0;
+            labelEmail.Text = "Email: *";
             // 
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(131, 141);
+            labelPassword.Location = new Point(154, 177);
             labelPassword.Margin = new Padding(2, 0, 2, 0);
             labelPassword.Name = "labelPassword";
-            labelPassword.Size = new Size(60, 15);
+            labelPassword.Size = new Size(83, 20);
             labelPassword.TabIndex = 1;
-            labelPassword.Text = "Password:";
+            labelPassword.Text = "Password: *";
             // 
-            // textBoxUserName
+            // textBoxEmail
             // 
-            textBoxUserName.Location = new Point(262, 93);
-            textBoxUserName.Margin = new Padding(2);
-            textBoxUserName.Name = "textBoxUserName";
-            textBoxUserName.Size = new Size(152, 23);
-            textBoxUserName.TabIndex = 2;
+            textBoxEmail.Location = new Point(299, 124);
+            textBoxEmail.Margin = new Padding(2, 3, 2, 3);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(237, 27);
+            textBoxEmail.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(262, 133);
-            textBoxPassword.Margin = new Padding(2);
+            textBoxPassword.Location = new Point(299, 177);
+            textBoxPassword.Margin = new Padding(2, 3, 2, 3);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(152, 23);
+            textBoxPassword.PasswordChar = '*';
+            textBoxPassword.Size = new Size(237, 27);
             textBoxPassword.TabIndex = 3;
-            textBoxPassword.TextChanged += textBoxPassword_TextChanged;
             // 
             // buttonRegister
             // 
-            buttonRegister.Location = new Point(134, 248);
-            buttonRegister.Margin = new Padding(2);
+            buttonRegister.Location = new Point(153, 331);
+            buttonRegister.Margin = new Padding(2, 3, 2, 3);
             buttonRegister.Name = "buttonRegister";
-            buttonRegister.Size = new Size(65, 30);
+            buttonRegister.Size = new Size(74, 40);
             buttonRegister.TabIndex = 4;
             buttonRegister.Text = "Register";
             buttonRegister.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(385, 193);
-            buttonExit.Margin = new Padding(2);
+            buttonExit.Location = new Point(440, 257);
+            buttonExit.Margin = new Padding(2, 3, 2, 3);
             buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(65, 30);
+            buttonExit.Size = new Size(74, 40);
             buttonExit.TabIndex = 5;
             buttonExit.Text = "Exit";
             buttonExit.UseVisualStyleBackColor = true;
@@ -101,50 +101,49 @@
             // 
             labelWelcome.AutoSize = true;
             labelWelcome.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelWelcome.Location = new Point(210, 37);
+            labelWelcome.Location = new Point(240, 49);
             labelWelcome.Margin = new Padding(2, 0, 2, 0);
             labelWelcome.Name = "labelWelcome";
-            labelWelcome.Size = new Size(110, 26);
+            labelWelcome.Size = new Size(140, 32);
             labelWelcome.TabIndex = 6;
             labelWelcome.Text = "Welcome!";
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(282, 193);
-            buttonLogin.Margin = new Padding(2);
+            buttonLogin.Location = new Point(322, 257);
+            buttonLogin.Margin = new Padding(2, 3, 2, 3);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(65, 30);
+            buttonLogin.Size = new Size(74, 40);
             buttonLogin.TabIndex = 7;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = true;
             buttonLogin.Click += buttonLogin_Click;
             // 
-            // loginForm
+            // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(552, 353);
+            ClientSize = new Size(631, 471);
             Controls.Add(buttonLogin);
             Controls.Add(labelWelcome);
             Controls.Add(buttonExit);
             Controls.Add(buttonRegister);
             Controls.Add(textBoxPassword);
-            Controls.Add(textBoxUserName);
+            Controls.Add(textBoxEmail);
             Controls.Add(labelPassword);
-            Controls.Add(labelUserName);
-            Margin = new Padding(2);
-            Name = "loginForm";
+            Controls.Add(labelEmail);
+            Margin = new Padding(2, 3, 2, 3);
+            Name = "LoginForm";
             Text = "Login";
-            Load += loginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Label labelUserName;
+        private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.TextBox textBoxUserName;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Button buttonExit;

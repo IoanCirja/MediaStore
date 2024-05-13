@@ -5380,19 +5380,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IoanC\\.nuget\\packages\\": {}
+    "C:\\Users\\qwert\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IoanC\\Desktop\\IP_PROIECT\\SiteManipulation\\WebNavigator.csproj",
+      "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
       "projectName": "WebNavigator",
-      "projectPath": "C:\\Users\\IoanC\\Desktop\\IP_PROIECT\\SiteManipulation\\WebNavigator.csproj",
-      "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IoanC\\Desktop\\IP_PROIECT\\SiteManipulation\\obj\\",
+      "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+      "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
+      "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5412,6 +5412,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5439,7 +5444,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

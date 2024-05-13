@@ -10,3 +10,16 @@ C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator
 C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
 C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
 C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.deps.json
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.pdb
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.AssemblyReference.cache
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.GeneratedMSBuildEditorConfig.editorconfig
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfoInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfo.cs
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.CoreCompileInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.sourcelink.json
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
+D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll

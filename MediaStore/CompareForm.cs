@@ -95,5 +95,10 @@ namespace MediaStore
             Store._comparedList.Clear();
             this.Hide();
         }
+
+        private void name1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

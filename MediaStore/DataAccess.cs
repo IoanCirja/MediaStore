@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic.ApplicationServices;
-
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace MediaStore
 {
@@ -12,35 +11,9 @@ namespace MediaStore
     class DataAccess
     {
         // Connection String for  SQlite Edition
-        static string _ConnectionString = @"Data Source=usersDatabase.db";
+        static string _ConnectionString = @"Data Source=Users.db";
 
-        //static SqliteConnection _Connection = null;
-
-        //public static SqliteConnection Connection
-        //{
-        //    get
-        //    {
-        //        if (_Connection == null)
-        //        {
-        //            _Connection = new SqliteConnection(_ConnectionString);
-        //            _Connection.Open();
-
-        //            return _Connection;
-        //        }
-        //        else if (_Connection.State != System.Data.ConnectionState.Open)
-        //        {
-        //            _Connection.Open();
-
-        //            return _Connection;
-        //        }
-        //        else
-        //        {
-        //            return _Connection;
-        //        }
-        //    }
-        //}
-
-        public static List<User> GetAllUsers()
+        public static List<User> GetUser()
         {
             List<User> users = new List<User>();
 
@@ -57,64 +30,65 @@ namespace MediaStore
                         while (reader.Read())
                         {
                             int id = reader.GetInt32(0);
-                            string name = reader.GetString(1);
-                            string password = reader.GetString(2);
+                            string email = reader.GetString(3);
+                            string password = reader.GetString(5);
 
-                            users.Add(new User(id, name, password));
+                            users.Add(new User(id, email, password));
                         }
                     }
                 }
             }
-
             return users;
         }
 
-        public static bool Login(string username, string password)
+        public static bool Login(string email, string password)
         {
             using (SqliteConnection connection = new SqliteConnection(_ConnectionString))
             {
                 connection.Open();
 
-                string query = "SELECT COUNT(*) FROM users WHERE name=@username AND password=@password";
+                string query = "SELECT COUNT(*) FROM users WHERE email=@email AND password=@password";
 
                 using (SqliteCommand command = new SqliteCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@email", email);
                     command.Parameters.AddWithValue("@password", password);
 
                     int count = Convert.ToInt32(command.ExecuteScalar());
-
                     return count > 0;
                 }
             }
         }
 
-        public static bool Register(string username, string password)
+        public static bool Register(string lastName, string firstName, string email, string phone, string password)
         {
             using (SqliteConnection connection = new SqliteConnection(_ConnectionString))
             {
                 connection.Open();
 
-                // Verifică dacă utilizatorul există deja
-                string checkQuery = "SELECT COUNT(*) FROM users WHERE name=@username";
+                // Verifica daca utilizatorul exista deja
+                string checkQuery = "SELECT COUNT(*) FROM users WHERE email=@email";
                 using (SqliteCommand checkCommand = new SqliteCommand(checkQuery, connection))
                 {
-                    checkCommand.Parameters.AddWithValue("@username", username);
+                    checkCommand.Parameters.AddWithValue("@email", email);
 
                     int existingUserCount = Convert.ToInt32(checkCommand.ExecuteScalar());
 
                     if (existingUserCount > 0)
                     {
-                        // Utilizatorul există deja
+                        // Utilizatorul exista deja
                         return false;
                     }
                 }
 
-                // Dacă utilizatorul nu există, îl înregistrează
-                string insertQuery = "INSERT INTO users (name, password) VALUES (@username, @password)";
+                // Daca utilizatorul nu exista, il inregistreaza
+                string insertQuery = "INSERT INTO users (lastName, firstName, email, phone, password) VALUES (@lastName, @firstName, @email, @phone, @password)";
                 using (SqliteCommand insertCommand = new SqliteCommand(insertQuery, connection))
                 {
-                    insertCommand.Parameters.AddWithValue("@username", username);
+                    insertCommand.Parameters.AddWithValue("@lastName", lastName);
+                    insertCommand.Parameters.AddWithValue("@firstName", firstName);
+                    insertCommand.Parameters.AddWithValue("@email", email);
+                    insertCommand.Parameters.AddWithValue("@phone", phone);
                     insertCommand.Parameters.AddWithValue("@password", password);
 
                     int rowsAffected = insertCommand.ExecuteNonQuery();
@@ -124,5 +98,44 @@ namespace MediaStore
             }
         }
 
+
+        /// <summary>
+        /// Functie de testare
+        /// </summary>
+        public static void ShowAllUsers()
+        {
+            try
+            {
+                using (SqliteConnection connection = new SqliteConnection(_ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT * FROM users";
+
+                    using (SqliteCommand command = new SqliteCommand(query, connection))
+                    {
+                        using (SqliteDataReader reader = command.ExecuteReader())
+                        {
+                            string message = "Utilizatori:\n";
+
+                            while (reader.Read())
+                            {
+                                int id = reader.GetInt32(0);
+                                string email = reader.GetString(3);
+                                string password = reader.GetString(5);
+
+                                message += $"ID: {id}, Nume: {email}, Parolă: {password}\n";
+                            }
+
+                            MessageBox.Show(message, "Utilizatori", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"A apărut o eroare: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

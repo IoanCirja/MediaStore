@@ -1,0 +1,12 @@
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\bin\Debug\net8.0\WebNavigator.deps.json
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\bin\Debug\net8.0\WebNavigator.dll
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\bin\Debug\net8.0\WebNavigator.pdb
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.AssemblyReference.cache
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfoInputs.cache
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfo.cs
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.CoreCompileInputs.cache
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.dll
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
+C:\Users\IoanC\Desktop\IP_PROIECT\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll

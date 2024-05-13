@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Microsoft.Data.Sqlite;
+using OpenQA.Selenium.DevTools.V121.Emulation;
 
 namespace MediaStore
 {
@@ -29,8 +31,19 @@ namespace MediaStore
                 MessageBox.Show("Autentificare reușită!");
                 textBoxUserName.Clear();
                 textBoxPassword.Clear();
-                this.Hide();
-                new Store().ShowDialog();
+
+
+                try
+                {
+                    Store.SetUser(DataAccess.GetAllUsers().Where(x => x.UserName == username && x.Password == password).FirstOrDefault());
+                    this.Hide();
+                    new Store().ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
 
 
             }

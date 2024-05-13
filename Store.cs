@@ -10,6 +10,7 @@ using static System.Net.WebRequestMethods;
 using MaterialSkin.Controls;
 using MaterialSkin;
 using System.Text.RegularExpressions;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace MediaStore
 {
@@ -20,6 +21,7 @@ namespace MediaStore
         private string url;
         private int pageIndex;
         private static List<Product> _productList;
+        private static User _currentUser;
 
         public Store()
         {
@@ -32,8 +34,19 @@ namespace MediaStore
             httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36");
             _productList = new List<Product>();
             url = "https://www.itgalaxy.ro/telefoane-mobile//pagina1/";
+
+        }
+        public static void SetUser(User user)
+        {
+            _currentUser = user;
+
         }
 
+        public void SetUserToForm()
+        {
+            textBox7.Text = _currentUser.UserName;
+
+        }
         private async void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -171,6 +184,8 @@ namespace MediaStore
             {
                 MessageBox.Show(ex.Message);
             }
+            SetUserToForm();
+
 
         }
 
@@ -280,6 +295,16 @@ namespace MediaStore
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

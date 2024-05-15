@@ -44,6 +44,7 @@ namespace SiteManipulation
 
         public void Register(string firstName, string lastName, string phoneNumber, string email, string password)
         {
+            Thread.Sleep(3000);
 
             _driver.Manage().Window.Maximize();
 
@@ -55,6 +56,8 @@ namespace SiteManipulation
             RepeatPasswordForm.SendKeys(password);
             TermsAndConditionsForm.Click();
             NewsletterForm.Click();
+            Thread.Sleep(1000);
+
             CreateAccountBtn.Click();
         }
 

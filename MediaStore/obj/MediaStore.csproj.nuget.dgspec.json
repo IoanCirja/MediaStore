@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\MediaStore.csproj": {}
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore.csproj": {}
   },
   "projects": {
-    "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\MediaStore.csproj": {
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\MediaStore.csproj",
+        "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore.csproj",
         "projectName": "MediaStore",
-        "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\MediaStore.csproj",
-        "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
-        "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\obj\\",
+        "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore.csproj",
+        "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+        "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
-                "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
+              "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
+                "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
               }
             }
           }
@@ -38,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -141,21 +136,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+        "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
         "projectName": "WebNavigator",
-        "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
-        "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
-        "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\SiteManipulation\\obj\\",
+        "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+        "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+        "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -175,11 +170,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -207,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

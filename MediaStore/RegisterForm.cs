@@ -58,6 +58,8 @@ namespace MediaStore
             {
                 try
                 {
+
+
                     bool success = DataAccess.Register(lastName, firstName, email, phone, password);
 
                     if (success)

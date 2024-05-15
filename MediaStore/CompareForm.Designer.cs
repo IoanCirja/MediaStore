@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            pictureBox0 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             price1 = new TextBox();
             price2 = new TextBox();
             price3 = new TextBox();
@@ -41,40 +41,40 @@
             name2 = new TextBox();
             name3 = new TextBox();
             Return = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
+            // 
+            // pictureBox0
+            // 
+            pictureBox0.Location = new Point(51, 28);
+            pictureBox0.Margin = new Padding(3, 4, 3, 4);
+            pictureBox0.Name = "pictureBox0";
+            pictureBox0.Size = new Size(421, 285);
+            pictureBox0.TabIndex = 1;
+            pictureBox0.TabStop = false;
+            pictureBox0.Click += pictureBox1_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(51, 28);
+            pictureBox1.Location = new Point(589, 28);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(421, 285);
-            pictureBox1.TabIndex = 1;
+            pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.Click += pictureBox2_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(589, 28);
+            pictureBox2.Location = new Point(1153, 28);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(421, 285);
-            pictureBox2.TabIndex = 2;
+            pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(1153, 28);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(421, 285);
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            pictureBox2.Click += pictureBox3_Click;
             // 
             // price1
             // 
@@ -201,6 +201,13 @@
             Return.Text = "Return";
             Return.UseVisualStyleBackColor = true;
             Return.Click += Return_Click;
+
+
+            pictureBox0.MouseDown += pictureBox_MouseDown;
+            pictureBox1.MouseDown += pictureBox_MouseDown;
+
+            pictureBox2.MouseDown += pictureBox_MouseDown;
+
             // 
             // CompareForm
             // 
@@ -217,24 +224,24 @@
             Controls.Add(price3);
             Controls.Add(price2);
             Controls.Add(price1);
-            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Controls.Add(pictureBox0);
             Name = "CompareForm";
             Text = "CompareForm";
             Load += CompareForm_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox0).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private PictureBox pictureBox0;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
         private TextBox price1;
         private TextBox price2;
         private TextBox price3;

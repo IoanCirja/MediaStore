@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,10 +61,10 @@ namespace MediaStore
             name3.Text = Store._comparedList[2].name;
 
 
-            pictureBox1.Image = Store._comparedList[0].image;
-            pictureBox2.Image = Store._comparedList[1].image;
+            pictureBox0.Image = Store._comparedList[0].image;
+            pictureBox1.Image = Store._comparedList[1].image;
 
-            pictureBox3.Image = Store._comparedList[2].image;
+            pictureBox2.Image = Store._comparedList[2].image;
 
 
 
@@ -99,6 +101,76 @@ namespace MediaStore
         private void name1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void pictureBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
+
+                ToolStripMenuItem removeMenuItem = new ToolStripMenuItem("Remove");
+                ToolStripMenuItem addToFavoritesMenuItem = new ToolStripMenuItem("Add To Favorites");
+                ToolStripMenuItem goToWebsiteMenuItem = new ToolStripMenuItem("Go to Website");
+
+
+
+                PictureBox pictureBox = sender as PictureBox;
+                string identifier = pictureBox.Name.Replace("pictureBox", "");
+                int id = int.Parse(identifier); // acum avem id ul picture boxului
+
+
+                addToFavoritesMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
+                {
+                    MessageBox.Show("added to favorites");
+                };
+
+                //goToWebsiteMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
+                //{
+
+
+
+                //    IWebDriver driver = new ChromeDriver();
+                //    driver.Navigate().GoToUrl("https://www.itgalaxy.ro/");
+                //    driver.Manage().Window.Maximize();
+
+                //    var searchText = driver.FindElement(By.Id("search-box"));
+                //    searchText.SendKeys(nameBox.Text);
+                //    searchText.SendKeys(OpenQA.Selenium.Keys.Enter);
+
+
+                //};
+
+                //adaug la comparat
+                removeMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
+                {
+                    TextBox nameBox = this.Controls.Find($"name{id + 1}", true).FirstOrDefault() as TextBox;
+                    TextBox priceBox = this.Controls.Find($"price{id + 1}", true).FirstOrDefault() as TextBox;
+                    TextBox descriptionBox = this.Controls.Find($"textBox{id +1}", true).FirstOrDefault() as TextBox;
+
+                    // Find the PictureBox control
+                    PictureBox pictureBox = this.Controls.Find($"pictureBox{id}", true).FirstOrDefault() as PictureBox;
+
+                    // Clear the TextBox controls
+                    if (nameBox != null) nameBox.Text = "";
+                    if (priceBox != null) priceBox.Text = "";
+                    if (descriptionBox != null) descriptionBox.Text = "";
+
+                    // Clear the PictureBox image
+                    if (pictureBox != null) pictureBox.Image = null;
+
+
+
+
+
+                };
+
+                contextMenuStrip.Items.Add(addToFavoritesMenuItem);
+                contextMenuStrip.Items.Add(removeMenuItem);
+                contextMenuStrip.Items.Add(goToWebsiteMenuItem);
+
+
+                contextMenuStrip.Show((Control)sender, e.Location);
+            }
         }
     }
 }

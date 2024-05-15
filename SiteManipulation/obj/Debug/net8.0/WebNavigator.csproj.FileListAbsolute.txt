@@ -23,3 +23,16 @@ D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\
 D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
 D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
 D:\An3_Sem2\IP - Ingineria programarii\versiune ion\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.deps.json
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.pdb
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.AssemblyReference.cache
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.GeneratedMSBuildEditorConfig.editorconfig
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfoInputs.cache
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfo.cs
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.CoreCompileInputs.cache
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.sourcelink.json
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll

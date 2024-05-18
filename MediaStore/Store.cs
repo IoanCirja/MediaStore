@@ -1,4 +1,4 @@
-using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using System;
 using System.Drawing;
@@ -14,6 +14,8 @@ using Microsoft.VisualBasic.ApplicationServices;
 using static System.Net.Mime.MediaTypeNames;
 using Image = System.Drawing.Image;
 using SiteManipulation;
+using Microsoft.Data.Sqlite;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 namespace MediaStore
 {
     public partial class Store : Form
@@ -27,9 +29,13 @@ namespace MediaStore
         private static User _currentUser;
         private static WebNavigator _webNavigator;
 
+        static string _ConnectionStringF = @"Data Source=Favorites.db";
+
         public Store()
         {
             InitializeComponent();
+            pictureBox7.MouseDown += PictureBox_MouseDown;
+
 
 
             page = 0;
@@ -51,6 +57,11 @@ namespace MediaStore
         {
             textBox7.Text = _currentUser.Email;
 
+        }
+
+        public void LoadIcon()
+        {
+            pictureBox7.Image = Properties.Resources.iconbun;
         }
         private async void Form1_Load(object sender, EventArgs e)
         {
@@ -190,6 +201,7 @@ namespace MediaStore
                 MessageBox.Show(ex.Message);
             }
             SetUserToForm();
+            LoadIcon();
 
 
         }
@@ -238,13 +250,40 @@ namespace MediaStore
                 int id = int.Parse(identifier); // acum avem id ul picture boxului
 
 
-
-
-
-
                 addToFavoritesMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
                 {
-                    MessageBox.Show(_productList.Count().ToString());
+                    try
+                    {
+                        TextBox nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
+                        TextBox priceBox = this.Controls.Find($"textBox{id}", true).FirstOrDefault() as TextBox;
+                        TextBox descriptionBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
+
+                        string name = nameBox.Text;
+                        string price = priceBox.Text;
+                        string description = descriptionBox.Text;
+
+                        // Verifică dacă produsul există deja în baza de date
+                        if (!DataAccess.IsFavorite(name, price, description))
+                        {
+                            // Adaugă produsul în baza de date
+                            if (DataAccess.AddFavorite(name, price, description))
+                            {
+                                MessageBox.Show("Produsul a fost adăugat la favorite.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Eroare la adăugarea produsului la favorite. Vă rugăm să încercați din nou mai târziu.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Produsul există deja în lista de favorite.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 };
 
                 goToWebsite.Click += (menuItemSender, menuItemEventArgs) =>
@@ -297,6 +336,8 @@ namespace MediaStore
                 contextMenuStrip.Show((Control)sender, e.Location);
             }
         }
+
+
 
         private void name3_TextChanged(object sender, EventArgs e)
         {
@@ -377,6 +418,44 @@ namespace MediaStore
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+        private void PictureBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                // Crearea meniului contextual
+                ContextMenuStrip contextMenu = new ContextMenuStrip();
+
+                // Adăugarea opțiunilor în meniu
+                ToolStripMenuItem favoritesMenuItem = new ToolStripMenuItem("See Favorites");
+                ToolStripMenuItem websiteMenuItem = new ToolStripMenuItem("Go to Website");
+                ToolStripMenuItem logoutMenuItem = new ToolStripMenuItem("Logout");
+                contextMenu.Items.Add(favoritesMenuItem);
+                contextMenu.Items.Add(websiteMenuItem);
+                contextMenu.Items.Add(logoutMenuItem);
+
+                // Asocierea evenimentelor pentru fiecare opțiune
+                favoritesMenuItem.Click += (s, args) =>
+                {
+                    Favorites favoritesForm = new Favorites();
+                    new Favorites().ShowDialog();
+                };
+                websiteMenuItem.Click += (s, args) => {
+                    _webNavigator = new WebNavigator();
+                    _webNavigator.Login(_currentUser.Email, _currentUser.Password);
+                };
+                logoutMenuItem.Click += (s, args) => MessageBox.Show("Logout clicked");
+
+                // Afișarea meniului contextual în poziția curentă a mouse-ului
+                contextMenu.Show((Control)sender, e.Location);
+            }
         }
     }
 }

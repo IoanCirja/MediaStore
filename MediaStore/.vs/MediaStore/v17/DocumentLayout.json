@@ -1,38 +1,48 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\",
+  "WorkspaceRootPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\sitemanipulation\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\sitemanipulation\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,116 +52,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Favorites.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Favorites.cs",
+              "RelativeDocumentMoniker": "Favorites.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Favorites.cs",
+              "RelativeToolTip": "Favorites.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:04:46.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Favorites.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Favorites.cs",
+              "RelativeDocumentMoniker": "Favorites.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Favorites.cs [Design]",
+              "RelativeToolTip": "Favorites.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:01:10.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\DataAccess.cs",
+              "RelativeDocumentMoniker": "DataAccess.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\DataAccess.cs",
+              "RelativeToolTip": "DataAccess.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T13:16:54.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Product.cs",
+              "RelativeDocumentMoniker": "Product.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Product.cs",
+              "RelativeToolTip": "Product.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T18:12:06.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Store.cs",
+              "RelativeDocumentMoniker": "Store.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Store.cs",
+              "RelativeToolTip": "Store.cs",
+              "ViewState": "AQIAALABAAAAAAAAAAAMwLwBAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:38:35.992Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CompareForm.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs",
-              "RelativeDocumentMoniker": "CompareForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs",
-              "RelativeToolTip": "CompareForm.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAtwGQAAAAAAAAA",
+              "Title": "Store.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Store.cs",
+              "RelativeDocumentMoniker": "Store.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Store.cs [Design]",
+              "RelativeToolTip": "Store.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T17:38:15.746Z"
+              "WhenOpened": "2024-05-15T16:37:59.665Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CompareForm.cs [Design]",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs",
-              "RelativeDocumentMoniker": "CompareForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs [Design]",
-              "RelativeToolTip": "CompareForm.cs [Design]",
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Favorite.cs",
+              "RelativeDocumentMoniker": "Favorite.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Favorite.cs",
+              "RelativeToolTip": "Favorite.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAMwAoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T17:38:13.478Z"
+              "WhenOpened": "2024-05-16T14:11:44.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "RegisterPage.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\SiteManipulation\\RegisterPage.cs",
+              "RelativeDocumentMoniker": "..\\SiteManipulation\\RegisterPage.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\SiteManipulation\\RegisterPage.cs",
+              "RelativeToolTip": "..\\SiteManipulation\\RegisterPage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:37:16.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\SiteManipulation\\HomePage.cs",
+              "RelativeDocumentMoniker": "..\\SiteManipulation\\HomePage.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\SiteManipulation\\HomePage.cs",
+              "RelativeToolTip": "..\\SiteManipulation\\HomePage.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:37:11.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RegisterForm.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\RegisterForm.cs",
               "RelativeToolTip": "RegisterForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAARAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T16:24:26.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\RegisterForm.cs [Design]",
               "RelativeToolTip": "RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:56:32.8Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\User.cs",
-              "RelativeDocumentMoniker": "User.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\User.cs",
-              "RelativeToolTip": "User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:54.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:55.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:55.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\DataAccess.cs",
-              "RelativeDocumentMoniker": "DataAccess.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\DataAccess.cs",
-              "RelativeToolTip": "DataAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:55.852Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 303,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2024-05-13T13:56:32.8Z"
             }
           ]
         }

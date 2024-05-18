@@ -60,14 +60,15 @@ namespace MediaStore
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             button3 = new Button();
-            button4 = new Button();
             sqliteCommand1 = new Microsoft.Data.Sqlite.SqliteCommand();
+            pictureBox7 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -346,7 +347,7 @@ namespace MediaStore
             textBox4.BackColor = SystemColors.Control;
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(874, 101);
+            textBox4.Location = new Point(874, 83);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(416, 221);
@@ -379,9 +380,9 @@ namespace MediaStore
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(1240, 12);
+            textBox7.Location = new Point(1300, 33);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(259, 27);
+            textBox7.Size = new Size(246, 27);
             textBox7.TabIndex = 44;
             textBox7.TextChanged += textBox7_TextChanged;
             // 
@@ -395,23 +396,22 @@ namespace MediaStore
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button4
-            // 
-            button4.Location = new Point(1386, 443);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(162, 31);
-            button4.TabIndex = 46;
-            button4.Text = "Go To Account";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
             // sqliteCommand1
             // 
             sqliteCommand1.CommandTimeout = 30;
             sqliteCommand1.Connection = null;
             sqliteCommand1.Transaction = null;
             sqliteCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.iconbun;
+            pictureBox7.Location = new Point(1552, 12);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(88, 69);
+            pictureBox7.TabIndex = 47;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // Store
             // 
@@ -420,7 +420,7 @@ namespace MediaStore
             AutoScroll = true;
             AutoScrollMinSize = new Size(0, 300);
             ClientSize = new Size(1651, 912);
-            Controls.Add(button4);
+            Controls.Add(pictureBox7);
             Controls.Add(button3);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
@@ -459,6 +459,7 @@ namespace MediaStore
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -496,7 +497,7 @@ namespace MediaStore
         private TextBox textBox6;
         private TextBox textBox7;
         private Button button3;
-        private Button button4;
         private Microsoft.Data.Sqlite.SqliteCommand sqliteCommand1;
+        private PictureBox pictureBox7;
     }
 }

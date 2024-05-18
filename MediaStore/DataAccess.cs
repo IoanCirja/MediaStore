@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -12,6 +13,7 @@ namespace MediaStore
     {
         // Connection String for  SQlite Edition
         static string _ConnectionString = @"Data Source=Users.db";
+        static string _ConnectionStringF = @"Data Source=favorites.db";
 
         public static List<User> GetUser()
         {
@@ -40,6 +42,8 @@ namespace MediaStore
             }
             return users;
         }
+
+
 
         public static bool Login(string email, string password)
         {
@@ -135,6 +139,46 @@ namespace MediaStore
             catch (Exception ex)
             {
                 MessageBox.Show($"A apărut o eroare: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static bool IsFavorite(string name, string price, string description)
+        {
+            using (SqliteConnection connection = new SqliteConnection(_ConnectionStringF))
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(*) FROM favoritesDatabase WHERE name=@name AND price=@price AND description=@description";
+
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@name", name);
+                    command.Parameters.AddWithValue("@price", price);
+                    command.Parameters.AddWithValue("@description", description);
+
+                    int count = Convert.ToInt32(command.ExecuteScalar());
+                    return count > 0;
+                }
+            }
+        }
+
+        public static bool AddFavorite(string name, string price, string description)
+        {
+            using (SqliteConnection connection = new SqliteConnection(_ConnectionStringF))
+            {
+                connection.Open();
+
+                string query = "INSERT INTO favoritesDatabase (name, price, description) VALUES (@name, @price, @description)";
+
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@name", name);
+                    command.Parameters.AddWithValue("@price", price);
+                    command.Parameters.AddWithValue("@description", description);
+
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
             }
         }
     }

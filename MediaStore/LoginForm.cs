@@ -46,6 +46,8 @@ namespace MediaStore
             {
                 MessageBox.Show("Email sau parolă incorecte!");
             }
+
+
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
@@ -59,6 +61,11 @@ namespace MediaStore
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

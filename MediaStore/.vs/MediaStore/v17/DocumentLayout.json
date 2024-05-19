@@ -1,38 +1,95 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\",
+  "WorkspaceRootPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\store.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\chooseproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\chooseproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\dataaccess\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\sitemanipulation\\webnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\chooseproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\chooseproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\dataaccess\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\dataaccess\\urls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\dataaccess\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:mediastore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\favorites.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\favorites.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,116 +99,316 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Store.Designer.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Store.Designer.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.Designer.cs",
+              "RelativeToolTip": "Forms\\Store.Designer.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAowLYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:53:40.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CompareForm.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs",
-              "RelativeDocumentMoniker": "CompareForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs",
-              "RelativeToolTip": "CompareForm.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAtwGQAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Store.cs [Design]",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "RelativeDocumentMoniker": "Forms\\Store.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs [Design]",
+              "RelativeToolTip": "Forms\\Store.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T17:38:15.746Z"
+              "WhenOpened": "2024-05-19T14:51:15.3Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChooseProduct.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\ChooseProduct.cs",
+              "RelativeDocumentMoniker": "Forms\\ChooseProduct.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\ChooseProduct.cs",
+              "RelativeToolTip": "Forms\\ChooseProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:37:14.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "URLS.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\URLS.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\URLS.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\URLS.cs",
+              "RelativeToolTip": "..\\DataAccess\\URLS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:32:31.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\Product.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Product.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\Product.cs",
+              "RelativeToolTip": "..\\DataAccess\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:31:39.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\Favorite.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Favorite.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\Favorite.cs",
+              "RelativeToolTip": "..\\DataAccess\\Favorite.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:31:10.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataAccess",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj",
+              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.csproj",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj",
+              "RelativeToolTip": "..\\DataAccess\\DataAccess.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-19T14:27:54.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CompareForm.cs [Design]",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs",
-              "RelativeDocumentMoniker": "CompareForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\CompareForm.cs [Design]",
-              "RelativeToolTip": "CompareForm.cs [Design]",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\User.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\User.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\User.cs",
+              "RelativeToolTip": "..\\DataAccess\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T17:38:13.478Z"
+              "WhenOpened": "2024-05-19T14:27:37.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "RelativeToolTip": "..\\DataAccess\\DataAccess.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:26:56.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:01:09.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "RelativeDocumentMoniker": "Forms\\Store.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "RelativeToolTip": "Forms\\Store.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAtwBkCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:38:55.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChooseProduct.cs [Design]",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\ChooseProduct.cs",
+              "RelativeDocumentMoniker": "Forms\\ChooseProduct.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\ChooseProduct.cs [Design]",
+              "RelativeToolTip": "Forms\\ChooseProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:23:49.748Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WebNavigator.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.cs",
+              "RelativeDocumentMoniker": "..\\SiteManipulation\\WebNavigator.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.cs",
+              "RelativeToolTip": "..\\SiteManipulation\\WebNavigator.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:23:43.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CompareForm.cs [Design]",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\CompareForm.cs",
+              "RelativeDocumentMoniker": "Forms\\CompareForm.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\CompareForm.cs [Design]",
+              "RelativeToolTip": "Forms\\CompareForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:38:13.478Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompareForm.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\CompareForm.cs",
+              "RelativeDocumentMoniker": "Forms\\CompareForm.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\CompareForm.cs",
+              "RelativeToolTip": "Forms\\CompareForm.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAADgv28AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:38:15.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T13:52:55.851Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MediaStore",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore.csproj",
+              "RelativeDocumentMoniker": "MediaStore.csproj",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore.csproj",
+              "RelativeToolTip": "MediaStore.csproj",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-19T13:31:38.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Favorites.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Favorites.cs",
+              "RelativeDocumentMoniker": "Forms\\Favorites.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Favorites.cs",
+              "RelativeToolTip": "Forms\\Favorites.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:33:10.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Resource.resx",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Resource.resx",
+              "RelativeDocumentMoniker": "Resource.resx",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Resource.resx",
+              "RelativeToolTip": "Resource.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-19T13:51:37.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Forms\\LoginForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T13:52:55.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Favorites.cs [Design]",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Favorites.cs",
+              "RelativeDocumentMoniker": "Forms\\Favorites.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Favorites.cs [Design]",
+              "RelativeToolTip": "Forms\\Favorites.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:33:08.998Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Favorites.Designer.cs",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Favorites.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Favorites.Designer.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Favorites.Designer.cs",
+              "RelativeToolTip": "Forms\\Favorites.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:32:04.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "RegisterForm.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs",
-              "RelativeToolTip": "RegisterForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAARAAAA",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
+              "RelativeToolTip": "Forms\\RegisterForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T16:24:26.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 23,
               "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "Forms\\RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T13:56:32.8Z",
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\User.cs",
-              "RelativeDocumentMoniker": "User.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\User.cs",
-              "RelativeToolTip": "User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:54.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:55.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:55.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\DataAccess.cs",
-              "RelativeDocumentMoniker": "DataAccess.cs",
-              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\versiune ion\\MediaStore\\MediaStore\\DataAccess.cs",
-              "RelativeToolTip": "DataAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:52:55.852Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 303,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

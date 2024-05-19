@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "CXuesong.Shims.VisualBasic.ApplicationServices/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CXuesong.Shims.VisualBasic.ApplicationServices.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/CXuesong.Shims.VisualBasic.ApplicationServices.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "HtmlAgilityPack/1.11.60": {
         "type": "package",
         "compile": {
@@ -74,6 +87,28 @@
         "runtime": {
           "lib/net8.0/Microsoft.Data.Sqlite.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -289,6 +324,25 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Drawing.Common/8.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
@@ -323,6 +377,66 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "TelerikWinCompositeUI/2012.1.321.20": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.Practices.CompositeUI.WinForms.dll": {},
+          "lib/Microsoft.Practices.CompositeUI.dll": {},
+          "lib/Microsoft.Practices.ObjectBuilder.dll": {},
+          "lib/Telerik.WinControls.CompositeUI.dll": {},
+          "lib/Telerik.WinControls.GridView.dll": {},
+          "lib/Telerik.WinControls.RadChart.dll": {},
+          "lib/Telerik.WinControls.RadDock.dll": {},
+          "lib/Telerik.WinControls.UI.dll": {},
+          "lib/Telerik.WinControls.dll": {},
+          "lib/TelerikCommon.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.Practices.CompositeUI.WinForms.dll": {},
+          "lib/Microsoft.Practices.CompositeUI.dll": {},
+          "lib/Microsoft.Practices.ObjectBuilder.dll": {},
+          "lib/Telerik.WinControls.CompositeUI.dll": {},
+          "lib/Telerik.WinControls.GridView.dll": {},
+          "lib/Telerik.WinControls.RadChart.dll": {},
+          "lib/Telerik.WinControls.RadDock.dll": {},
+          "lib/Telerik.WinControls.UI.dll": {},
+          "lib/Telerik.WinControls.dll": {},
+          "lib/TelerikCommon.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CXuesong.Shims.VisualBasic.ApplicationServices": "0.4.0",
+          "HtmlAgilityPack": "1.11.60",
+          "HtmlAgilityPack_Helper": "2.0.0",
+          "MaterialSkin": "0.2.1",
+          "MaterialSkin.2": "2.3.1",
+          "Microsoft.Data.Sqlite": "8.0.4",
+          "Microsoft.Data.Sqlite.Core": "8.0.4",
+          "OpenQA.Selenium.Chrome.ChromeDriverExtensions": "1.2.0",
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.8",
+          "SQLitePCLRaw.core": "2.1.8",
+          "SQLitePCLRaw.lib.e_sqlite3": "2.1.8",
+          "SQLitePCLRaw.provider.dynamic_cdecl": "2.1.8",
+          "Selenium.WebDriver": "4.19.0",
+          "Selenium.WebDriver.ChromeDriver": "123.0.6312.8600",
+          "Selenium.WebDriver.IEDriver": "4.14.0",
+          "System.Buffers": "4.5.1",
+          "System.Drawing.Common": "8.0.5",
+          "System.Memory": "4.5.5",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "TelerikWinCompositeUI": "2012.1.321.20"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      },
       "WebNavigator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -339,6 +453,20 @@
     }
   },
   "libraries": {
+    "CXuesong.Shims.VisualBasic.ApplicationServices/0.4.0": {
+      "sha512": "3adI5Mo6cOPP0CVd9Jt9W8ab7eS8UFQUlpkxZF/I56bL8ZKcyWXCd9UlhRtsTqjHyqHUGbWOljq1ijq7m8k5iw==",
+      "type": "package",
+      "path": "cxuesong.shims.visualbasic.applicationservices/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cxuesong.shims.visualbasic.applicationservices.0.4.0.nupkg.sha512",
+        "cxuesong.shims.visualbasic.applicationservices.nuspec",
+        "lib/netstandard2.0/CXuesong.Shims.VisualBasic.ApplicationServices.dll",
+        "lib/netstandard2.0/CXuesong.Shims.VisualBasic.ApplicationServices.pdb",
+        "lib/netstandard2.0/CXuesong.Shims.VisualBasic.ApplicationServices.xml"
+      ]
+    },
     "HtmlAgilityPack/1.11.60": {
       "sha512": "7Uzaf1Mxeuxne33LpTZfSsuRW4sRRX6FWMolOSxXcaAwcKvFevH2E+P6tb4dMWhdyUdBfi0N0yyPZ8hqodfEYg==",
       "type": "package",
@@ -459,6 +587,41 @@
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
         "microsoft.data.sqlite.core.8.0.4.nupkg.sha512",
         "microsoft.data.sqlite.core.nuspec"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "sha512": "9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Newtonsoft.Json/13.0.1": {
@@ -693,6 +856,46 @@
         "version.txt"
       ]
     },
+    "System.Drawing.Common/8.0.5": {
+      "sha512": "n55wb6rL8YG254AG+SfQOSQencrcnpKAAcYyEcvBuO2pob7ltXuZ5skBBdvLJOLVPKd1Ya8+8ColIM5AtBo5ww==",
+      "type": "package",
+      "path": "system.drawing.common/8.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.pdb",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.pdb",
+        "lib/net7.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.drawing.common.8.0.5.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Memory/4.5.5": {
       "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
@@ -788,6 +991,32 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "TelerikWinCompositeUI/2012.1.321.20": {
+      "sha512": "sAlpe0fsb2R2Gpz4FQvn7wIhRoTJNiZ6VBBl/n8wtoNL9TaXTAnOQdTwGx3SVQlfvRqVFnWW63LJQpUlcxvv7A==",
+      "type": "package",
+      "path": "telerikwincompositeui/2012.1.321.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.Practices.CompositeUI.WinForms.dll",
+        "lib/Microsoft.Practices.CompositeUI.dll",
+        "lib/Microsoft.Practices.ObjectBuilder.dll",
+        "lib/Telerik.WinControls.CompositeUI.dll",
+        "lib/Telerik.WinControls.GridView.dll",
+        "lib/Telerik.WinControls.RadChart.dll",
+        "lib/Telerik.WinControls.RadDock.dll",
+        "lib/Telerik.WinControls.UI.dll",
+        "lib/Telerik.WinControls.dll",
+        "lib/TelerikCommon.dll",
+        "telerikwincompositeui.2012.1.321.20.nupkg.sha512",
+        "telerikwincompositeui.nuspec"
+      ]
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
     "WebNavigator/1.0.0": {
       "type": "project",
       "path": "../SiteManipulation/WebNavigator.csproj",
@@ -796,6 +1025,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "DataAccess >= 1.0.0",
       "HtmlAgilityPack >= 1.11.60",
       "HtmlAgilityPack_Helper >= 2.0.0",
       "MaterialSkin >= 0.2.1",
@@ -814,6 +1044,7 @@
       "System.Memory >= 4.5.5",
       "System.Numerics.Vectors >= 4.5.0",
       "System.Runtime.CompilerServices.Unsafe >= 6.0.0",
+      "TelerikWinCompositeUI >= 2012.1.321.20",
       "WebNavigator >= 1.0.0"
     ]
   },
@@ -844,6 +1075,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+            "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj"
+            },
             "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
               "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
             }
@@ -854,6 +1088,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -931,6 +1170,10 @@
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "TelerikWinCompositeUI": {
+            "target": "Package",
+            "version": "[2012.1.321.20, )"
           }
         },
         "imports": [
@@ -952,7 +1195,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -973,6 +1216,16 @@
       "warningLevel": 1,
       "message": "Package 'MaterialSkin 0.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "MaterialSkin",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'TelerikWinCompositeUI 2012.1.321.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "TelerikWinCompositeUI",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]

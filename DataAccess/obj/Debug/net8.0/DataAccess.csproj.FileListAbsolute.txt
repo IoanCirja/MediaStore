@@ -1,0 +1,16 @@
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

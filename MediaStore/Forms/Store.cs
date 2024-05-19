@@ -31,6 +31,8 @@ namespace MediaStore
             InitializeComponent();
 
             pictureBox7.MouseDown += PictureBox_MouseDown;
+            this.FormClosing += Closing;
+
 
             page = 0;
             pageIndex = 0;
@@ -535,6 +537,30 @@ namespace MediaStore
             }
         }
 
+        private void Closing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                TerminateChromeDrivers();
 
+                Environment.Exit(0);
+            }
+        }
+        private void TerminateChromeDrivers()
+        {
+            Process[] chromeDrivers = Process.GetProcessesByName("chromedriver");
+
+            foreach (Process chromeDriver in chromeDrivers)
+            {
+                try
+                {
+                    chromeDriver.Kill();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error terminating ChromeDriver process: {ex.Message}");
+                }
+            }
+        }
     }
 }

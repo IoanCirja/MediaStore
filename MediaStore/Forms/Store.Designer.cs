@@ -55,15 +55,14 @@ namespace MediaStore
             textBox5 = new TextBox();
             textBox6 = new TextBox();
             textBox7 = new TextBox();
-            button4 = new Button();
             sqliteCommand1 = new Microsoft.Data.Sqlite.SqliteCommand();
-            comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             price1 = new TextBox();
             name0 = new TextBox();
             pictureBox1 = new PictureBox();
             button5 = new Button();
             pictureBox7 = new PictureBox();
+            searchbtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -183,6 +182,7 @@ namespace MediaStore
             name4.Size = new Size(379, 48);
             name4.TabIndex = 25;
             name4.Text = "Se incarca...";
+            name4.TextChanged += name4_TextChanged;
             // 
             // pictureBox5
             // 
@@ -225,9 +225,9 @@ namespace MediaStore
             // 
             // button1
             // 
-            button1.Location = new Point(1397, 649);
+            button1.Location = new Point(1397, 622);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(75, 50);
             button1.TabIndex = 36;
             button1.Text = "Next";
             button1.UseVisualStyleBackColor = true;
@@ -235,9 +235,9 @@ namespace MediaStore
             // 
             // button2
             // 
-            button2.Location = new Point(1316, 649);
+            button2.Location = new Point(1290, 622);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(75, 48);
             button2.TabIndex = 37;
             button2.Text = "Prev";
             button2.UseVisualStyleBackColor = true;
@@ -260,6 +260,7 @@ namespace MediaStore
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(368, 154);
             textBox2.TabIndex = 39;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -311,21 +312,11 @@ namespace MediaStore
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(1213, 84);
+            textBox7.Location = new Point(1245, 11);
             textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(227, 23);
             textBox7.TabIndex = 44;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(1213, 332);
-            button4.Name = "button4";
-            button4.Size = new Size(142, 23);
-            button4.TabIndex = 46;
-            button4.Text = "Go To Account";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
             // 
             // sqliteCommand1
             // 
@@ -333,17 +324,6 @@ namespace MediaStore
             sqliteCommand1.Connection = null;
             sqliteCommand1.Transaction = null;
             sqliteCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Laptopuri", "Telefoane Mobile", "Desktop PC", "Televizoare", "Trambuline" });
-            comboBox1.Location = new Point(1085, 130);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 47;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // textBox1
             // 
@@ -356,6 +336,7 @@ namespace MediaStore
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(368, 154);
             textBox1.TabIndex = 51;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // price1
             // 
@@ -389,10 +370,10 @@ namespace MediaStore
             // 
             // button5
             // 
-            button5.Location = new Point(1077, 220);
+            button5.Location = new Point(1147, 134);
             button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(195, 22);
+            button5.Size = new Size(218, 49);
             button5.TabIndex = 52;
             button5.Text = "Choose Product";
             button5.UseVisualStyleBackColor = true;
@@ -400,11 +381,23 @@ namespace MediaStore
             // 
             // pictureBox7
             // 
-            pictureBox7.Location = new Point(1136, 8);
+            pictureBox7.Location = new Point(1147, 8);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(92, 63);
             pictureBox7.TabIndex = 53;
             pictureBox7.TabStop = false;
+            // 
+            // searchbtn
+            // 
+            searchbtn.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            searchbtn.ForeColor = Color.DodgerBlue;
+            searchbtn.Location = new Point(1386, 134);
+            searchbtn.Name = "searchbtn";
+            searchbtn.Size = new Size(86, 49);
+            searchbtn.TabIndex = 54;
+            searchbtn.Text = "🔍";
+            searchbtn.UseVisualStyleBackColor = true;
+            searchbtn.Click += button3_Click_1;
             // 
             // Store
             // 
@@ -412,15 +405,14 @@ namespace MediaStore
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoScrollMinSize = new Size(0, 300);
-            ClientSize = new Size(1484, 684);
+            ClientSize = new Size(1487, 684);
+            Controls.Add(searchbtn);
             Controls.Add(pictureBox7);
             Controls.Add(button5);
             Controls.Add(textBox1);
             Controls.Add(price1);
             Controls.Add(name0);
             Controls.Add(pictureBox1);
-            Controls.Add(comboBox1);
-            Controls.Add(button4);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
             Controls.Add(textBox5);
@@ -483,14 +475,13 @@ namespace MediaStore
         private TextBox textBox5;
         private TextBox textBox6;
         private TextBox textBox7;
-        private Button button4;
         private Microsoft.Data.Sqlite.SqliteCommand sqliteCommand1;
-        private ComboBox comboBox1;
         private TextBox textBox1;
         private TextBox price1;
         private TextBox name0;
         private PictureBox pictureBox1;
         private Button button5;
         private PictureBox pictureBox7;
+        private Button searchbtn;
     }
 }

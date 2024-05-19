@@ -130,7 +130,7 @@ namespace MediaStore
 
 
 
-                PictureBox pictureBox = sender as PictureBox;
+                PictureBox? pictureBox = sender as PictureBox;
                 string identifier = pictureBox.Name.Replace("pictureBox", "");
                 int id = int.Parse(identifier); // acum avem id ul picture boxului
 
@@ -159,12 +159,12 @@ namespace MediaStore
                 //adaug la comparat
                 removeMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
                 {
-                    TextBox nameBox = this.Controls.Find($"name{id + 1}", true).FirstOrDefault() as TextBox;
-                    TextBox priceBox = this.Controls.Find($"price{id + 1}", true).FirstOrDefault() as TextBox;
-                    TextBox descriptionBox = this.Controls.Find($"textBox{id +1}", true).FirstOrDefault() as TextBox;
+                    TextBox? nameBox = this.Controls.Find($"name{id + 1}", true).FirstOrDefault() as TextBox;
+                    TextBox? priceBox = this.Controls.Find($"price{id + 1}", true).FirstOrDefault() as TextBox;
+                    TextBox? descriptionBox = this.Controls.Find($"textBox{id +1}", true).FirstOrDefault() as TextBox;
 
                     // Find the PictureBox control
-                    PictureBox pictureBox = this.Controls.Find($"pictureBox{id}", true).FirstOrDefault() as PictureBox;
+                    PictureBox? pictureBox = this.Controls.Find($"pictureBox{id}", true).FirstOrDefault() as PictureBox;
 
                     // Clear the TextBox controls
                     if (nameBox != null) nameBox.Text = "";

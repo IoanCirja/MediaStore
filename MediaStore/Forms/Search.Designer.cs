@@ -1,6 +1,6 @@
-﻿namespace MediaStore
+﻿namespace MediaStore.Forms
 {
-    partial class ChooseProduct
+    partial class Search
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             SuspendLayout();
             // 
-            // ChooseProduct
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
+            // Search
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "ChooseProduct";
-            Text = "ChooseProduct";
-            Load += ChooseProduct_Load;
+            ClientSize = new Size(250, 585);
+            Name = "Search";
+            Text = "Search";
+            Load += Search_Load;
             ResumeLayout(false);
         }
 
         #endregion
+        private ContextMenuStrip contextMenuStrip1;
     }
 }

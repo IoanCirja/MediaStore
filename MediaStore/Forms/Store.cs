@@ -9,6 +9,7 @@ using SiteManipulation;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Diagnostics;
+using MediaStore.Forms;
 
 namespace MediaStore
 {
@@ -174,7 +175,7 @@ namespace MediaStore
                             }
                         }
 
-                        PictureBox pictureBox = this.Controls.Find($"pictureBox{cnt}", true).FirstOrDefault() as PictureBox;
+                        PictureBox? pictureBox = this.Controls.Find($"pictureBox{cnt}", true).FirstOrDefault() as PictureBox;
                         if (pictureBox != null)
                         {
                             pictureBox.Image = image;
@@ -213,9 +214,9 @@ namespace MediaStore
                         var priceElement = htmlDocument.DocumentNode.SelectSingleNode($"(//span[@class='fw-bold mb-3 mb-md-0 color-secondary'])[{startIndex + cnt}]");
                         var price = priceElement?.InnerText.Trim() ?? "";
 
-                        TextBox textBox = this.Controls.Find($"name{cnt - 1}", true).FirstOrDefault() as TextBox;
-                        TextBox priceBox = this.Controls.Find($"price{cnt}", true).FirstOrDefault() as TextBox;
-                        TextBox detailsBox = this.Controls.Find($"textBox{cnt}", true).FirstOrDefault() as TextBox;
+                        TextBox? textBox = this.Controls.Find($"name{cnt - 1}", true).FirstOrDefault() as TextBox;
+                        TextBox? priceBox = this.Controls.Find($"price{cnt}", true).FirstOrDefault() as TextBox;
+                        TextBox? detailsBox = this.Controls.Find($"textBox{cnt}", true).FirstOrDefault() as TextBox;
 
                         if (textBox != null)
                         {
@@ -336,13 +337,13 @@ namespace MediaStore
                 {
                     try
                     {
-                        TextBox nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
-                        TextBox priceBox = this.Controls.Find($"textBox{id}", true).FirstOrDefault() as TextBox;
-                        TextBox descriptionBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
+                        TextBox? nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
+                        TextBox? priceBox = this.Controls.Find($"textBox{id}", true).FirstOrDefault() as TextBox;
+                        TextBox? descriptionBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
 
-                        string name = nameBox.Text;
-                        string price = priceBox.Text;
-                        string description = descriptionBox.Text;
+                        string? name = nameBox.Text;
+                        string? price = priceBox.Text;
+                        string? description = descriptionBox.Text;
 
                         // Verifică dacă produsul există deja în baza de date
                         if (!DataAccess.IsFavorite(name, price, description, _currentUser.Email))
@@ -435,31 +436,11 @@ namespace MediaStore
         {
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            _webNavigator = new WebNavigator();
-
-            _webNavigator.Login(_currentUser.Email, _currentUser.Password);
-        }
 
 
 
-        private async void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedText = comboBox1.SelectedItem.ToString();
 
-            url = URLS.UrlDispenser(selectedText);
 
-            try
-            {
-                page = 1;
-                await LoadHTMLAsync(url, page);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void ClearFormControls(Control parent)
         {
@@ -481,7 +462,7 @@ namespace MediaStore
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new ChooseProduct().ShowDialog();
+            new Search().ShowDialog();
         }
 
 
@@ -560,6 +541,36 @@ namespace MediaStore
                 {
                     Console.WriteLine($"Error terminating ChromeDriver process: {ex.Message}");
                 }
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void button3_Click_1(object sender, EventArgs e)
+        {
+            url = Search.url;
+
+            try
+            {
+                page = 1;
+                await LoadHTMLAsync(url, page);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

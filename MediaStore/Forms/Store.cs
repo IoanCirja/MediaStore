@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
-
 using System.Text.RegularExpressions;
-
 using Image = System.Drawing.Image;
 using SiteManipulation;
-
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Diagnostics;
-using MediaStore.Forms;
+using MediaStore;
+using ExportLibrary;
 
 namespace MediaStore
 {
@@ -23,6 +21,9 @@ namespace MediaStore
         public static List<Product> _comparedList;
         private static User _currentUser;
         private static WebNavigator _webNavigator;
+        private Dictionary<string, string> _searchMappings;
+        private static int _currentPage;
+
 
 
         public static User CurrentUser { get { return _currentUser; } }
@@ -33,10 +34,13 @@ namespace MediaStore
 
             pictureBox7.MouseDown += PictureBox_MouseDown;
             this.FormClosing += Closing;
-
+            _searchMappings = URLS._websiteProducts;
 
             page = 0;
             pageIndex = 0;
+            _currentPage = 1;
+            label1.Text = 1.ToString();
+
             httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36");
             _productList = new List<Product>();
@@ -44,6 +48,8 @@ namespace MediaStore
             url = "https://www.itgalaxy.ro/laptopuri//pagina1/";
 
             pictureBox7.Image = ResizeImage(Resource.profile, 60, 60);
+            searchResultsListBox.Visible = false;
+
 
         }
         public static void SetUser(User user)
@@ -67,7 +73,10 @@ namespace MediaStore
             try
             {
                 page = 1;
-                await LoadHTMLAsync(url, page);
+                await LoadHTMLAsync(url, page, true);
+                _currentPage = 1;
+                label1.Text = _currentPage.ToString();
+
             }
             catch (Exception ex)
             {
@@ -77,19 +86,19 @@ namespace MediaStore
 
         private async void button1_Click(object sender, EventArgs e)
         {
-
+            button1.Enabled = false;
             page++;
             pageIndex = (page - 1) / 6 + 1;
-            MessageBox.Show("page: " + page.ToString() + "pageindex: " + pageIndex.ToString());
 
 
             try
             {
                 url = url.Substring(0, url.Length - 2) + pageIndex.ToString() + "/";
-                MessageBox.Show(url);
 
                 int index = (page % 6) == 0 ? 6 : page % 6;
-                await LoadHTMLAsync(url, index);
+                await LoadHTMLAsync(url, index, true);
+                button1.Enabled = true;
+
 
             }
             catch (Exception ex)
@@ -100,20 +109,22 @@ namespace MediaStore
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            button2.Enabled = false;
             page--;
             if (page < 1) page = 1;
             pageIndex = (page - 1) / 6 + 1;
-            MessageBox.Show("page: " + page.ToString() + "pageindex: " + pageIndex.ToString());
 
 
             try
             {
 
                 url = url.Substring(0, url.Length - 2) + pageIndex.ToString() + "/";
-                MessageBox.Show(url);
 
                 int index = (page % 6) == 0 ? 6 : page % 6;
-                await LoadHTMLAsync(url, index);
+                await LoadHTMLAsync(url, index, false);
+
+                button2.Enabled = true;
+
 
             }
             catch (Exception ex)
@@ -121,8 +132,11 @@ namespace MediaStore
                 MessageBox.Show(ex.Message);
             }
         }
-        private async Task LoadHTMLAsync(string url, int page)
+        private async Task LoadHTMLAsync(string url, int page, bool next)
         {
+            searchResultsListBox.Visible = false;
+
+
             ClearFormControls(this);
             string technical_details = "";
 
@@ -266,6 +280,28 @@ namespace MediaStore
             }
 
             SetUserToForm();
+
+
+            if(next)
+            {
+                _currentPage++;
+            }
+            else
+            {
+                if (_currentPage <= 1)
+                {
+                    _currentPage = 1;
+
+
+                }
+                else
+                {
+                    _currentPage--;
+
+                }
+            }
+            label1.Text = _currentPage.ToString();
+
         }
 
         private Image ResizeImage(Image image, int width, int height)
@@ -460,10 +496,10 @@ namespace MediaStore
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            new Search().ShowDialog();
-        }
+        //private void button5_Click(object sender, EventArgs e)
+        //{
+        //    new Search().ShowDialog();
+        //}
 
 
 
@@ -479,12 +515,16 @@ namespace MediaStore
                 ToolStripMenuItem favoritesMenuItem = new ToolStripMenuItem("See Favorites");
                 ToolStripMenuItem websiteMenuItem = new ToolStripMenuItem("Go to Website");
                 ToolStripMenuItem compareMenuItem = new ToolStripMenuItem("Compare");
+                ToolStripMenuItem excelMenuItem = new ToolStripMenuItem("Export as Excel");
+                ToolStripMenuItem pdfMenuItem = new ToolStripMenuItem("Export as Pdf");
 
                 ToolStripMenuItem logoutMenuItem = new ToolStripMenuItem("Logout");
                 contextMenu.Items.Add(favoritesMenuItem);
                 contextMenu.Items.Add(websiteMenuItem);
                 contextMenu.Items.Add(logoutMenuItem);
                 contextMenu.Items.Add(compareMenuItem);
+                contextMenu.Items.Add(excelMenuItem);
+                contextMenu.Items.Add(pdfMenuItem);
 
 
                 // Asocierea evenimentelor pentru fiecare opțiune
@@ -492,6 +532,70 @@ namespace MediaStore
                 {
                     Favorites favoritesForm = new Favorites();
                     new Favorites().ShowDialog();
+                };
+                excelMenuItem.Click += (s, args) =>
+                {
+                    try
+                    {
+                        IExporter excelExporter = new ExcelExporter();
+                        ProductExportFacade exportFacade = new ProductExportFacade(excelExporter, null);
+
+                        // Generare nume fisier dinamic
+                        string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ExportProducts");
+                        string fileName = $"products_{DateTime.Now:yyyy.MM.dd_HH.mm.ss}.xlsx";
+                        string filePath = Path.Combine(folderPath, fileName);
+
+                        // Creeaza folderul daca nu exista
+                        if (!Directory.Exists(folderPath))
+                        {
+                            Directory.CreateDirectory(folderPath);
+                        }
+
+                        // Realizează exportul
+                        exportFacade.ExportToExcel(_productList, filePath);
+
+                        // Opțional, afișează un mesaj pentru utilizator
+                        MessageBox.Show("Produsele au fost exportate în Excel cu succes!", "Export completat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Resetarea listei de produse (daca este necesar)
+                        // _productList.Clear();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                };
+                pdfMenuItem.Click += (s, args) =>
+                {
+                    try
+                    {
+                        IExporter pdfExporter = new PdfExporter();
+                        ProductExportFacade exportFacade = new ProductExportFacade(null, pdfExporter);
+
+                        // Generare nume fisier dinamic
+                        string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ExportProducts");
+                        string fileName = $"products_{DateTime.Now:yyyy.MM.dd_HH.mm.ss}.pdf";
+                        string filePath = Path.Combine(folderPath, fileName);
+
+                        // Creeaza folderul daca nu exista
+                        if (!Directory.Exists(folderPath))
+                        {
+                            Directory.CreateDirectory(folderPath);
+                        }
+
+                        // Realizeaza exportul
+                        exportFacade.ExportToPdf(_productList, filePath);
+
+                        // Optional, afiseaza un mesaj pentru utilizator
+                        MessageBox.Show("Produsele au fost exportate în PDF cu succes!", "Export completat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Resetarea listei de produse (daca este necesar)
+                        // _productList.Clear();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 };
                 compareMenuItem.Click += (s, args) =>
                 {
@@ -507,9 +611,10 @@ namespace MediaStore
                 {
                     ClearFormControls(this);
                     _currentUser = null;
-                    this.Close();
+
                     this.Hide();
                     new LoginForm().ShowDialog(this);
+
 
                 };
 
@@ -544,34 +649,58 @@ namespace MediaStore
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
         {
+            searchResultsListBox.Visible = true;
+
+            UpdateSearchResults(textBox8.Text);
 
         }
-
-        private void name4_TextChanged(object sender, EventArgs e)
+        private void UpdateSearchResults(string searchTerm)
         {
+            searchResultsListBox.Items.Clear();
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private async void button3_Click_1(object sender, EventArgs e)
-        {
-            url = Search.url;
-
-            try
+            foreach (var mapping in _searchMappings)
             {
-                page = 1;
-                await LoadHTMLAsync(url, page);
+                if (mapping.Key.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase))
+                {
+                    searchResultsListBox.Items.Add(mapping.Key);
+                }
             }
-            catch (Exception ex)
+        }
+
+        private async void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedTerm = searchResultsListBox.SelectedItem as string;
+
+            if (!string.IsNullOrEmpty(selectedTerm) && _searchMappings.ContainsKey(selectedTerm))
             {
-                MessageBox.Show(ex.Message);
+                url = _searchMappings[selectedTerm];
+
+                try
+                {
+                    page = 1;
+                    _currentPage = 1;
+                    label1.Text = _currentPage.ToString();
+
+                    await LoadHTMLAsync(url, page, true);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
+
+            searchResultsListBox.Visible = false;
+
+
+
+        }
+
+        private void name1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

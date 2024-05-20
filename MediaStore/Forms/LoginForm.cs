@@ -20,6 +20,7 @@ namespace MediaStore
         public LoginForm()
         {
             InitializeComponent();
+            this.AcceptButton = buttonLogin;
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace MediaStore
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelWelcome_Click(object sender, EventArgs e)
         {
 
         }

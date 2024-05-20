@@ -41,7 +41,7 @@
             // labelEmail
             // 
             labelEmail.AutoSize = true;
-            labelEmail.Location = new Point(153, 127);
+            labelEmail.Location = new Point(115, 154);
             labelEmail.Margin = new Padding(2, 0, 2, 0);
             labelEmail.Name = "labelEmail";
             labelEmail.Size = new Size(59, 20);
@@ -51,7 +51,7 @@
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(154, 177);
+            labelPassword.Location = new Point(91, 204);
             labelPassword.Margin = new Padding(2, 0, 2, 0);
             labelPassword.Name = "labelPassword";
             labelPassword.Size = new Size(83, 20);
@@ -60,27 +60,27 @@
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(299, 124);
+            textBoxEmail.Location = new Point(197, 151);
             textBoxEmail.Margin = new Padding(2, 3, 2, 3);
             textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(237, 27);
+            textBoxEmail.Size = new Size(275, 27);
             textBoxEmail.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(299, 177);
+            textBoxPassword.Location = new Point(197, 204);
             textBoxPassword.Margin = new Padding(2, 3, 2, 3);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.PasswordChar = '*';
-            textBoxPassword.Size = new Size(237, 27);
+            textBoxPassword.Size = new Size(275, 27);
             textBoxPassword.TabIndex = 3;
             // 
             // buttonRegister
             // 
-            buttonRegister.Location = new Point(153, 331);
+            buttonRegister.Location = new Point(103, 286);
             buttonRegister.Margin = new Padding(2, 3, 2, 3);
             buttonRegister.Name = "buttonRegister";
-            buttonRegister.Size = new Size(74, 40);
+            buttonRegister.Size = new Size(133, 57);
             buttonRegister.TabIndex = 4;
             buttonRegister.Text = "Register";
             buttonRegister.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(440, 257);
+            buttonExit.Location = new Point(420, 286);
             buttonExit.Margin = new Padding(2, 3, 2, 3);
             buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(74, 40);
+            buttonExit.Size = new Size(133, 57);
             buttonExit.TabIndex = 5;
             buttonExit.Text = "Exit";
             buttonExit.UseVisualStyleBackColor = true;
@@ -101,19 +101,20 @@
             // 
             labelWelcome.AutoSize = true;
             labelWelcome.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelWelcome.Location = new Point(240, 49);
+            labelWelcome.Location = new Point(151, 49);
             labelWelcome.Margin = new Padding(2, 0, 2, 0);
             labelWelcome.Name = "labelWelcome";
-            labelWelcome.Size = new Size(140, 32);
+            labelWelcome.Size = new Size(354, 32);
             labelWelcome.TabIndex = 6;
-            labelWelcome.Text = "Welcome!";
+            labelWelcome.Text = "Welcome to ScrapeMaster!";
+            labelWelcome.Click += labelWelcome_Click;
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(322, 257);
+            buttonLogin.Location = new Point(260, 286);
             buttonLogin.Margin = new Padding(2, 3, 2, 3);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(74, 40);
+            buttonLogin.Size = new Size(134, 57);
             buttonLogin.TabIndex = 7;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = true;

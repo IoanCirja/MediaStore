@@ -47,31 +47,52 @@ namespace MediaStore
 
         private void CompareForm_Load(object sender, EventArgs e)
         {
-            price1.Text = Store._comparedList[0].price;
-            price2.Text = Store._comparedList[1].price;
-            price3.Text = Store._comparedList[2].price;
+            if (Store._comparedList.Count > 0)
+            {
+                price1.Text = Store._comparedList[0].price;
+                textBox1.Text = Store._comparedList[0].description;
+                name1.Text = Store._comparedList[0].name;
+                pictureBox0.Image = Store._comparedList[0].image;
+            }
+            else
+            {
+                price1.Visible = false;
+                textBox1.Visible = false;
+                name1.Visible = false;
+                pictureBox0.Visible = false;
+            }
 
+            if (Store._comparedList.Count > 1)
+            {
+                price2.Text = Store._comparedList[1].price;
+                textBox2.Text = Store._comparedList[1].description;
+                name2.Text = Store._comparedList[1].name;
+                pictureBox1.Image = Store._comparedList[1].image;
+            }
+            else
+            {
+                price2.Visible = false;
+                textBox2.Visible = false;
+                name2.Visible = false;
+                pictureBox1.Visible = false;
+            }
 
-            textBox1.Text = Store._comparedList[0].description;
-            textBox2.Text = Store._comparedList[1].description;
-            textBox3.Text = Store._comparedList[2].description;
-
-
-            name1.Text = Store._comparedList[0].name;
-            name2.Text = Store._comparedList[1].name;
-            name3.Text = Store._comparedList[2].name;
-
-
-            pictureBox0.Image = Store._comparedList[0].image;
-            pictureBox1.Image = Store._comparedList[1].image;
-
-            pictureBox2.Image = Store._comparedList[2].image;
-
-
-
-
-
+            if (Store._comparedList.Count > 2)
+            {
+                price3.Text = Store._comparedList[2].price;
+                textBox3.Text = Store._comparedList[2].description;
+                name3.Text = Store._comparedList[2].name;
+                pictureBox2.Image = Store._comparedList[2].image;
+            }
+            else
+            {
+                price3.Visible = false;
+                textBox3.Visible = false;
+                name3.Visible = false;
+                pictureBox2.Visible = false;
+            }
         }
+
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {

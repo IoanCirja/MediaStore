@@ -60,9 +60,10 @@ namespace MediaStore
             price1 = new TextBox();
             name0 = new TextBox();
             pictureBox1 = new PictureBox();
-            button5 = new Button();
             pictureBox7 = new PictureBox();
-            searchbtn = new Button();
+            textBox8 = new TextBox();
+            searchResultsListBox = new ListBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -92,6 +93,7 @@ namespace MediaStore
             name1.Size = new Size(379, 48);
             name1.TabIndex = 7;
             name1.Text = "Se incarca...";
+            name1.TextChanged += name1_TextChanged;
             // 
             // pictureBox2
             // 
@@ -182,7 +184,6 @@ namespace MediaStore
             name4.Size = new Size(379, 48);
             name4.TabIndex = 25;
             name4.Text = "Se incarca...";
-            name4.TextChanged += name4_TextChanged;
             // 
             // pictureBox5
             // 
@@ -225,7 +226,7 @@ namespace MediaStore
             // 
             // button1
             // 
-            button1.Location = new Point(1397, 622);
+            button1.Location = new Point(1353, 622);
             button1.Name = "button1";
             button1.Size = new Size(75, 50);
             button1.TabIndex = 36;
@@ -235,7 +236,7 @@ namespace MediaStore
             // 
             // button2
             // 
-            button2.Location = new Point(1290, 622);
+            button2.Location = new Point(1164, 624);
             button2.Name = "button2";
             button2.Size = new Size(75, 48);
             button2.TabIndex = 37;
@@ -260,7 +261,6 @@ namespace MediaStore
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(368, 154);
             textBox2.TabIndex = 39;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -336,7 +336,6 @@ namespace MediaStore
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(368, 154);
             textBox1.TabIndex = 51;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // price1
             // 
@@ -368,17 +367,6 @@ namespace MediaStore
             pictureBox1.TabStop = false;
             pictureBox1.MouseDown += pictureBox_MouseDown;
             // 
-            // button5
-            // 
-            button5.Location = new Point(1147, 134);
-            button5.Margin = new Padding(3, 2, 3, 2);
-            button5.Name = "button5";
-            button5.Size = new Size(218, 49);
-            button5.TabIndex = 52;
-            button5.Text = "Choose Product";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
             // pictureBox7
             // 
             pictureBox7.Location = new Point(1147, 8);
@@ -387,17 +375,32 @@ namespace MediaStore
             pictureBox7.TabIndex = 53;
             pictureBox7.TabStop = false;
             // 
-            // searchbtn
+            // textBox8
             // 
-            searchbtn.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            searchbtn.ForeColor = Color.DodgerBlue;
-            searchbtn.Location = new Point(1386, 134);
-            searchbtn.Name = "searchbtn";
-            searchbtn.Size = new Size(86, 49);
-            searchbtn.TabIndex = 54;
-            searchbtn.Text = "🔍";
-            searchbtn.UseVisualStyleBackColor = true;
-            searchbtn.Click += button3_Click_1;
+            textBox8.Location = new Point(1147, 108);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(325, 23);
+            textBox8.TabIndex = 55;
+            textBox8.TextChanged += textBox8_TextChanged;
+            // 
+            // searchResultsListBox
+            // 
+            searchResultsListBox.FormattingEnabled = true;
+            searchResultsListBox.ItemHeight = 15;
+            searchResultsListBox.Location = new Point(1147, 158);
+            searchResultsListBox.Name = "searchResultsListBox";
+            searchResultsListBox.Size = new Size(325, 424);
+            searchResultsListBox.TabIndex = 56;
+            searchResultsListBox.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(1287, 640);
+            label1.Name = "label1";
+            label1.Size = new Size(13, 15);
+            label1.TabIndex = 57;
+            label1.Text = "0";
             // 
             // Store
             // 
@@ -406,9 +409,10 @@ namespace MediaStore
             AutoScroll = true;
             AutoScrollMinSize = new Size(0, 300);
             ClientSize = new Size(1487, 684);
-            Controls.Add(searchbtn);
+            Controls.Add(label1);
+            Controls.Add(searchResultsListBox);
+            Controls.Add(textBox8);
             Controls.Add(pictureBox7);
-            Controls.Add(button5);
             Controls.Add(textBox1);
             Controls.Add(price1);
             Controls.Add(name0);
@@ -480,8 +484,9 @@ namespace MediaStore
         private TextBox price1;
         private TextBox name0;
         private PictureBox pictureBox1;
-        private Button button5;
         private PictureBox pictureBox7;
-        private Button searchbtn;
+        private TextBox textBox8;
+        private ListBox searchResultsListBox;
+        private Label label1;
     }
 }

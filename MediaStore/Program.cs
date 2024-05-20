@@ -1,4 +1,4 @@
-using MediaStore.Forms;
+using MediaStore;
 
 namespace MediaStore
 {

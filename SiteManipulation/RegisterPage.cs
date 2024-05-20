@@ -69,6 +69,8 @@ namespace SiteManipulation
             Thread.Sleep(3000);
             EmailLoginForm.SendKeys(email);
             PasswordLoginForm.SendKeys(password);
+            Thread.Sleep(2000);
+
             LoginButton.Click();
 
         }

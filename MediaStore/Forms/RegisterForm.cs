@@ -38,11 +38,11 @@ namespace MediaStore
             string email = textBoxEmail.Text;
             string phone = textBoxPhone.Text;
             string password = textBoxPassword.Text;
-            string rePassword = textBoxRePassword.Text; 
+            string rePassword = textBoxRePassword.Text;
 
-            if ( string.IsNullOrWhiteSpace(lastName) || string.IsNullOrWhiteSpace(firstName) || 
-                 string.IsNullOrWhiteSpace(email)    || string.IsNullOrWhiteSpace(phone)     || 
-                 string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(rePassword) )
+            if (string.IsNullOrWhiteSpace(lastName) || string.IsNullOrWhiteSpace(firstName) ||
+                 string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phone) ||
+                 string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(rePassword))
             {
                 MessageBox.Show("Aveti campuri necompletate.", "Eroare");
             }
@@ -77,7 +77,7 @@ namespace MediaStore
                 {
                     MessageBox.Show("A aparut o eroare in timpul inregistrarii: " + ex.Message, "Eroare");
                 }
-               
+
                 LoginForm loginForm = new LoginForm();
                 loginForm.Show();
 
@@ -96,6 +96,11 @@ namespace MediaStore
             {
                 return false;
             }
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

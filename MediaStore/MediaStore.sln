@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebNavigator", "..\SiteMani
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "..\DataAccess\DataAccess.csproj", "{46254F1C-3B63-4FBB-8951-E222C7DD3F67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export", "..\Export\Export.csproj", "{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{46254F1C-3B63-4FBB-8951-E222C7DD3F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46254F1C-3B63-4FBB-8951-E222C7DD3F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46254F1C-3B63-4FBB-8951-E222C7DD3F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

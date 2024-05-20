@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {}
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {}
   },
   "projects": {
-    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+        "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
         "projectName": "WebNavigator",
-        "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+        "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
         "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
-        "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\obj\\",
+        "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,9 +45,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CXuesong.Shims.VisualBasic.Devices": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.2, )"
+            },
             "OpenQA.Selenium.Chrome.ChromeDriverExtensions": {
               "target": "Package",
               "version": "[1.2.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
             }
           },
           "imports": [

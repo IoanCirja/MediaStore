@@ -1,88 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\",
+  "WorkspaceRootPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\store.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\sitemanipulation\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\sitemanipulation\\webnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\sitemanipulation\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\sitemanipulation\\webnavigator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\compareform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}|..\\Export\\Export.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\export\\excelexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}|..\\Export\\Export.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\export\\pdfexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}|..\\Export\\Export.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\export\\productsexportfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}|..\\Export\\Export.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\export\\iexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34BE66E3-B220-49A7-BD6A-FE4A1DD0E691}|..\\Export\\Export.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\export\\export.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\mediastore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:mediastore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\mediastore\\forms\\favorites.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\favorites.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -92,17 +17,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Store.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeToolTip": "Forms\\Store.cs",
-              "ViewState": "AQIAABMBAAAAAAAAAAAAAB8BAAANAAAA",
+              "ViewState": "AQIAADgBAAAAAAAAAAAmwKYBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T14:59:35.693Z",
               "IsPinned": true,
@@ -110,284 +35,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "Forms\\LoginForm.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAvwBcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T16:00:29.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "RelativeToolTip": "..\\DataAccess\\DataAccess.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAuwMQAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T16:00:27.331Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RegisterPage.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\RegisterPage.cs",
-              "RelativeDocumentMoniker": "..\\SiteManipulation\\RegisterPage.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\RegisterPage.cs",
-              "RelativeToolTip": "..\\SiteManipulation\\RegisterPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:33:29.066Z",
+              "WhenOpened": "2024-05-20T18:03:18.759Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WebNavigator.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.cs",
-              "RelativeDocumentMoniker": "..\\SiteManipulation\\WebNavigator.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.cs",
-              "RelativeToolTip": "..\\SiteManipulation\\WebNavigator.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA1wCQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:33:22.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HomePage.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\HomePage.cs",
-              "RelativeDocumentMoniker": "..\\SiteManipulation\\HomePage.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\HomePage.cs",
-              "RelativeToolTip": "..\\SiteManipulation\\HomePage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:33:21.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WebNavigator",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
-              "RelativeDocumentMoniker": "..\\SiteManipulation\\WebNavigator.csproj",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
-              "RelativeToolTip": "..\\SiteManipulation\\WebNavigator.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-20T15:33:19.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CompareForm.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\CompareForm.cs",
-              "RelativeDocumentMoniker": "Forms\\CompareForm.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\CompareForm.cs",
-              "RelativeToolTip": "Forms\\CompareForm.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAQwF4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:31:29.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CompareForm.cs [Design]",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\CompareForm.cs",
-              "RelativeDocumentMoniker": "Forms\\CompareForm.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\CompareForm.cs [Design]",
-              "RelativeToolTip": "Forms\\CompareForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:31:28.27Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PdfExporter.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\PdfExporter.cs",
-              "RelativeDocumentMoniker": "..\\Export\\PdfExporter.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\PdfExporter.cs",
-              "RelativeToolTip": "..\\Export\\PdfExporter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:23:04.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductsExportFacade.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\ProductsExportFacade.cs",
-              "RelativeDocumentMoniker": "..\\Export\\ProductsExportFacade.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\ProductsExportFacade.cs",
-              "RelativeToolTip": "..\\Export\\ProductsExportFacade.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:23:03.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ExcelExporter.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\ExcelExporter.cs",
-              "RelativeDocumentMoniker": "..\\Export\\ExcelExporter.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\ExcelExporter.cs",
-              "RelativeToolTip": "..\\Export\\ExcelExporter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:22:36.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Store.Designer.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Store.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Store.Designer.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Store.Designer.cs",
-              "RelativeToolTip": "Forms\\Store.Designer.cs",
-              "ViewState": "AQIAAM8BAAAAAAAAAAAAANEBAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:04:54.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Store.cs [Design]",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Store.cs",
-              "RelativeDocumentMoniker": "Forms\\Store.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Store.cs [Design]",
-              "RelativeToolTip": "Forms\\Store.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:59:23.254Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:06:05.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DataAccess",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\DataAccess\\DataAccess.csproj",
-              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.csproj",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\DataAccess\\DataAccess.csproj",
-              "RelativeToolTip": "..\\DataAccess\\DataAccess.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-20T15:23:51.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IExport.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\IExport.cs",
-              "RelativeDocumentMoniker": "..\\Export\\IExport.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\IExport.cs",
-              "RelativeToolTip": "..\\Export\\IExport.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:23:07.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Export",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\Export.csproj",
-              "RelativeDocumentMoniker": "..\\Export\\Export.csproj",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Export\\Export.csproj",
-              "RelativeToolTip": "..\\Export\\Export.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-20T15:23:27.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MediaStore",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\MediaStore.csproj",
-              "RelativeDocumentMoniker": "MediaStore.csproj",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\MediaStore.csproj",
-              "RelativeToolTip": "MediaStore.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-20T15:22:25.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
-              "RelativeToolTip": "Forms\\RegisterForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:05:50.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "Forms\\RegisterForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:05:48.246Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Favorites.Designer.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Favorites.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Favorites.Designer.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Favorites.Designer.cs",
-              "RelativeToolTip": "Forms\\Favorites.Designer.cs",
-              "ViewState": "AQIAAPEAAAAAAAAAAAAAAAkBAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T08:40:51.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Favorites.cs [Design]",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Favorites.cs",
-              "RelativeDocumentMoniker": "Forms\\Favorites.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\MediaStore\\Forms\\Favorites.cs [Design]",
-              "RelativeToolTip": "Forms\\Favorites.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T08:40:23.058Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

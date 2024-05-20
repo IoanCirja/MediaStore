@@ -17,3 +17,22 @@ C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\Export\obj\Debug\net8.0\Expo
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\Export\obj\Debug\net8.0\Export.pdb
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\Export.deps.json
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\Export.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\Export.pdb
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\DataAccess.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.csproj.AssemblyReference.cache
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfoInputs.cache
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfo.cs
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.csproj.CoreCompileInputs.cache
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.sourcelink.json
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.csproj.Up2Date
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.pdb
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediaStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ae23f32fb2c6a85d71223bef1d371119ce70178")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef1ea0276b2ed60ec8ad9f071ef94728ef5f2d50")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediaStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediaStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -357,6 +357,7 @@ namespace MediaStore
                 ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
 
                 ToolStripMenuItem addToFavoritesMenuItem = new ToolStripMenuItem("Add to Favorites");
+                ToolStripMenuItem removeFromFavoritesMenuItem = new ToolStripMenuItem("Remove from Favorites");
                 ToolStripMenuItem goToWebsite = new ToolStripMenuItem("Go to Website");
                 ToolStripMenuItem addToCompare = new ToolStripMenuItem("Add to Compare"); //max 3
 
@@ -374,8 +375,8 @@ namespace MediaStore
                     try
                     {
                         TextBox? nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
-                        TextBox? priceBox = this.Controls.Find($"textBox{id}", true).FirstOrDefault() as TextBox;
-                        TextBox? descriptionBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
+                        TextBox? priceBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
+                        TextBox? descriptionBox = this.Controls.Find($"TextBox{id}", true).FirstOrDefault() as TextBox;
 
                         string? name = nameBox.Text;
                         string? price = priceBox.Text;
@@ -404,6 +405,36 @@ namespace MediaStore
                         MessageBox.Show(ex.Message);
                     }
                 };
+
+                removeFromFavoritesMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
+                {
+                    try
+                    {
+                        TextBox? nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
+                        TextBox? priceBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
+                        TextBox? descriptionBox = this.Controls.Find($"textBox{id}", true).FirstOrDefault() as TextBox;
+
+                        string? name = nameBox.Text;
+                        string? price = priceBox.Text;
+                        string? description = descriptionBox.Text;
+
+                        // Verifică dacă produsul există deja în baza de date
+                        if (DataAccess.IsFavorite(name, price, description, _currentUser.Email))
+                        {
+                            DataAccess.RemoveFavorite(name, price, description, _currentUser.Email);
+                            MessageBox.Show("Produsul a fost șters din lista de favorite.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Produsul nu există în lista de favorite.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                };
+
 
                 goToWebsite.Click += (menuItemSender, menuItemEventArgs) =>
                 {
@@ -439,7 +470,7 @@ namespace MediaStore
                     }
                     else
                     {
-                        MessageBox.Show("Already have 3 elements in comaprte");
+                        MessageBox.Show("Already have 3 elements in compare");
                     }
 
 
@@ -448,6 +479,7 @@ namespace MediaStore
                 };
 
                 contextMenuStrip.Items.Add(addToFavoritesMenuItem);
+                contextMenuStrip.Items.Add(removeFromFavoritesMenuItem);
                 contextMenuStrip.Items.Add(goToWebsite);
                 contextMenuStrip.Items.Add(addToCompare);
 

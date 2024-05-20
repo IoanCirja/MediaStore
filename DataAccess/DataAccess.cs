@@ -181,5 +181,27 @@ namespace MediaStore
                 }
             }
         }
+        public static bool RemoveFavorite(string name, string price, string description, string user)
+        {
+            using (SqliteConnection connection = new SqliteConnection(_ConnectionStringF))
+            {
+                connection.Open();
+
+                string query = "DELETE FROM favoritesDatabase WHERE name=@name";
+
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@name", name);
+                    command.Parameters.AddWithValue("@price", price);
+                    command.Parameters.AddWithValue("@description", description);
+                    command.Parameters.AddWithValue("@user", user);
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+        }
+
+        
     }
+
 }

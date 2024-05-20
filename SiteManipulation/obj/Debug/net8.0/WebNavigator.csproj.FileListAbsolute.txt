@@ -49,3 +49,16 @@ C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\SiteManipulation\obj\Debug\n
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.deps.json
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.pdb
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.AssemblyReference.cache
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfoInputs.cache
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfo.cs
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.CoreCompileInputs.cache
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.sourcelink.json
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll

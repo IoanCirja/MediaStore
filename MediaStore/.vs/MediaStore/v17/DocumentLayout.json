@@ -1,13 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\",
+  "WorkspaceRootPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\an3_sem2\\ip-m\\proiect2\\mediastore\\mediastore\\forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\an3_sem2\\ip-m\\proiect2\\mediastore\\mediastore\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,38 +33,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Store.cs",
-              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
-              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "ToolTip": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeToolTip": "Forms\\Store.cs",
               "ViewState": "AQIAADgBAAAAAAAAAAAmwKYBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T14:59:35.693Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Favorites.cs [Design]",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\Favorites.cs",
+              "RelativeDocumentMoniker": "Forms\\Favorites.cs",
+              "ToolTip": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\Favorites.cs [Design]",
+              "RelativeToolTip": "Forms\\Favorites.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:02:38.552Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "Forms\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T07:42:37.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Forms\\LoginForm.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAmwD4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T07:38:34.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.cs",
-              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
-              "RelativeToolTip": "..\\DataAccess\\DataAccess.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAuwMQAAABDAAAA",
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T18:03:18.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T07:35:08.515Z",
+              "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAuwMQAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T18:03:18.759Z"
             }
           ]
         }

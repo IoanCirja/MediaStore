@@ -36,3 +36,22 @@ C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\Export.pdb
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\Export.deps.json
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\Export.dll
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\Export.pdb
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\DataAccess.dll
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\bin\Debug\net8.0\DataAccess.pdb
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.csproj.AssemblyReference.cache
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.GeneratedMSBuildEditorConfig.editorconfig
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfoInputs.cache
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfo.cs
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.csproj.CoreCompileInputs.cache
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.sourcelink.json
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.csproj.Up2Date
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.dll
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\Export.pdb
+C:\An3_SEM2\IP-M\PROIECT2\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll

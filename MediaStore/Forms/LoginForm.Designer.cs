@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             labelEmail = new Label();
             labelPassword = new Label();
             textBoxEmail = new TextBox();
@@ -41,7 +42,8 @@
             // labelEmail
             // 
             labelEmail.AutoSize = true;
-            labelEmail.Location = new Point(115, 154);
+            labelEmail.BackColor = Color.Transparent;
+            labelEmail.Location = new Point(336, 249);
             labelEmail.Margin = new Padding(2, 0, 2, 0);
             labelEmail.Name = "labelEmail";
             labelEmail.Size = new Size(59, 20);
@@ -51,7 +53,8 @@
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(91, 204);
+            labelPassword.BackColor = Color.Transparent;
+            labelPassword.Location = new Point(312, 299);
             labelPassword.Margin = new Padding(2, 0, 2, 0);
             labelPassword.Name = "labelPassword";
             labelPassword.Size = new Size(83, 20);
@@ -60,7 +63,7 @@
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(197, 151);
+            textBoxEmail.Location = new Point(418, 249);
             textBoxEmail.Margin = new Padding(2, 3, 2, 3);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(275, 27);
@@ -68,7 +71,7 @@
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(197, 204);
+            textBoxPassword.Location = new Point(418, 299);
             textBoxPassword.Margin = new Padding(2, 3, 2, 3);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.PasswordChar = '*';
@@ -77,7 +80,7 @@
             // 
             // buttonRegister
             // 
-            buttonRegister.Location = new Point(103, 286);
+            buttonRegister.Location = new Point(360, 475);
             buttonRegister.Margin = new Padding(2, 3, 2, 3);
             buttonRegister.Name = "buttonRegister";
             buttonRegister.Size = new Size(133, 57);
@@ -88,7 +91,7 @@
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(420, 286);
+            buttonExit.Location = new Point(507, 504);
             buttonExit.Margin = new Padding(2, 3, 2, 3);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(133, 57);
@@ -100,31 +103,34 @@
             // labelWelcome
             // 
             labelWelcome.AutoSize = true;
+            labelWelcome.BackColor = Color.Transparent;
             labelWelcome.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelWelcome.Location = new Point(151, 49);
+            labelWelcome.Location = new Point(418, 174);
             labelWelcome.Margin = new Padding(2, 0, 2, 0);
             labelWelcome.Name = "labelWelcome";
-            labelWelcome.Size = new Size(354, 32);
+            labelWelcome.Size = new Size(140, 32);
             labelWelcome.TabIndex = 6;
-            labelWelcome.Text = "Welcome to ScrapeMaster!";
+            labelWelcome.Text = "Welcome!";
             labelWelcome.Click += labelWelcome_Click;
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(260, 286);
+            buttonLogin.BackColor = Color.Wheat;
+            buttonLogin.Location = new Point(441, 365);
             buttonLogin.Margin = new Padding(2, 3, 2, 3);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(134, 57);
             buttonLogin.TabIndex = 7;
             buttonLogin.Text = "Login";
-            buttonLogin.UseVisualStyleBackColor = true;
+            buttonLogin.UseVisualStyleBackColor = false;
             buttonLogin.Click += buttonLogin_Click;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(631, 471);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(998, 693);
             Controls.Add(buttonLogin);
             Controls.Add(labelWelcome);
             Controls.Add(buttonExit);

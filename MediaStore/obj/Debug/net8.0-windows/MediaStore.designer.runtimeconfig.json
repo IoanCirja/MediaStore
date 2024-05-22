@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Delia\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Delia\\.nuget\\packages",
+      "C:\\Users\\Madalina\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Madalina\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

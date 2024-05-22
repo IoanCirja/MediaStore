@@ -5869,23 +5869,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Delia\\.nuget\\packages\\": {},
+    "C:\\Users\\Madalina\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\MediaStore.csproj",
+      "projectUniqueName": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\MediaStore.csproj",
       "projectName": "MediaStore",
-      "projectPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\MediaStore.csproj",
-      "packagesPath": "C:\\Users\\Delia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\obj\\",
+      "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\MediaStore.csproj",
+      "packagesPath": "C:\\Users\\Madalina\\.nuget\\packages\\",
+      "outputPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\MediaStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Delia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Madalina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5894,20 +5894,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.csproj"
+            "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\Export\\Export.csproj": {
-              "projectPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\Export\\Export.csproj"
+            "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\Export.csproj": {
+              "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\Export.csproj"
             },
-            "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
-              "projectPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
+            "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
+              "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
             }
           }
         }
@@ -6035,7 +6036,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

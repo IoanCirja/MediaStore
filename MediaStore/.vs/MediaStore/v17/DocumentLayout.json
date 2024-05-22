@@ -3,11 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45A582D5-1292-4883-9193-AD1E8D1B64F3}|..\\UnitTest\\UnitTest.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\unittest\\pdfexportertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46254F1C-3B63-4FBB-8951-E222C7DD3F67}|..\\DataAccess\\DataAccess.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45A582D5-1292-4883-9193-AD1E8D1B64F3}|..\\UnitTest\\UnitTest.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\unittest\\excelexportertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A582D5-1292-4883-9193-AD1E8D1B64F3}|..\\UnitTest\\UnitTest.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\unittest\\webnavigatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A582D5-1292-4883-9193-AD1E8D1B64F3}|..\\UnitTest\\UnitTest.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\unittest\\dataaccesstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\delia\\desktop\\proiect ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Store.cs",
               "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
               "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeToolTip": "Forms\\Store.cs",
-              "ViewState": "AQIAADgBAAAAAAAAAAAmwKYBAAAZAAAA",
+              "ViewState": "AQIAADgBAAAAAAAAAAAmwEwBAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T14:59:35.693Z",
               "IsPinned": true,
@@ -35,15 +44,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.cs",
-              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\DataAccess\\DataAccess.cs",
-              "RelativeToolTip": "..\\DataAccess\\DataAccess.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAuwMQAAABDAAAA",
+              "DocumentIndex": 0,
+              "Title": "PdfExporterTests.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\PdfExporterTests.cs",
+              "RelativeDocumentMoniker": "..\\UnitTest\\PdfExporterTests.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\PdfExporterTests.cs",
+              "RelativeToolTip": "..\\UnitTest\\PdfExporterTests.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T18:03:18.759Z",
+              "WhenOpened": "2024-05-22T12:02:39.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExcelExporterTests.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\ExcelExporterTests.cs",
+              "RelativeDocumentMoniker": "..\\UnitTest\\ExcelExporterTests.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\ExcelExporterTests.cs",
+              "RelativeToolTip": "..\\UnitTest\\ExcelExporterTests.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:51:56.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebNavigatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\WebNavigatorTests.cs",
+              "RelativeDocumentMoniker": "..\\UnitTest\\WebNavigatorTests.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\WebNavigatorTests.cs",
+              "RelativeToolTip": "..\\UnitTest\\WebNavigatorTests.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAgwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:18:57.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataAccessTests.cs",
+              "DocumentMoniker": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\DataAccessTests.cs",
+              "RelativeDocumentMoniker": "..\\UnitTest\\DataAccessTests.cs",
+              "ToolTip": "C:\\Users\\Delia\\Desktop\\PROIECT IP\\MediaStore\\UnitTest\\DataAccessTests.cs",
+              "RelativeToolTip": "..\\UnitTest\\DataAccessTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIUAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T10:33:37.252Z",
               "EditorCaption": ""
             },
             {

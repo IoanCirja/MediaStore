@@ -10,8 +10,8 @@ namespace MediaStore
     public class DataAccess
     {
         // Connection String for  SQlite Edition
-        static string _ConnectionString = @"Data Source=Users.db";
-        static string _ConnectionStringF = @"Data Source=favorites.db";
+        public static string _ConnectionString = @"Data Source=Users.db";
+        public static string _ConnectionStringF = @"Data Source=favorites.db";
 
         public static List<User> GetUser()
         {

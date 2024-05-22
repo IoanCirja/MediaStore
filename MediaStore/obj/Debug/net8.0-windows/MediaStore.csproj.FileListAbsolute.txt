@@ -190,7 +190,6 @@ C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\CXu
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\DataAccess.dll
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\DataAccess.pdb
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\System.Drawing.Common.dll
-C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.Forms.Search.resources
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\MediaStore\bin\Debug\net8.0-windows\selenium-manager\linux\selenium-manager
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\MediaStore\bin\Debug\net8.0-windows\selenium-manager\macos\selenium-manager
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\MediaStore\bin\Debug\net8.0-windows\selenium-manager\windows\selenium-manager.exe
@@ -451,3 +450,100 @@ C:\An3_SEM2\IP-M\PROIECT2\MediaStore\MediaStore\obj\Debug\net8.0-windows\refint\
 C:\An3_SEM2\IP-M\PROIECT2\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.pdb
 C:\An3_SEM2\IP-M\PROIECT2\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.genruntimeconfig.cache
 C:\An3_SEM2\IP-M\PROIECT2\MediaStore\MediaStore\obj\Debug\net8.0-windows\ref\MediaStore.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\MediaStore.exe
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\MediaStore.deps.json
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\MediaStore.runtimeconfig.json
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\MediaStore.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\MediaStore.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\BouncyCastle.Crypto.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\ClosedXML.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\CXuesong.Shims.VisualBasic.ApplicationServices.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\CXuesong.Shims.VisualBasic.Devices.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\ExcelNumberFormat.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\HtmlAgilityPack.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\HtmlAgilityPack_Helper.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Irony.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\itextsharp.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\MaterialSkin.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\OpenQA.Selenium.Chrome.ChromeDriverExtensions.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\WebDriver.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Microsoft.Practices.CompositeUI.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Telerik.WinControls.CompositeUI.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Telerik.WinControls.GridView.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Telerik.WinControls.RadChart.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Telerik.WinControls.RadDock.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Telerik.WinControls.UI.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Telerik.WinControls.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\TelerikCommon.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\XLParser.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Export.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\WebNavigator.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\Export.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\bin\Debug\net8.0-windows\WebNavigator.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.csproj.AssemblyReference.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.CompareForm.resources
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.Favorites.resources
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.LoginForm.resources
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.RegisterForm.resources
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.Store.resources
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.Resource.resources
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.csproj.GenerateResource.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.AssemblyInfoInputs.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.AssemblyInfo.cs
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.csproj.CoreCompileInputs.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.sourcelink.json
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.csproj.Up2Date
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\refint\MediaStore.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\MediaStore.genruntimeconfig.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\MediaStore\obj\Debug\net8.0-windows\ref\MediaStore.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\BouncyCastle.Crypto.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\ClosedXML.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\CXuesong.Shims.VisualBasic.Devices.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\ExcelNumberFormat.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\Irony.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\itextsharp.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\XLParser.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\Export.dll
+C:\FACULTATE\AN III\SEM II\IP\MediaStore\MediaStore\bin\Debug\net8.0-windows\Export.pdb

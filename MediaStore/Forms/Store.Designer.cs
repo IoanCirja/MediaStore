@@ -64,6 +64,7 @@ namespace MediaStore
             textBox8 = new TextBox();
             searchResultsListBox = new ListBox();
             label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -336,6 +337,7 @@ namespace MediaStore
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(368, 154);
             textBox1.TabIndex = 51;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // price1
             // 
@@ -402,6 +404,17 @@ namespace MediaStore
             label1.TabIndex = 57;
             label1.Text = "0";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ActiveCaption;
+            label2.Location = new Point(1108, 108);
+            label2.Name = "label2";
+            label2.Size = new Size(33, 25);
+            label2.TabIndex = 58;
+            label2.Text = "🔍";
+            // 
             // Store
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -409,6 +422,7 @@ namespace MediaStore
             AutoScroll = true;
             AutoScrollMinSize = new Size(0, 300);
             ClientSize = new Size(1487, 684);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(searchResultsListBox);
             Controls.Add(textBox8);
@@ -488,5 +502,6 @@ namespace MediaStore
         private TextBox textBox8;
         private ListBox searchResultsListBox;
         private Label label1;
+        private Label label2;
     }
 }

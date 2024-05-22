@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\Export.csproj": {}
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\Export.csproj": {}
   },
   "projects": {
-    "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj": {
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Madalina\\.nuget\\packages\\",
-        "outputPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\obj\\",
+        "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+        "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Madalina\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -163,25 +158,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\Export.csproj": {
+    "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\Export.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\Export.csproj",
+        "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\Export.csproj",
         "projectName": "Export",
-        "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\Export.csproj",
-        "packagesPath": "C:\\Users\\Madalina\\.nuget\\packages\\",
-        "outputPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\Export\\obj\\",
+        "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\Export.csproj",
+        "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+        "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Madalina\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -189,15 +180,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\An3_SEM2\\IP-M\\PROIECT2\\MediaStore\\DataAccess\\DataAccess.csproj"
+              "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -242,7 +232,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

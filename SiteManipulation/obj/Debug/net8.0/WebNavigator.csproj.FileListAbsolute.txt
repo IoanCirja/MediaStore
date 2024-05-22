@@ -75,3 +75,16 @@ C:\An3_SEM2\IP-M\PROIECT2\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNaviga
 C:\An3_SEM2\IP-M\PROIECT2\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
 C:\An3_SEM2\IP-M\PROIECT2\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
 C:\An3_SEM2\IP-M\PROIECT2\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.deps.json
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.AssemblyReference.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfoInputs.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfo.cs
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.CoreCompileInputs.cache
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.sourcelink.json
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
+C:\Users\IoanC\Desktop\TEST\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll

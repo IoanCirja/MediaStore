@@ -282,7 +282,7 @@ namespace MediaStore
             SetUserToForm();
 
 
-            if(next)
+            if (next)
             {
                 _currentPage++;
             }
@@ -713,7 +713,7 @@ namespace MediaStore
                 try
                 {
                     page = 1;
-                    _currentPage = 1;
+                    _currentPage = 0;
                     label1.Text = _currentPage.ToString();
 
                     await LoadHTMLAsync(url, page, true);
@@ -731,6 +731,11 @@ namespace MediaStore
         }
 
         private void name1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

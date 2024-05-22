@@ -93,3 +93,22 @@ C:\FACULTATE\AN III\SEM II\IP\MediaStore\Export\obj\Debug\net8.0\Export.dll
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\Export\obj\Debug\net8.0\Export.pdb
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\Export.deps.json
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\Export.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\Export.pdb
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\DataAccess.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\bin\Debug\net8.0\DataAccess.pdb
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.csproj.AssemblyReference.cache
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.GeneratedMSBuildEditorConfig.editorconfig
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfoInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfo.cs
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.csproj.CoreCompileInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.sourcelink.json
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.csproj.Up2Date
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\Export.pdb
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll

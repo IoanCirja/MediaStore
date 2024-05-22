@@ -111,7 +111,6 @@
             labelWelcome.Size = new Size(140, 32);
             labelWelcome.TabIndex = 6;
             labelWelcome.Text = "Welcome!";
-            labelWelcome.Click += labelWelcome_Click;
             // 
             // buttonLogin
             // 
@@ -142,7 +141,6 @@
             Margin = new Padding(2, 3, 2, 3);
             Name = "LoginForm";
             Text = "Login";
-            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

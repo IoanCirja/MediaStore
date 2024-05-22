@@ -137,10 +137,6 @@ namespace MediaStore
         }
 
 
-
-
-
-
         /// <summary>
         /// Metoda ce permite navigarea printre produsele de pe site din același URL corespunzător butonului "Next".
         /// Această metodă crește indexul paginii și actualizează URL-ul pentru a încărca următoarea pagină de produse.
@@ -355,13 +351,10 @@ namespace MediaStore
                 if (_currentPage <= 1)
                 {
                     _currentPage = 1;
-
-
                 }
                 else
                 {
                     _currentPage--;
-
                 }
             }
             label1.Text = _currentPage.ToString();
@@ -424,14 +417,12 @@ namespace MediaStore
                 ToolStripMenuItem removeFromFavoritesMenuItem = new ToolStripMenuItem("Remove from Favorites");
                 ToolStripMenuItem goToWebsite = new ToolStripMenuItem("Go to Website");
                 ToolStripMenuItem addToCompare = new ToolStripMenuItem("Add to Compare"); //max 3
+                ToolStripMenuItem shareToWhapp = new ToolStripMenuItem("Share to Whatsapp");
+
 
                 PictureBox pictureBox = sender as PictureBox;
                 string identifier = pictureBox.Name.Replace("pictureBox", "");
                 int id = int.Parse(identifier); // acum avem id ul picture boxului
-
-
-
-
 
 
                 addToFavoritesMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
@@ -499,7 +490,6 @@ namespace MediaStore
                     }
                 };
 
-
                 goToWebsite.Click += (menuItemSender, menuItemEventArgs) =>
                 {
                     TextBox nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
@@ -515,7 +505,6 @@ namespace MediaStore
 
                 };
 
-                //adaug la comparat
                 addToCompare.Click += (menuItemSender, menuItemEventArgs) =>
                 {
                     TextBox nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
@@ -542,10 +531,46 @@ namespace MediaStore
 
                 };
 
+                shareToWhapp.Click += async (menuItemSender, menuItemEventArgs) =>
+                {
+                    TextBox nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
+                    if (nameBox != null && nameBox.Text != null)
+                    {
+                        string productName = nameBox.Text;
+                        string searchUrl = $"https://www.itgalaxy.ro/search?q={Uri.EscapeDataString(productName)}";
+
+                        try
+                        {
+                            IWebDriver driver = new ChromeDriver();
+                            driver.Navigate().GoToUrl(searchUrl);
+
+                            // Wait for the page to load and display the search results
+                            await Task.Delay(3000);
+
+                            // Find the first search result link (adjust the selector as needed)
+                            var firstResultLink = driver.FindElement(By.CssSelector(".product-item a"));
+                            string productLink = firstResultLink.GetAttribute("href");
+
+                            driver.Quit();
+
+                            // Construct WhatsApp URL
+                            string whatsappUrl = $"https://api.whatsapp.com/send?text={Uri.EscapeDataString(productLink)}";
+
+                            Process.Start(new ProcessStartInfo(whatsappUrl) { UseShellExecute = true });
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error exporting link to WhatsApp: {ex.Message}");
+                        }
+                    }
+                };
+
+
                 contextMenuStrip.Items.Add(addToFavoritesMenuItem);
                 contextMenuStrip.Items.Add(removeFromFavoritesMenuItem);
                 contextMenuStrip.Items.Add(goToWebsite);
                 contextMenuStrip.Items.Add(addToCompare);
+                contextMenuStrip.Items.Add(shareToWhapp);
 
 
                 contextMenuStrip.Show((Control)sender, e.Location);
@@ -558,21 +583,7 @@ namespace MediaStore
         private Product searchProduct(string name)
         {
             return _productList.FirstOrDefault(p => p.name == name);
-
-
-
         }
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
-
-
-
-
-
-
 
         private void ClearFormControls(Control parent)
         {
@@ -591,14 +602,6 @@ namespace MediaStore
                 }
             }
         }
-
-        //private void button5_Click(object sender, EventArgs e)
-        //{
-        //    new Search().ShowDialog();
-        //}
-
-
-
 
         private void PictureBox_MouseDown(object sender, MouseEventArgs e)
         {
@@ -787,21 +790,7 @@ namespace MediaStore
                     MessageBox.Show(ex.Message);
                 }
             }
-
             searchResultsListBox.Visible = false;
-
-
-
-        }
-
-        private void name1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

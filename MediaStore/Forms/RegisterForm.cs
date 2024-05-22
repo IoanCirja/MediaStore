@@ -1,4 +1,24 @@
-﻿using SiteManipulation;
+﻿/***************************************************************************
+ *                                                                         *
+ *  Fișier:      LoginForm.cs                                              *
+ *               Funcționalitate adăugată de Cîrja Ioan                    *
+ *                                         Mihălucă Mădălina-Maria         *
+ *                                         Popa Andrei                     *
+ *                                         Sandu Delia-Andreea             *
+ * Descriere:   Acest fișier conține clasa LoginForm, care definește       *
+ *              comportamentul și aspectul ferestrei de înregistrare       *
+ *              pentru aplicația MediaStore. Clasa gestionează procesele   *
+ *              de înregistrare a utilizatorilor.                          *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ ***************************************************************************/
+
+using SiteManipulation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +33,23 @@ namespace MediaStore
 {
     public partial class RegisterForm : Form
     {
+        #region Constructor
+
+        /// <summary>
+        /// Constructor pentru clasa RegisterForm.
+        /// </summary>
         public RegisterForm()
         {
             InitializeComponent();
         }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Gestionează evenimentul de apăsare a butonului pentru revenirea la fereastra de autentificare.
+        /// </summary>
         private void buttonBackToLogin_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
@@ -26,11 +58,17 @@ namespace MediaStore
             this.Hide();
         }
 
+        /// <summary>
+        /// Gestionează evenimentul de apăsare a butonului pentru ieșirea din aplicație.
+        /// </summary>
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        /// <summary>
+        /// Gestionează evenimentul de apăsare a butonului pentru înregistrarea unui nou utilizator.
+        /// </summary>
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             string lastName = textBoxLastName.Text;
@@ -85,6 +123,9 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Verifică dacă o adresă de email este validă.
+        /// </summary>
         private bool IsValidEmail(string email)
         {
             try
@@ -98,9 +139,6 @@ namespace MediaStore
             }
         }
 
-        private void RegisterForm_Load(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

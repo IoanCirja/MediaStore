@@ -1,4 +1,23 @@
-﻿using Microsoft.Data.Sqlite;
+﻿/***************************************************************************
+ *                                                                         *
+ *  Fisier:      Favorites.cs                                              *
+ *               Funcționalitate adăugată de Cîrjă Ioan                    *
+ *                                           Mihălucă Mădălina-Maria       *
+ *                                           Popa Andrei                   *
+ *                                           Sandu Delia-Andreea           *
+ * Descriere:   Acest fișier conține clasa Favorites care definește        *
+ *              comportamentul și aspectul ferestrei de afișare a         *
+ *              produselor favorite ale unui utilizator.                   *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ ***************************************************************************/
+
+using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,24 +33,47 @@ namespace MediaStore
 
     public partial class Favorites : Form
     {
-        static string _ConnectionStringF = @"Data Source=favorites.db";
+        #region Fields
+
+        /// <summary>
+        /// Stringul de conectare la baza de date SQLite a produselor favorite
+        /// </summary>
+        private static string _connectionStringFavorites = @"Data Source=favorites.db";
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Constructorul clasei Favorites.
+        /// </summary>
         public Favorites()
         {
             InitializeComponent();
             LoadFavorites();
         }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Metodă care încarcă produsele favorite ale utilizatorului.
+        /// </summary>
         private void LoadFavorites()
         {
             List<Favorite> favorites = GetFavorite();
             DisplayFavorites(favorites);
         }
 
+        /// <summary>
+        /// Metodă care obține lista de produse favorite ale utilizatorului din baza de date.
+        /// </summary>
         public static List<Favorite> GetFavorite()
         {
             List<Favorite> favorites = new List<Favorite>();
 
-            using (SqliteConnection connection = new SqliteConnection(_ConnectionStringF))
+            using (SqliteConnection connection = new SqliteConnection(_connectionStringFavorites))
             {
                 connection.Open();
 
@@ -56,6 +98,10 @@ namespace MediaStore
             }
             return favorites;
         }
+
+        /// <summary>
+        /// Metoda care afișează produsele favorite ale utilizatorului în interfața grafică.
+        /// </summary>
         private void DisplayFavorites(List<Favorite> favorites)
         {
             try
@@ -87,19 +133,6 @@ namespace MediaStore
             }
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Favorites_Load(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

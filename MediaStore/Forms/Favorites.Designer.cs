@@ -107,7 +107,6 @@
             desc2.Name = "desc2";
             desc2.Size = new Size(365, 219);
             desc2.TabIndex = 5;
-            desc2.TextChanged += textBox6_TextChanged;
             // 
             // name1
             // 
@@ -205,7 +204,6 @@
             price5.Name = "price5";
             price5.Size = new Size(242, 43);
             price5.TabIndex = 15;
-            price5.TextChanged += textBox16_TextChanged;
             // 
             // price3
             // 
@@ -231,7 +229,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1480, 765);
+            ClientSize = new Size(1656, 905);
             Controls.Add(price1);
             Controls.Add(price3);
             Controls.Add(price5);
@@ -252,7 +250,6 @@
             Controls.Add(desc6);
             Name = "Favorites";
             Text = "Favorites";
-            Load += Favorites_Load;
             ResumeLayout(false);
             PerformLayout();
         }

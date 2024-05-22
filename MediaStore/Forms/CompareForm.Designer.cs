@@ -54,7 +54,6 @@
             pictureBox0.Size = new Size(421, 205);
             pictureBox0.TabIndex = 1;
             pictureBox0.TabStop = false;
-            pictureBox0.Click += pictureBox1_Click;
             pictureBox0.MouseDown += pictureBox_MouseDown;
             // 
             // pictureBox1
@@ -65,7 +64,6 @@
             pictureBox1.Size = new Size(421, 213);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox2_Click;
             pictureBox1.MouseDown += pictureBox_MouseDown;
             // 
             // pictureBox2
@@ -76,7 +74,6 @@
             pictureBox2.Size = new Size(421, 213);
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox3_Click;
             pictureBox2.MouseDown += pictureBox_MouseDown;
             // 
             // price1
@@ -90,7 +87,6 @@
             price1.Name = "price1";
             price1.Size = new Size(422, 51);
             price1.TabIndex = 6;
-            price1.TextChanged += price1_TextChanged;
             // 
             // price2
             // 
@@ -103,7 +99,6 @@
             price2.Name = "price2";
             price2.Size = new Size(421, 64);
             price2.TabIndex = 7;
-            price2.TextChanged += price2_TextChanged;
             // 
             // price3
             // 
@@ -127,7 +122,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(421, 253);
             textBox1.TabIndex = 39;
-            textBox1.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
             // 
@@ -139,7 +133,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(421, 232);
             textBox2.TabIndex = 40;
-            textBox2.TextChanged += textBox4_TextChanged;
             // 
             // textBox3
             // 
@@ -151,7 +144,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(421, 242);
             textBox3.TabIndex = 41;
-            textBox3.TextChanged += textBox5_TextChanged;
             // 
             // name1
             // 
@@ -165,7 +157,6 @@
             name1.Size = new Size(421, 64);
             name1.TabIndex = 42;
             name1.Text = "Se incarca...";
-            name1.TextChanged += name1_TextChanged;
             // 
             // name2
             // 
@@ -192,7 +183,6 @@
             name3.Size = new Size(421, 75);
             name3.TabIndex = 44;
             name3.Text = "Se incarca...";
-            name3.TextChanged += name3_TextChanged;
             // 
             // Return
             // 

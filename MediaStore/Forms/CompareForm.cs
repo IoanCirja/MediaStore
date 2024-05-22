@@ -1,4 +1,24 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿/***************************************************************************
+ *                                                                         *
+ *  Fisier:      CompareForm.cs                                            *
+ *               Funcționalitate adăugată de Cîrja Ioan                    *
+ *                                           Mihălucă Mădălina-Maria       *
+ *                                           Popa Andrei                   *
+ *                                           Sandu Delia-Andreea           *
+ * Descriere:   Acest fișier conține clasa CompareForm care definește      *
+ *              comportamentul și aspectul ferestrei de comparare a        *
+ *              produselor.                                                *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ ***************************************************************************/
+
+
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -10,43 +30,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using System.Diagnostics;
+
 
 namespace MediaStore
 {
     public partial class CompareForm : Form
     {
+        #region Constructor
+
+        /// <summary>
+        /// Constructorul clasei CompareForm.
+        /// </summary>
         public CompareForm()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        #endregion
 
-        }
+        #region Methods
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void price1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Evenimentul care are loc când se încarcă fereastra de comparare a produselor.
+        /// </summary>
         private void CompareForm_Load(object sender, EventArgs e)
         {
+            // Verifică dacă lista de produse comparate conține cel puțin un produs și încarcă informațiile acestora în câmpurile corespunzătoare
             if (Store._comparedList.Count > 0)
             {
                 price1.Text = Store._comparedList[0].price;
@@ -62,6 +72,7 @@ namespace MediaStore
                 pictureBox0.Visible = false;
             }
 
+            // Verifică dacă lista de produse comparate conține cel puțin doi produse și încarcă informațiile acestora în câmpurile corespunzătoare
             if (Store._comparedList.Count > 1)
             {
                 price2.Text = Store._comparedList[1].price;
@@ -77,6 +88,7 @@ namespace MediaStore
                 pictureBox1.Visible = false;
             }
 
+            // Verifică dacă lista de produse comparate conține cel puțin trei produse și încarcă informațiile acestora în câmpurile corespunzătoare
             if (Store._comparedList.Count > 2)
             {
                 price3.Text = Store._comparedList[2].price;
@@ -93,33 +105,20 @@ namespace MediaStore
             }
         }
 
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void price2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void name3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Evenimentul care are loc când se dă click pe butonul de Înapoi.
+        /// </summary>
         private void Return_Click(object sender, EventArgs e)
         {
+            // Curăță controalele formularului și șterge lista de produse comparate
             ClearFormControls(this);
             Store._comparedList.Clear();
             this.Hide();
         }
+
+        /// <summary>
+        /// Metodă care curăță controalele formularului.
+        /// </summary>
         private void ClearFormControls(Control parent)
         {
             foreach (Control control in parent.Controls)
@@ -135,49 +134,23 @@ namespace MediaStore
             }
         }
 
-        private void name1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        // <summary>
+        /// Evenimentul care are loc când se apasă butonul dreapta al mouse-ului pe o imagine.
+        /// </summary>
         private void pictureBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
                 ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
 
+                // Adaugă opțiunile de meniu
                 ToolStripMenuItem removeMenuItem = new ToolStripMenuItem("Remove");
-                ToolStripMenuItem addToFavoritesMenuItem = new ToolStripMenuItem("Add To Favorites");
-                ToolStripMenuItem goToWebsiteMenuItem = new ToolStripMenuItem("Go to Website");
 
-
-
+                // Obține PictureBox-ul pe care s-a dat click
                 PictureBox? pictureBox = sender as PictureBox;
                 string identifier = pictureBox.Name.Replace("pictureBox", "");
                 int id = int.Parse(identifier); // acum avem id ul picture boxului
 
-
-                addToFavoritesMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
-                {
-                    MessageBox.Show("added to favorites");
-                };
-
-                //goToWebsiteMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
-                //{
-
-
-
-                //    IWebDriver driver = new ChromeDriver();
-                //    driver.Navigate().GoToUrl("https://www.itgalaxy.ro/");
-                //    driver.Manage().Window.Maximize();
-
-                //    var searchText = driver.FindElement(By.Id("search-box"));
-                //    searchText.SendKeys(nameBox.Text);
-                //    searchText.SendKeys(OpenQA.Selenium.Keys.Enter);
-
-
-                //};
-
-                //adaug la comparat
                 removeMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
                 {
                     TextBox? nameBox = this.Controls.Find($"name{id + 1}", true).FirstOrDefault() as TextBox;
@@ -195,19 +168,14 @@ namespace MediaStore
                     // Clear the PictureBox image
                     if (pictureBox != null) pictureBox.Image = null;
 
-
-
-
-
                 };
 
-                contextMenuStrip.Items.Add(addToFavoritesMenuItem);
                 contextMenuStrip.Items.Add(removeMenuItem);
-                contextMenuStrip.Items.Add(goToWebsiteMenuItem);
-
 
                 contextMenuStrip.Show((Control)sender, e.Location);
             }
         }
     }
+
+    #endregion
 }

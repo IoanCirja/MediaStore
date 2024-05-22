@@ -1,4 +1,24 @@
-﻿using System;
+﻿/***************************************************************************
+ *                                                                         *
+ *  Fișier:      LoginForm.cs                                              *
+ *               Funcționalitate adăugată de Cîrja Ioan                    *
+ *                                         Mihălucă Mădălina-Maria         *
+ *                                         Popa Andrei                     *
+ *                                         Sandu Delia-Andreea             *
+ * Descriere:   Acest fișier conține clasa LoginForm, care definește       *
+ *              comportamentul și aspectul ferestrei de autentificare      *
+ *              pentru aplicația MediaStore. Clasa gestionează procesele   *
+ *              de autentificare a utilizatorilor.                         *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ ***************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,12 +37,24 @@ namespace MediaStore
 {
     public partial class LoginForm : Form
     {
+        #region Constructor
+
+        /// <summary>
+        /// Constructorul clasei LoginForm.
+        /// </summary>
         public LoginForm()
         {
             InitializeComponent();
             this.AcceptButton = buttonLogin;
         }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Gestionează evenimentul de apăsare a butonului pentru funcționalitatea de autentificare.
+        /// </summary>
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string email = textBoxEmail.Text;
@@ -50,6 +82,9 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Gestionează evenimentul de apăsare a butonului pentru deschiderea formularului de înregistrare.
+        /// </summary>
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();
@@ -58,19 +93,14 @@ namespace MediaStore
             this.Hide();
         }
 
+        /// <summary>
+        /// Gestionează evenimentul de apăsare a butonului pentru ieșirea din aplicație.
+        /// </summary>
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelWelcome_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

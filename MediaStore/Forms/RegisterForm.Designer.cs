@@ -260,7 +260,6 @@
             Controls.Add(labelUserFirstName);
             Name = "RegisterForm";
             Text = "RegisterForm";
-            Load += RegisterForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

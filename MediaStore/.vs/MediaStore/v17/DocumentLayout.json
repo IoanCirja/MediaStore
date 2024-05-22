@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\",
+  "WorkspaceRootPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|d:\\an3_sem2\\ip - ingineria programarii\\ip-proiect\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\facultate\\an iii\\sem ii\\ip\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|d:\\an3_sem2\\ip - ingineria programarii\\ip-proiect\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -17,33 +17,47 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 235,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 241,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Store.cs",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeToolTip": "Forms\\Store.cs",
-              "ViewState": "AQIAAE8CAAAAAAAAAAAuwFYCAAAAAAAA",
+              "ViewState": "AQIAAJwCAAAAAAAAAAAAALcCAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:14:33.245Z",
+              "WhenOpened": "2024-05-22T20:56:49.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Store.cs [Design]",
-              "DocumentMoniker": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "DocumentMoniker": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
-              "ToolTip": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\MediaStore\\Forms\\Store.cs [Design]",
+              "ToolTip": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\MediaStore\\Forms\\Store.cs [Design]",
               "RelativeToolTip": "Forms\\Store.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:14:16.863Z",
+              "WhenOpened": "2024-05-22T20:54:38.716Z",
               "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 303,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

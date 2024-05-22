@@ -78,3 +78,19 @@ C:\Users\IoanC\Desktop\TEST\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.dl
 C:\Users\IoanC\Desktop\TEST\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 C:\Users\IoanC\Desktop\TEST\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\IoanC\Desktop\TEST\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

@@ -6,77 +6,129 @@ using SiteManipulation;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Diagnostics;
-using MediaStore;
 using ExportLibrary;
 
 namespace MediaStore
 {
     public partial class Store : Form
     {
-        private int page;
-        private HttpClient httpClient;
-        private string url;
-        private int pageIndex;
+        /// <summary>
+        /// Porțiunea curentă din pagina de pe site.
+        /// </summary>
+        private int _page;
+
+        /// <summary>
+        /// Client HTTP.
+        /// </summary>
+        private HttpClient _httpClient;
+
+        /// <summary>
+        /// Link-ul curent.
+        /// </summary>
+        private string _url;
+
+        /// <summary>
+        /// Pagină corespunzătoare de pe site a linkului curent (pagina1, pagina2, etc.).
+        /// </summary>
+        private int _pageIndex;
+
+        /// <summary>
+        /// Produse extrase.
+        /// </summary>
         private static List<Product> _productList;
+
+        /// <summary>
+        /// Produse ce vor fi comparate.
+        /// </summary>
         public static List<Product> _comparedList;
+
+        /// <summary>
+        /// Utilizatorul curent.
+        /// </summary>
         private static User _currentUser;
+
+        /// <summary>
+        /// Navigatorul web.
+        /// </summary>
         private static WebNavigator _webNavigator;
+
+        /// <summary>
+        /// Lista de produse valabile de pe site cu linkuri aferente.
+        /// </summary>
         private Dictionary<string, string> _searchMappings;
+
+        /// <summary>
+        /// Indexul paginii curente.
+        /// </summary>
         private static int _currentPage;
 
-
-
+        /// <summary>
+        /// Obține utilizatorul curent.
+        /// </summary>
         public static User CurrentUser { get { return _currentUser; } }
 
+        /// <summary>
+        /// Constructorul clasei Store, ce face câteva modificări la nivel de interfață și configurează setările pentru scraping.
+        /// Metoda inițializează componentele UI, setează evenimentele, și pregătește variabilele necesare pentru extragerea datelor de pe site.
+        /// </summary>
         public Store()
         {
+            // Inițializări
             InitializeComponent();
 
             pictureBox7.MouseDown += PictureBox_MouseDown;
             this.FormClosing += Closing;
             _searchMappings = URLS._websiteProducts;
 
-            page = 0;
-            pageIndex = 0;
+            _page = 0;
+            _pageIndex = 0;
             _currentPage = 1;
             label1.Text = 1.ToString();
 
-            httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36");
+            _httpClient = new HttpClient();
+            _httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36");
             _productList = new List<Product>();
             _comparedList = new List<Product>();
-            url = "https://www.itgalaxy.ro/laptopuri//pagina1/";
+
+            // Linkul de start
+            _url = "https://www.itgalaxy.ro/laptopuri//pagina1/";
 
             pictureBox7.Image = ResizeImage(Resource.profile, 60, 60);
             searchResultsListBox.Visible = false;
-
-
         }
+
+        /// <summary>
+        /// Metoda ce setează utilizatorul curent.
+        /// Aceasta actualizează obiectul static _currentUser cu noul utilizator specificat ca parametru.
+        /// </summary>
+        /// <param name="user">Utilizatorul ce urmează a fi setat.</param>
         public static void SetUser(User user)
         {
             _currentUser = user;
-
         }
 
+        /// <summary>
+        /// Metoda ce actualizează pe form utilizatorul curent.
+        /// </summary>
         public void SetUserToForm()
         {
             textBox7.Text = _currentUser.Email;
-
         }
+
+        /// <summary>
+        /// Metoda ce încarcă primul set de produse extrase la pornirea aplicației.
+        /// Aceasta inițializează pagina și încearcă să încarce HTML-ul paginii curente, gestionând eventualele erori.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumentele evenimentului.</param>
         private async void Form1_Load(object sender, EventArgs e)
         {
-
-
-
-
-
             try
             {
-                page = 1;
-                await LoadHTMLAsync(url, page, true);
+                _page = 1;
+                await LoadHTMLAsync(_url, _page, true); // Obținem produsele
                 _currentPage = 1;
                 label1.Text = _currentPage.ToString();
-
             }
             catch (Exception ex)
             {
@@ -84,22 +136,30 @@ namespace MediaStore
             }
         }
 
+
+
+
+
+
+        /// <summary>
+        /// Metoda ce permite navigarea printre produsele de pe site din același URL corespunzător butonului "Next".
+        /// Această metodă crește indexul paginii și actualizează URL-ul pentru a încărca următoarea pagină de produse.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumentele evenimentului.</param>
         private async void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
-            page++;
-            pageIndex = (page - 1) / 6 + 1;
-
+            _page++;
+            _pageIndex = (_page - 1) / 6 + 1; // Calculăm cele 6 produse de pe site pe care le extragem în pagina aplicației curente din totalul de 36/pagina
 
             try
             {
-                url = url.Substring(0, url.Length - 2) + pageIndex.ToString() + "/";
+                _url = _url.Substring(0, _url.Length - 2) + _pageIndex.ToString() + "/"; // Actualizăm URL-ul cu pagina de pe site corectă
 
-                int index = (page % 6) == 0 ? 6 : page % 6;
-                await LoadHTMLAsync(url, index, true);
+                int index = (_page % 6) == 0 ? 6 : _page % 6;
+                await LoadHTMLAsync(_url, index, true); // Încărcăm HTML-ul paginii
                 button1.Enabled = true;
-
-
             }
             catch (Exception ex)
             {
@@ -107,31 +167,35 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Metoda ce permite navigarea printre produsele de pe site din același URL corespunzător butonului "Prev".
+        /// Această metodă scade indexul paginii și actualizează URL-ul pentru a încărca pagina anterioară de produse.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumentele evenimentului.</param>
         private async void button2_Click(object sender, EventArgs e)
         {
             button2.Enabled = false;
-            page--;
-            if (page < 1) page = 1;
-            pageIndex = (page - 1) / 6 + 1;
-
+            _page--;
+            if (_page < 1) _page = 1;
+            _pageIndex = (_page - 1) / 6 + 1; // Calculăm cele 6 produse de pe site pe care le extragem în pagina aplicației curente din totalul de 36/pagina
 
             try
             {
+                _url = _url.Substring(0, _url.Length - 2) + _pageIndex.ToString() + "/"; // Actualizăm URL-ul cu pagina de pe site corectă
 
-                url = url.Substring(0, url.Length - 2) + pageIndex.ToString() + "/";
-
-                int index = (page % 6) == 0 ? 6 : page % 6;
-                await LoadHTMLAsync(url, index, false);
-
+                int index = (_page % 6) == 0 ? 6 : _page % 6;
+                await LoadHTMLAsync(_url, index, false); // Încărcăm HTML-ul paginii
                 button2.Enabled = true;
-
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+        //metoda ce extrage produse de pe site prin manipularea DOMULui oferit de site si extragerea selectorilor de tip xpath aferenti datelor dorite
         private async Task LoadHTMLAsync(string url, int page, bool next)
         {
             searchResultsListBox.Visible = false;
@@ -142,7 +206,7 @@ namespace MediaStore
 
             try
             {
-                var html = await httpClient.GetStringAsync(url);
+                var html = await _httpClient.GetStringAsync(url);
                 HtmlAgilityPack.HtmlDocument htmlDocument = new HtmlAgilityPack.HtmlDocument();
                 htmlDocument.LoadHtml(html);
 
@@ -150,7 +214,7 @@ namespace MediaStore
                 var imageNodes = htmlDocument.DocumentNode.SelectNodes("//img[@class='img-fluid inline-block img-animate']");
                 if (imageNodes != null)
                 {
-                    int startIndex = (page - 1) * 6; // Calculate the starting index based on the page number
+                    int startIndex = (page - 1) * 6; // Calculate the starting index based on the _page number
 
                     foreach (var imageNode in imageNodes.Skip(startIndex).Take(6))
                     {
@@ -159,7 +223,7 @@ namespace MediaStore
 
                         try
                         {
-                            byte[] imageBytes = await httpClient.GetByteArrayAsync(imageUrl);
+                            byte[] imageBytes = await _httpClient.GetByteArrayAsync(imageUrl);
                             if (imageBytes == null || imageBytes.Length == 0)
                             {
                                 throw new Exception("Image data is empty.");
@@ -346,7 +410,7 @@ namespace MediaStore
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            httpClient.Dispose();
+            _httpClient.Dispose();
         }
 
 
@@ -708,15 +772,15 @@ namespace MediaStore
 
             if (!string.IsNullOrEmpty(selectedTerm) && _searchMappings.ContainsKey(selectedTerm))
             {
-                url = _searchMappings[selectedTerm];
+                _url = _searchMappings[selectedTerm];
 
                 try
                 {
-                    page = 1;
+                    _page = 1;
                     _currentPage = 0;
                     label1.Text = _currentPage.ToString();
 
-                    await LoadHTMLAsync(url, page, true);
+                    await LoadHTMLAsync(_url, _page, true);
                 }
                 catch (Exception ex)
                 {

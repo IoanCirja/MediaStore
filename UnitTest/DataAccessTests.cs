@@ -1,3 +1,27 @@
+/***************************************************************************
+ *                                                                         *
+ *  Fisier:      DataAccessTests.cs                                        *
+ *               Functionalitate adaugata de Cîrja Ioan                    *
+ *                                           Mih?luc? M?d?lina-Maria       *
+ *                                           Popa Andrei                   *
+ *                                           Sandu Delia-Andreea           *
+ * Descriere:    În acest fi?ier sunt definite teste unitare care          *
+ *               verific? diverse func?ionalit??i ale clasei DataAccess    *
+ *               din cadrul aplica?iei, inclusiv autentificarea            * 
+ *               utilizatorilor, înregistrarea de noi utilizatori,         *
+ *               gestionarea preferin?elor de articole favorite ?i         *
+ *               interac?iunea cu bazele de date pentru utilizatori ?i     *
+ *               produse favorite.                                         *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ **************************************************************************/
+
+
 using NUnit.Framework;
 using System.Collections.Generic;
 using MediaStore;
@@ -9,29 +33,34 @@ namespace MediaStore
     [TestFixture]
     public class DataAccessTests
     {
+        #region Fields
+        /// <summary>
+        /// String-ul de conexiune pentru baza de date a utilizatorilor.
+        /// </summary>
         private const string ConnectionString = @"Data Source=Users.db";
+        /// <summary>
+        /// String-ul de conexiune pentru baza de date a produselor favorite.
+        /// </summary>
         private const string ConnectionStringF = @"Data Source=favorites.db";
+        #endregion
 
+        #region Methods
+        /// <summary>
+        /// Constructorul pentru clasa de teste DataAccessTests.
+        /// </summary>
         public DataAccessTests()
         {
-            DataAccess._ConnectionString = ConnectionString;
-            DataAccess._ConnectionStringF = ConnectionStringF;
+            DataAccess._connectionStringUsers = ConnectionString;
+            DataAccess._connectionStringFavorites = ConnectionStringF;
 
             InitializeDatabase();
         }
-
-        [SetUp]
-        public void Setup()
-        {
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            
-        }
+        /// <summary>
+        /// Metod? care ini?ializeaz? bazele de date.
+        /// </summary>
         private void InitializeDatabase()
         {
+            // Deschiderea unei conexiuni c?tre baza de date a utilizatorilor 
             using (var connection = new SqliteConnection(ConnectionString))
             {
                 connection.Open();
@@ -40,7 +69,7 @@ namespace MediaStore
                 var command = new SqliteCommand(query, connection);
                 
             }
-
+            // Deschiderea unei conexiuni c?tre baza de date a produselor favorite 
             using (var connection = new SqliteConnection(ConnectionStringF))
             {
                 connection.Open();
@@ -51,18 +80,25 @@ namespace MediaStore
 
             }
         }
+        #endregion
 
+        #region Tests
+        /// <summary>
+        /// Testeaz? metoda GetUser pentru a verifica dac? returneaz? o list? de utilizatori care nu este nul? ?i con?ine cel pu?in un utilizator.
+        /// </summary>
         [Test]
         public void GetUser_Test()
         {
-            Setup();
 
             List<User> users = DataAccess.GetUser();
 
             Assert.IsNotNull(users);
             Assert.IsTrue(users.Count > 0);
         }
-
+        /// <summary>
+        /// Testeaz? metoda Login cu date valide pentru a verifica dac? se reu?e?te autentificarea.
+        /// </summary>
+        /// <returns>True dac? autentificarea a reu?it.</returns>
         [Test]
         public void Login_WithValidCredentials_Test()
         {
@@ -73,7 +109,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda Login cu date invalide pentru a verifica dac? autentificarea e?ueaz?.
+        /// </summary>
+        /// <returns>True dac? autentificarea a esuat.</returns>
         [Test]
         public void Login_WithInvalidCredentials_Test()
         {
@@ -84,7 +123,10 @@ namespace MediaStore
 
             Assert.IsFalse(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda Login cu un format invalid pentru email pentru a verifica dac? autentificarea reu?e?te.
+        /// </summary>
+        /// <returns>False daca autentificarea nu a reu?it.</returns>
         [Test]
         public void Login_WithInvalidEmailFormat_Test()
         {
@@ -95,7 +137,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda Register pentru a verifica dac? un nou utilizator poate fi înregistrat cu succes.
+        /// </summary>
+        /// <returns>True dac? înregistrarea a reu?it.</returns>
         [Test]
         public void Register_WithNewUser_Test()
         {
@@ -109,7 +154,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda Register pentru a verifica dac? înregistrarea unui utilizator deja existent e?ueaz?.
+        /// </summary>
+        /// <returns>True dac? înregistrarea a e?uat.</returns>
         [Test]
         public void Register_WithExistingUser_Test()
         {
@@ -123,6 +171,10 @@ namespace MediaStore
 
             Assert.IsFalse(result);
         }
+        /// <summary>
+        /// Testeaz? metoda Register pentru a verifica dac? înregistrarea unui utilizator cu un format gre?it pentru telefon reu?e?te.
+        /// </summary>
+        /// <returns>False dac? înregistrarea a e?uat.</returns>
         [Test]
         public void Register_WithWrongFormatForPhone_Test()
         {
@@ -136,7 +188,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda Register pentru a verifica dac? înregistrarea unui utilizator cu un format gre?it pentru email reu?e?te.
+        /// </summary>
+        /// <returns>False dac? înregistrarea a e?uat.</returns>
         [Test]
         public void Register_WithWrongFormatForEmail_Test()
         {
@@ -150,7 +205,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda IsFavorite pentru a verifica dac? un articol favorit este g?sit.
+        /// </summary>
+        /// <returns>True dac? articolul se g?se?te în baza de date.</returns>
         [Test]
         public void IsFavorite_WithExistingFavorite_Test()
         {
@@ -163,7 +221,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda IsFavorite pentru a verifica dac? un articol favorit inexistent este g?sit.
+        /// </summary>
+        /// <returns>True dac? articolul nu se g?se?te în baza de date.</returns>
         [Test]
         public void IsFavorite_WithNonExistingFavorite_Test()
         {
@@ -176,7 +237,10 @@ namespace MediaStore
 
             Assert.IsFalse(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda AddFavorite pentru a verifica dac? un articol poate fi ad?ugat la favorite cu succes.
+        /// </summary>
+        /// /// <returns>True dac? articolul a putut fi ad?ugat în baza de date.</returns>
         [Test]
         public void AddFavorite_Test()
         {
@@ -189,7 +253,10 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
-
+        /// <summary>
+        /// Testeaz? metoda RemoveFavorite pentru a verifica dac? un articol poate fi ?ters din lista de favorite cu succes.
+        /// </summary>
+        /// /// <returns>True dac? articolul a putut fi ?ters din baza de date.</returns>
         [Test]
         public void RemoveFavorite_Test()
         { 
@@ -202,5 +269,6 @@ namespace MediaStore
 
             Assert.IsTrue(result);
         }
+        #endregion
     }
 }

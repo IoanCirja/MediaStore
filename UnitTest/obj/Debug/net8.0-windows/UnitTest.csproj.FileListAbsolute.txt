@@ -38,7 +38,6 @@ C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\M
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\Microsoft.TestPlatform.Utilities.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\NuGet.Frameworks.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\nunit.framework.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\OpenQA.Selenium.Chrome.ChromeDriverExtensions.dll
 C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\WebDriver.dll
@@ -672,3 +671,4 @@ C:\FACULTATE\AN III\SEM II\IP\MediaStore\UnitTest\obj\Debug\net8.0-windows\refin
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\UnitTest\obj\Debug\net8.0-windows\UnitTest.pdb
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\UnitTest\obj\Debug\net8.0-windows\UnitTest.genruntimeconfig.cache
 C:\FACULTATE\AN III\SEM II\IP\MediaStore\UnitTest\obj\Debug\net8.0-windows\ref\UnitTest.dll
+C:\Users\Delia\Desktop\PROIECT IP\MediaStore\UnitTest\bin\Debug\net8.0-windows\.msCoverageSourceRootsMapping_UnitTest

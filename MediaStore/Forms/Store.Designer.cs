@@ -369,6 +369,7 @@ namespace MediaStore
             name0.Size = new Size(433, 64);
             name0.TabIndex = 49;
             name0.Text = "Se incarca...";
+            name0.TextChanged += name0_TextChanged;
             // 
             // pictureBox1
             // 

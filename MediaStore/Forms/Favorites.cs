@@ -18,10 +18,13 @@
  ***************************************************************************/
 
 using Microsoft.Data.Sqlite;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -39,6 +42,7 @@ namespace MediaStore
         /// Stringul de conectare la baza de date SQLite a produselor favorite
         /// </summary>
         private static string _connectionStringFavorites = @"Data Source=favorites.db";
+
 
         #endregion
 
@@ -111,8 +115,8 @@ namespace MediaStore
                 for (int i = 0; i < count; i++)
                 {
                     var nameTextBox = this.Controls.Find($"name{i + 1}", true)[0] as TextBox;
-                    var descriptionTextBox = this.Controls.Find($"desc{i + 1}", true)[0] as TextBox;
-                    var priceTextBox = this.Controls.Find($"price{i + 1}", true)[0] as TextBox;
+                    var descriptionTextBox = this.Controls.Find($"price{i + 1}", true)[0] as TextBox;
+                    var priceTextBox = this.Controls.Find($"desc{i + 1}", true)[0] as TextBox;
 
                     if (nameTextBox != null && descriptionTextBox != null && priceTextBox != null)
                     {
@@ -134,5 +138,68 @@ namespace MediaStore
         }
 
         #endregion
+
+        private void desc1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CloseButton(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            string identifier = button.Name.Replace("button", "");
+            int id = int.Parse(identifier); // Acum avem id-ul picture boxului
+
+            try
+            {
+                TextBox? nameBox = this.Controls.Find($"name{id}", true).FirstOrDefault() as TextBox;
+                TextBox? priceBox = this.Controls.Find($"desc{id}", true).FirstOrDefault() as TextBox;
+                TextBox? descriptionBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
+
+                if (nameBox == null || priceBox == null || descriptionBox == null)
+                {
+                    MessageBox.Show("One or more text boxes could not be found.");
+                    return;
+                }
+
+                string name = nameBox.Text;
+                string price = priceBox.Text;
+                string description = descriptionBox.Text;
+
+                // Verifică dacă produsul există deja în baza de date
+                if (DataAccess.IsFavorite(name, description, price, Store.CurrentUser.Email))
+                {
+                    DataAccess.RemoveFavorite(name, price, description, Store.CurrentUser.Email);
+
+                    nameBox.Text = "";
+                    priceBox.Text = "";
+                    descriptionBox.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Produsul nu există în lista de favorite.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void desc4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Favorites_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

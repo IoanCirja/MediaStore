@@ -5653,19 +5653,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\qwert\\.nuget\\packages\\": {}
+    "C:\\Users\\IoanC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+      "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
       "projectName": "WebNavigator",
-      "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
-      "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
-      "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\IP-Proiect\\MediaStore\\SiteManipulation\\obj\\",
+      "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\WebNavigator.csproj",
+      "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+      "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\SiteManipulation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5729,7 +5729,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

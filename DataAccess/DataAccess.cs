@@ -36,12 +36,12 @@ namespace MediaStore
         /// <summary>
         /// Stringul de conectare la baza de date SQLite a utilizatorilor
         /// </summary>
-        private static string _connectionStringUsers = @"Data Source=Users.db";
+        public static string _connectionStringUsers = @"Data Source=Users.db";
 
         /// <summary>
         /// Stringul de conectare la baza de date SQLite a produselor favorite
         /// </summary>
-        private static string _connectionStringFavorites = @"Data Source=favorites.db";
+        public static string _connectionStringFavorites = @"Data Source=favorites.db";
       
         #endregion
 
@@ -284,7 +284,7 @@ namespace MediaStore
                 connection.Open();
 
                 // Query-ul pentru a elimina un produs în lista de favorite
-                string query = "DELETE FROM favoritesDatabase WHERE name=@name";
+                string query = "DELETE FROM favoritesDatabase WHERE name=@name and user=@user";
 
                 using (SqliteCommand command = new SqliteCommand(query, connection))
                 {

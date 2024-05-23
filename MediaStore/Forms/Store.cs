@@ -37,6 +37,7 @@ namespace MediaStore
         /// </summary>
         private static List<Product> _productList;
 
+
         /// <summary>
         /// Produse ce vor fi comparate.
         /// </summary>
@@ -580,7 +581,7 @@ namespace MediaStore
 
 
 
-        private Product searchProduct(string name)
+        public static Product searchProduct(string name)
         {
             return _productList.FirstOrDefault(p => p.name == name);
         }
@@ -791,6 +792,11 @@ namespace MediaStore
                 }
             }
             searchResultsListBox.Visible = false;
+        }
+
+        private void name0_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

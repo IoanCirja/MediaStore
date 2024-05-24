@@ -108,11 +108,10 @@ namespace MediaStore
         /// <param name="e"></param>
         private void button_Help_Click(object sender, EventArgs e)
         {
-
+            string helpFilePath = Path.Combine(Application.StartupPath, "_MediaStore_UserHelp.chm");
+            Help.ShowHelp(this, helpFilePath);
         }
 
         #endregion
-
-
     }
 }

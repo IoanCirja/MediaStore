@@ -45,6 +45,7 @@ namespace MediaStore
         public CompareForm()
         {
             InitializeComponent();
+            UpdateLabelVisibility();
         }
 
         #endregion
@@ -189,11 +190,24 @@ namespace MediaStore
         /// <param name="e"></param>
         private void button_Help_Click(object sender, EventArgs e)
         {
-
+            string helpFilePath = Path.Combine(Application.StartupPath, "_MediaStore_UserHelp.chm");
+            Help.ShowHelp(this, helpFilePath);
         }
 
+        /// <summary>
+        /// Metodă care actualizeaza starea labelului in functie de numarul de produse din comparator
+        /// </summary>
+        private void UpdateLabelVisibility()
+        {
+            if (Store._comparedList != null && Store._comparedList.Count > 0)
+            {
+                label_No_Prod.Visible = false;
+            }
+            else
+            {
+                label_No_Prod.Visible = true;
+            }
+        }
         #endregion
     }
-
-
 }

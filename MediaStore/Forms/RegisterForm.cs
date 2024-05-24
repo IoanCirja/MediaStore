@@ -84,6 +84,10 @@ namespace MediaStore
             {
                 MessageBox.Show("Aveti campuri necompletate.", "Eroare");
             }
+            else if (!phone.StartsWith("07") || phone.Length != 10)
+            {
+                MessageBox.Show("Numarul de telefon trebuie sa inceapa cu '07' și să aibă 10 caractere.", "Eroare");
+            }
             else if (!password.Equals(rePassword))
             {
                 MessageBox.Show("Parolele nu coincid.", "Eroare");
@@ -146,12 +150,10 @@ namespace MediaStore
         /// <param name="e"></param>
         private void button_Help_Click(object sender, EventArgs e)
         {
-
+            string helpFilePath = Path.Combine(Application.StartupPath, "_MediaStore_UserHelp.chm");
+            Help.ShowHelp(this, helpFilePath);
         }
 
         #endregion
-
-
-
     }
 }

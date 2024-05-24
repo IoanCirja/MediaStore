@@ -458,7 +458,6 @@ namespace MediaStore
                 ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
 
                 ToolStripMenuItem addToFavoritesMenuItem = new ToolStripMenuItem("Add to Favorites");
-                ToolStripMenuItem removeFromFavoritesMenuItem = new ToolStripMenuItem("Remove from Favorites");
                 ToolStripMenuItem goToWebsite = new ToolStripMenuItem("Go to Website");
                 ToolStripMenuItem addToCompare = new ToolStripMenuItem("Add to Compare"); //max 3
                 ToolStripMenuItem shareToWhapp = new ToolStripMenuItem("Share to Whatsapp");
@@ -497,35 +496,6 @@ namespace MediaStore
                         else
                         {
                             MessageBox.Show("Produsul există deja în lista de favorite.");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                };
-
-                removeFromFavoritesMenuItem.Click += (menuItemSender, menuItemEventArgs) =>
-                {
-                    try
-                    {
-                        TextBox? nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
-                        TextBox? priceBox = this.Controls.Find($"price{id}", true).FirstOrDefault() as TextBox;
-                        TextBox? descriptionBox = this.Controls.Find($"textBox{id}", true).FirstOrDefault() as TextBox;
-
-                        string? name = nameBox.Text;
-                        string? price = priceBox.Text;
-                        string? description = descriptionBox.Text;
-
-                        // Verifică dacă produsul există deja în baza de date
-                        if (DataAccess.IsFavorite(name, price, description, _currentUser.Email))
-                        {
-                            DataAccess.RemoveFavorite(name, price, description, _currentUser.Email);
-                            MessageBox.Show("Produsul a fost șters din lista de favorite.");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Produsul nu există în lista de favorite.");
                         }
                     }
                     catch (Exception ex)
@@ -611,7 +581,6 @@ namespace MediaStore
 
 
                 contextMenuStrip.Items.Add(addToFavoritesMenuItem);
-                contextMenuStrip.Items.Add(removeFromFavoritesMenuItem);
                 contextMenuStrip.Items.Add(goToWebsite);
                 contextMenuStrip.Items.Add(addToCompare);
                 contextMenuStrip.Items.Add(shareToWhapp);
@@ -882,12 +851,10 @@ namespace MediaStore
         /// <param name="e"></param>
         private void button_Help_Click(object sender, EventArgs e)
         {
-
+            string helpFilePath = Path.Combine(Application.StartupPath, "_MediaStore_UserHelp.chm");
+            Help.ShowHelp(this, helpFilePath);
         }
 
         #endregion
-
-
-
     }
 }

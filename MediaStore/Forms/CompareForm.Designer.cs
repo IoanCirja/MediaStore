@@ -42,6 +42,7 @@
             name3 = new TextBox();
             Return = new Button();
             button_Help = new Button();
+            label_No_Prod = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -207,11 +208,21 @@
             button_Help.UseVisualStyleBackColor = true;
             button_Help.Click += button_Help_Click;
             // 
+            // label_No_Prod
+            // 
+            label_No_Prod.AutoSize = true;
+            label_No_Prod.Location = new Point(35, 163);
+            label_No_Prod.Name = "label_No_Prod";
+            label_No_Prod.Size = new Size(305, 20);
+            label_No_Prod.TabIndex = 62;
+            label_No_Prod.Text = "There are no products in the comparator yet!";
+            // 
             // CompareForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1589, 696);
+            Controls.Add(label_No_Prod);
             Controls.Add(button_Help);
             Controls.Add(Return);
             Controls.Add(name3);
@@ -252,5 +263,6 @@
         private TextBox name3;
         private Button Return;
         private Button button_Help;
+        private Label label_No_Prod;
     }
 }

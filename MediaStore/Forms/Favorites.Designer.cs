@@ -53,13 +53,14 @@
             button5 = new Button();
             button6 = new Button();
             button_Help = new Button();
+            Return = new Button();
             SuspendLayout();
             // 
             // desc6
             // 
             desc6.BackColor = SystemColors.ButtonHighlight;
             desc6.BorderStyle = BorderStyle.None;
-            desc6.Location = new Point(1039, 617);
+            desc6.Location = new Point(1039, 597);
             desc6.Multiline = true;
             desc6.Name = "desc6";
             desc6.Size = new Size(400, 303);
@@ -79,7 +80,7 @@
             // 
             desc4.BackColor = SystemColors.ButtonHighlight;
             desc4.BorderStyle = BorderStyle.None;
-            desc4.Location = new Point(527, 617);
+            desc4.Location = new Point(527, 597);
             desc4.Multiline = true;
             desc4.Name = "desc4";
             desc4.Size = new Size(400, 303);
@@ -109,7 +110,7 @@
             // 
             desc2.BackColor = SystemColors.ButtonHighlight;
             desc2.BorderStyle = BorderStyle.None;
-            desc2.Location = new Point(13, 609);
+            desc2.Location = new Point(13, 589);
             desc2.Multiline = true;
             desc2.Name = "desc2";
             desc2.Size = new Size(400, 311);
@@ -129,7 +130,7 @@
             // 
             name6.BackColor = SystemColors.ButtonHighlight;
             name6.BorderStyle = BorderStyle.None;
-            name6.Location = new Point(1039, 527);
+            name6.Location = new Point(1039, 507);
             name6.Multiline = true;
             name6.Name = "name6";
             name6.Size = new Size(400, 76);
@@ -139,7 +140,7 @@
             // 
             name4.BackColor = SystemColors.ButtonHighlight;
             name4.BorderStyle = BorderStyle.None;
-            name4.Location = new Point(527, 527);
+            name4.Location = new Point(527, 507);
             name4.Multiline = true;
             name4.Name = "name4";
             name4.Size = new Size(400, 76);
@@ -149,7 +150,7 @@
             // 
             name2.BackColor = SystemColors.ButtonHighlight;
             name2.BorderStyle = BorderStyle.None;
-            name2.Location = new Point(13, 527);
+            name2.Location = new Point(13, 507);
             name2.Multiline = true;
             name2.Name = "name2";
             name2.Size = new Size(400, 76);
@@ -178,7 +179,7 @@
             // price6
             // 
             price6.BackColor = SystemColors.ButtonHighlight;
-            price6.Location = new Point(1106, 941);
+            price6.Location = new Point(1106, 921);
             price6.Multiline = true;
             price6.Name = "price6";
             price6.Size = new Size(242, 35);
@@ -187,7 +188,7 @@
             // price4
             // 
             price4.BackColor = SystemColors.ButtonHighlight;
-            price4.Location = new Point(585, 941);
+            price4.Location = new Point(585, 921);
             price4.Multiline = true;
             price4.Name = "price4";
             price4.Size = new Size(241, 43);
@@ -196,7 +197,7 @@
             // price2
             // 
             price2.BackColor = SystemColors.ButtonHighlight;
-            price2.Location = new Point(32, 933);
+            price2.Location = new Point(32, 913);
             price2.Multiline = true;
             price2.Name = "price2";
             price2.Size = new Size(237, 43);
@@ -246,7 +247,7 @@
             // button2
             // 
             button2.ForeColor = Color.FromArgb(192, 0, 0);
-            button2.Location = new Point(307, 933);
+            button2.Location = new Point(307, 913);
             button2.Name = "button2";
             button2.Size = new Size(51, 43);
             button2.TabIndex = 19;
@@ -268,7 +269,7 @@
             // button4
             // 
             button4.ForeColor = Color.FromArgb(192, 0, 0);
-            button4.Location = new Point(864, 941);
+            button4.Location = new Point(864, 921);
             button4.Name = "button4";
             button4.Size = new Size(51, 43);
             button4.TabIndex = 21;
@@ -290,7 +291,7 @@
             // button6
             // 
             button6.ForeColor = Color.FromArgb(192, 0, 0);
-            button6.Location = new Point(1397, 933);
+            button6.Location = new Point(1397, 913);
             button6.Name = "button6";
             button6.Size = new Size(51, 43);
             button6.TabIndex = 23;
@@ -309,11 +310,23 @@
             button_Help.UseVisualStyleBackColor = true;
             button_Help.Click += button_Help_Click;
             // 
+            // Return
+            // 
+            Return.Location = new Point(1484, 67);
+            Return.Margin = new Padding(3, 4, 3, 4);
+            Return.Name = "Return";
+            Return.Size = new Size(86, 48);
+            Return.TabIndex = 62;
+            Return.Text = "Return";
+            Return.UseVisualStyleBackColor = true;
+            Return.Click += Return_Click;
+            // 
             // Favorites
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1616, 1010);
+            Controls.Add(Return);
             Controls.Add(button_Help);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -372,5 +385,6 @@
         private Button button5;
         private Button button6;
         private Button button_Help;
+        private Button Return;
     }
 }

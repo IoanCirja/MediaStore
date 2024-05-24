@@ -30,6 +30,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace MediaStore
 {
@@ -191,7 +192,29 @@ namespace MediaStore
         /// <param name="e"></param>
         private void button_Help_Click(object sender, EventArgs e)
         {
+            string helpFilePath = Path.Combine(Application.StartupPath, "_MediaStore_UserHelp.chm");
+            Help.ShowHelp(this, helpFilePath);
+        }
 
+        /// <summary>
+        /// Evenimentul care are loc când se dă click pe butonul de Înapoi.
+        /// </summary>
+        private void Return_Click(object sender, EventArgs e)
+        {
+            // Curăță controalele formularului și șterge lista de produse comparate
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox textBox)
+                {
+                    textBox.Text = "";
+                }
+                else if (control is PictureBox pictureBox)
+                {
+                    pictureBox.Image = null;
+                }
+            }
+            Store._comparedList.Clear();
+            this.Hide();
         }
 
         #endregion

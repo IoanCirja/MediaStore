@@ -137,13 +137,11 @@ namespace MediaStore
             }
         }
 
-        #endregion
-
-        private void desc1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Metodă care elimină un produs din lista de favorite
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CloseButton(object sender, EventArgs e)
         {
             Button button = sender as Button;
@@ -186,20 +184,16 @@ namespace MediaStore
             }
         }
 
-
-        private void desc4_TextChanged(object sender, EventArgs e)
+        /// <summary>
+        /// Metodă care deschide un help pentru utilizator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Help_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Favorites_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

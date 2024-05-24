@@ -1,11 +1,11 @@
 ﻿/***************************************************************************
  *                                                                         *
- *  Fișier:      LoginForm.cs                                              *
+ *  Fișier:      Registerorm.cs                                            *
  *               Funcționalitate adăugată de Cîrja Ioan                    *
  *                                         Mihălucă Mădălina-Maria         *
  *                                         Popa Andrei                     *
  *                                         Sandu Delia-Andreea             *
- * Descriere:   Acest fișier conține clasa LoginForm, care definește       *
+ * Descriere:   Acest fișier conține clasa RegisterForm, care definește    *
  *              comportamentul și aspectul ferestrei de înregistrare       *
  *              pentru aplicația MediaStore. Clasa gestionează procesele   *
  *              de înregistrare a utilizatorilor.                          *
@@ -139,6 +139,19 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Metodă care deschide un help pentru utilizator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Help_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
+
+
+
     }
 }

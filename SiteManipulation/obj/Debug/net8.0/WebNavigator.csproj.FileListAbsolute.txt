@@ -101,3 +101,16 @@ D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\SiteManipulation\ob
 D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
 D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
 D:\An3_Sem2\IP - Ingineria programarii\IP-Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.deps.json
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\bin\Debug\net8.0\WebNavigator.pdb
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.AssemblyReference.cache
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.GeneratedMSBuildEditorConfig.editorconfig
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfoInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.AssemblyInfo.cs
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.csproj.CoreCompileInputs.cache
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.sourcelink.json
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\refint\WebNavigator.dll
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\WebNavigator.pdb
+D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\SiteManipulation\obj\Debug\net8.0\ref\WebNavigator.dll

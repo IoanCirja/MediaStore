@@ -52,26 +52,27 @@
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
+            button_Help = new Button();
             SuspendLayout();
             // 
             // desc6
             // 
             desc6.BackColor = SystemColors.ButtonHighlight;
             desc6.BorderStyle = BorderStyle.None;
-            desc6.Location = new Point(1126, 617);
+            desc6.Location = new Point(1039, 617);
             desc6.Multiline = true;
             desc6.Name = "desc6";
-            desc6.Size = new Size(439, 303);
+            desc6.Size = new Size(400, 303);
             desc6.TabIndex = 0;
             // 
             // desc5
             // 
             desc5.BackColor = SystemColors.ButtonHighlight;
             desc5.BorderStyle = BorderStyle.None;
-            desc5.Location = new Point(1126, 83);
+            desc5.Location = new Point(1039, 83);
             desc5.Multiline = true;
             desc5.Name = "desc5";
-            desc5.Size = new Size(426, 325);
+            desc5.Size = new Size(400, 325);
             desc5.TabIndex = 1;
             // 
             // desc4
@@ -81,9 +82,8 @@
             desc4.Location = new Point(527, 617);
             desc4.Multiline = true;
             desc4.Name = "desc4";
-            desc4.Size = new Size(435, 303);
+            desc4.Size = new Size(400, 303);
             desc4.TabIndex = 2;
-            desc4.TextChanged += desc4_TextChanged;
             // 
             // desc3
             // 
@@ -92,7 +92,7 @@
             desc3.Location = new Point(527, 83);
             desc3.Multiline = true;
             desc3.Name = "desc3";
-            desc3.Size = new Size(435, 325);
+            desc3.Size = new Size(400, 325);
             desc3.TabIndex = 3;
             // 
             // desc1
@@ -102,9 +102,8 @@
             desc1.Location = new Point(13, 83);
             desc1.Multiline = true;
             desc1.Name = "desc1";
-            desc1.Size = new Size(381, 325);
+            desc1.Size = new Size(400, 325);
             desc1.TabIndex = 4;
-            desc1.TextChanged += desc1_TextChanged;
             // 
             // desc2
             // 
@@ -113,7 +112,7 @@
             desc2.Location = new Point(13, 609);
             desc2.Multiline = true;
             desc2.Name = "desc2";
-            desc2.Size = new Size(381, 311);
+            desc2.Size = new Size(400, 311);
             desc2.TabIndex = 5;
             // 
             // name1
@@ -123,17 +122,17 @@
             name1.Location = new Point(13, 12);
             name1.Multiline = true;
             name1.Name = "name1";
-            name1.Size = new Size(381, 65);
+            name1.Size = new Size(400, 65);
             name1.TabIndex = 6;
             // 
             // name6
             // 
             name6.BackColor = SystemColors.ButtonHighlight;
             name6.BorderStyle = BorderStyle.None;
-            name6.Location = new Point(1126, 527);
+            name6.Location = new Point(1039, 527);
             name6.Multiline = true;
             name6.Name = "name6";
-            name6.Size = new Size(439, 76);
+            name6.Size = new Size(400, 76);
             name6.TabIndex = 7;
             // 
             // name4
@@ -143,7 +142,7 @@
             name4.Location = new Point(527, 527);
             name4.Multiline = true;
             name4.Name = "name4";
-            name4.Size = new Size(435, 76);
+            name4.Size = new Size(400, 76);
             name4.TabIndex = 8;
             // 
             // name2
@@ -153,17 +152,17 @@
             name2.Location = new Point(13, 527);
             name2.Multiline = true;
             name2.Name = "name2";
-            name2.Size = new Size(381, 76);
+            name2.Size = new Size(400, 76);
             name2.TabIndex = 9;
             // 
             // name5
             // 
             name5.BackColor = SystemColors.ButtonHighlight;
             name5.BorderStyle = BorderStyle.None;
-            name5.Location = new Point(1126, 12);
+            name5.Location = new Point(1039, 12);
             name5.Multiline = true;
             name5.Name = "name5";
-            name5.Size = new Size(426, 65);
+            name5.Size = new Size(400, 65);
             name5.TabIndex = 10;
             // 
             // name3
@@ -173,13 +172,13 @@
             name3.Location = new Point(527, 12);
             name3.Multiline = true;
             name3.Name = "name3";
-            name3.Size = new Size(435, 65);
+            name3.Size = new Size(400, 65);
             name3.TabIndex = 11;
             // 
             // price6
             // 
             price6.BackColor = SystemColors.ButtonHighlight;
-            price6.Location = new Point(1193, 941);
+            price6.Location = new Point(1106, 941);
             price6.Multiline = true;
             price6.Name = "price6";
             price6.Size = new Size(242, 35);
@@ -207,7 +206,7 @@
             // 
             price5.BackColor = SystemColors.ButtonHighlight;
             price5.BorderStyle = BorderStyle.None;
-            price5.Location = new Point(1193, 417);
+            price5.Location = new Point(1106, 417);
             price5.Multiline = true;
             price5.Name = "price5";
             price5.Size = new Size(242, 43);
@@ -242,7 +241,7 @@
             button1.TabIndex = 18;
             button1.Text = "❌";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += CloseButton;
             // 
             // button2
             // 
@@ -253,6 +252,7 @@
             button2.TabIndex = 19;
             button2.Text = "❌";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += CloseButton;
             // 
             // button3
             // 
@@ -263,6 +263,7 @@
             button3.TabIndex = 20;
             button3.Text = "❌";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += CloseButton;
             // 
             // button4
             // 
@@ -273,38 +274,47 @@
             button4.TabIndex = 21;
             button4.Text = "❌";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += CloseButton;
             // 
             // button5
             // 
             button5.ForeColor = Color.FromArgb(192, 0, 0);
-            button5.Location = new Point(1460, 417);
+            button5.Location = new Point(1373, 417);
             button5.Name = "button5";
             button5.Size = new Size(51, 43);
             button5.TabIndex = 22;
             button5.Text = "❌";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += CloseButton;
             // 
             // button6
             // 
-            button1.Click += CloseButton;
-            button2.Click += CloseButton;
-            button3.Click += CloseButton;
-            button4.Click += CloseButton;
-            button5.Click += CloseButton;
-            button6.Click += CloseButton;
             button6.ForeColor = Color.FromArgb(192, 0, 0);
-            button6.Location = new Point(1484, 933);
+            button6.Location = new Point(1397, 933);
             button6.Name = "button6";
             button6.Size = new Size(51, 43);
             button6.TabIndex = 23;
             button6.Text = "❌";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += CloseButton;
+            // 
+            // button_Help
+            // 
+            button_Help.Location = new Point(1484, 13);
+            button_Help.Margin = new Padding(3, 4, 3, 4);
+            button_Help.Name = "button_Help";
+            button_Help.Size = new Size(86, 46);
+            button_Help.TabIndex = 61;
+            button_Help.Text = "Help";
+            button_Help.UseVisualStyleBackColor = true;
+            button_Help.Click += button_Help_Click;
             // 
             // Favorites
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1656, 1010);
+            ClientSize = new Size(1616, 1010);
+            Controls.Add(button_Help);
             Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -331,7 +341,6 @@
             Controls.Add(desc6);
             Name = "Favorites";
             Text = "Favorites";
-            Load += Favorites_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -362,5 +371,6 @@
         private Button button4;
         private Button button5;
         private Button button6;
+        private Button button_Help;
     }
 }

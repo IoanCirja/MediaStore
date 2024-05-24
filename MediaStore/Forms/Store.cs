@@ -1,4 +1,24 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿/***************************************************************************
+ *                                                                         *
+ *  Fișier:      Store.cs                                                  *
+ *               Funcționalitate adăugată de Cîrjă Ioan                    *
+ *                                           Mihălucă Mădălina-Maria       *
+ *                                           Popa Andrei                   *
+ *                                           Sandu Delia-Andreea           *
+ * Descriere:   Acest fișier conține clasa Store care definește            *
+ *              comportamentul și aspectul ferestrei de afișare a          *
+ *              magazinului si a interacțiunilor cu  utilizatorul.         *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ ***************************************************************************/
+
+
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using System.Text.RegularExpressions;
 using Image = System.Drawing.Image;
@@ -12,6 +32,9 @@ namespace MediaStore
 {
     public partial class Store : Form
     {
+
+        #region Fields
+
         /// <summary>
         /// Porțiunea curentă din pagina de pe site.
         /// </summary>
@@ -62,6 +85,10 @@ namespace MediaStore
         /// Indexul paginii curente.
         /// </summary>
         private static int _currentPage;
+
+        #endregion
+
+        #region Methods
 
         /// <summary>
         /// Obține utilizatorul curent.
@@ -137,7 +164,6 @@ namespace MediaStore
             }
         }
 
-
         /// <summary>
         /// Metoda ce permite navigarea printre produsele de pe site din același URL corespunzător butonului "Next".
         /// Această metodă crește indexul paginii și actualizează URL-ul pentru a încărca următoarea pagină de produse.
@@ -191,8 +217,13 @@ namespace MediaStore
             }
         }
 
-
-        //metoda ce extrage produse de pe site prin manipularea DOMULui oferit de site si extragerea selectorilor de tip xpath aferenti datelor dorite
+        /// <summary>
+        /// Metoda ce extrage produse de pe site prin manipularea DOM-ului oferit de site si extragerea selectorilor de tip xpath aferenti datelor dorite
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="page"></param>
+        /// <param name="next"></param>
+        /// <returns></returns>
         private async Task LoadHTMLAsync(string url, int page, bool next)
         {
             searchResultsListBox.Visible = false;
@@ -362,6 +393,13 @@ namespace MediaStore
 
         }
 
+        /// <summary>
+        /// Metodă care redimensionează o imagine la dimensiunile specificate și face fundalul alb transparent.
+        /// </summary>
+        /// <param name="image">Imaginea de redimensionat.</param>
+        /// <param name="width">Lățimea dorită a imaginii redimensionate.</param>
+        /// <param name="height">Înălțimea dorită a imaginii redimensionate.</param>
+        /// <returns>O imagine redimensionată cu fundal transparent.</returns>
         private Image ResizeImage(Image image, int width, int height)
         {
             // Create a new bitmap with the specified size and a transparent background
@@ -398,16 +436,21 @@ namespace MediaStore
             return destImage;
         }
 
-
-
-
-
+        /// <summary>
+        /// Metodă pentru evenimentul de închidere a formularului.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumente pentru evenimentul de închidere a formularului.</param>
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             _httpClient.Dispose();
         }
 
-
+        /// <summary>
+        /// Metodă pentru evenimentul de apăsare a mouse-ului pe un produs.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumente pentru evenimentul de apăsare a mouse-ului.</param>
         private void pictureBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -578,14 +621,19 @@ namespace MediaStore
             }
         }
 
-
-
-
+        /// <summary>
+        /// Metodă care caută un produs după nume în lista de produse.
+        /// </summary>
+        /// <param name="name">Numele produsului de căutat.</param>
+        /// <returns>Produsul găsit sau null dacă nu este găsit.</returns>
         public static Product searchProduct(string name)
         {
             return _productList.FirstOrDefault(p => p.name == name);
         }
 
+        /// <summary>
+        /// Metoda care curăță controalele formularului specificat.
+        /// </summary>
         private void ClearFormControls(Control parent)
         {
             foreach (Control control in parent.Controls)
@@ -604,6 +652,11 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Metodă pentru evenimentul de apăsare a mouse-ului pe pictograma utilizatorului.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumente pentru evenimentul de apăsare a mouse-ului.</param>
         private void PictureBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -633,6 +686,7 @@ namespace MediaStore
                     Favorites favoritesForm = new Favorites();
                     new Favorites().ShowDialog();
                 };
+
                 excelMenuItem.Click += (s, args) =>
                 {
                     try
@@ -665,6 +719,7 @@ namespace MediaStore
                         MessageBox.Show(ex.Message);
                     }
                 };
+
                 pdfMenuItem.Click += (s, args) =>
                 {
                     try
@@ -697,16 +752,19 @@ namespace MediaStore
                         MessageBox.Show(ex.Message);
                     }
                 };
+
                 compareMenuItem.Click += (s, args) =>
                 {
                     new CompareForm().ShowDialog();
 
                 };
+
                 websiteMenuItem.Click += (s, args) =>
                 {
                     _webNavigator = new WebNavigator();
                     _webNavigator.Login(_currentUser.Email, _currentUser.Password);
                 };
+
                 logoutMenuItem.Click += (s, args) =>
                 {
                     ClearFormControls(this);
@@ -723,6 +781,11 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Metodă pentru evenimentul de închidere a formularului.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumente pentru evenimentul de închidere a formularului.</param>
         private void Closing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -732,6 +795,10 @@ namespace MediaStore
                 Environment.Exit(0);
             }
         }
+
+        /// <summary>
+        /// Metodă ce termină procesele ChromeDriver în cazul închiderii aplicației.
+        /// </summary>
         private void TerminateChromeDrivers()
         {
             Process[] chromeDrivers = Process.GetProcessesByName("chromedriver");
@@ -749,7 +816,11 @@ namespace MediaStore
             }
         }
 
-
+        /// <summary>
+        /// Metodă pentru evenimentul de modificare a categoriei de produse căutate.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumente pentru evenimentul de modificare a textului.</param>
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
             searchResultsListBox.Visible = true;
@@ -757,6 +828,11 @@ namespace MediaStore
             UpdateSearchResults(textBox8.Text);
 
         }
+
+        /// <summary>
+        /// Metodă care actualizează lista de rezultate a căutării pe baza unui termen de căutare dat.
+        /// </summary>
+        /// <param name="searchTerm">Termenul de căutare.</param>
         private void UpdateSearchResults(string searchTerm)
         {
             searchResultsListBox.Items.Clear();
@@ -770,6 +846,11 @@ namespace MediaStore
             }
         }
 
+        /// <summary>
+        /// Metodă folosită pentru evenimentul de selectare a unui element din ListBox-ul cu categorii de produse.
+        /// </summary>
+        /// <param name="sender">Obiectul care declanșează evenimentul.</param>
+        /// <param name="e">Argumente pentru evenimentul de selectare a unui element din ListBox.</param>
         private async void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedTerm = searchResultsListBox.SelectedItem as string;
@@ -794,9 +875,19 @@ namespace MediaStore
             searchResultsListBox.Visible = false;
         }
 
-        private void name0_TextChanged(object sender, EventArgs e)
+        /// <summary>
+        /// Metodă care deschide un help pentru utilizator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Help_Click(object sender, EventArgs e)
         {
 
         }
+
+        #endregion
+
+
+
     }
 }

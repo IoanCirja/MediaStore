@@ -1,4 +1,29 @@
-﻿using NUnit.Framework;
+﻿/***************************************************************************
+ *                                                                         *
+ *  Fisier:      WebNavigatorTests.cs                                      *
+ *               Functionalitate adaugata de Cîrja Ioan                    *
+ *                                           Mihălucă Mădălina-Maria       *
+ *                                           Popa Andrei                   *
+ *                                           Sandu Delia-Andreea           *
+ * Descriere:    Acest fișier conține o suită de teste folosind NUnit      *
+ *               pentru a valida funcționalitatea paginii de înregistrare  *
+ *               și autentificare pe site-ul www.itgalaxy.ro folosind      *
+ *               Selenium WebDriver într-un browser Chrome. Testele        *
+ *               acoperă diverse scenarii cum ar fi înregistrarea cu       *
+ *               detalii existente, detalii valide și insuficiente,        *
+ *               precum și autentificarea cu diverse formate de email      *
+ *               și parole.                                                *
+ *                                                                         *
+ *  This code and information is provided "as is" without warranty of      *
+ *  any kind, either expressed or implied, including but not limited       *
+ *  to the implied warranties of merchantability or fitness for a          *
+ *  particular purpose. You are free to use this source code in your       *
+ *  applications as long as the original copyright notice is included.     *
+ *                                                                         *
+ **************************************************************************/
+
+
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Threading;
@@ -7,30 +32,49 @@ using SiteManipulation;
 namespace MediaStore
 {
     [TestFixture]
-    public class RegisterPageTests
+    public class WebNavigatorTests
     {
+        #region Fields
+        /// <summary>
+        /// Driver-ul folosit pentru navigare.
+        /// </summary>
         private IWebDriver _driver;
+        /// <summary>
+        /// Pagina de înregistrare.
+        /// </summary>
         private RegisterPage _registerPage;
+        #endregion
 
+        #region Methods
+        /// <summary>
+        /// Configurarea inițială pentru fiecare test, creează o instanță nouă a driver-ului Chrome, navighează către pagina de înregistrare a site-ului www.itgalaxy.ro și inițializează pagina de înregistrare.
+        /// </summary>
         [SetUp]
         public void Setup()
         {
             _driver = new ChromeDriver();
-            _driver.Navigate().GoToUrl("https://www.itgalaxy.ro/cont"); 
+            _driver.Navigate().GoToUrl("https://www.itgalaxy.ro/cont");
             _registerPage = new RegisterPage(_driver);
         }
-
+        /// <summary>
+        /// Închide sesiunea și distruge obiectul driver-ului Chrome după fiecare test.
+        /// </summary>
         [TearDown]
         public void TearDown()
         {
             _driver.Quit();
             _driver.Dispose();
         }
+        #endregion
 
+        #region Tests
+        /// <summary>
+        /// Testează înregistrarea unui utilizator cu detalii deja existente în sistem.
+        /// </summary>
+        /// <returns>False dacă datele există deja.</returns>
         [Test]
         public void Register_WithDetailsAlreadyExisting_Test()
         {
-            //returneaza false daca datele pentru cont exista deja
             string firstName = "Sandu";
             string lastName = "Alexandra";
             string phoneNumber = "0712345678";
@@ -39,13 +83,16 @@ namespace MediaStore
 
             _registerPage.Register(firstName, lastName, phoneNumber, email, password);
 
-            Thread.Sleep(2000); 
+            Thread.Sleep(2000);
             Assert.IsTrue(_driver.Url.Contains("Deja exista un cont inregistrat cu aceasta adresa de email"));
         }
+        /// <summary>
+        /// Testează înregistrarea unui utilizator cu detalii valide.
+        /// </summary>
+        /// <returns>True dacă înregistrarea a reușit.</returns>
         [Test]
         public void Register_WithValidDetails_Test()
         {
-            //pentru ca testul sa fie passed, trebuie puse date noi de fiecare data cand este rulat
             string firstName = "Ionescu";
             string lastName = "Ana";
             string phoneNumber = "0712345648";
@@ -57,7 +104,10 @@ namespace MediaStore
             Thread.Sleep(2000);
             Assert.IsTrue(_driver.Url.Contains("https://www.itgalaxy.ro/cont"));
         }
-
+        /// <summary>
+        /// Testează înregistrarea unui utilizator cu detalii incomplete.
+        /// </summary>
+        /// <returns>True dacă înregistrarea nu a reușit.</returns>
         [Test]
         public void Register_WithNotEnoughDetails_Test()
         {
@@ -72,7 +122,10 @@ namespace MediaStore
             Thread.Sleep(2000);
             Assert.IsTrue(_driver.Url.Contains("Va rugam sa completati parola"));
         }
-
+        /// <summary>
+        /// Testează autentificarea unui utilizator cu date valide. 
+        /// </summary>
+        /// <returns>True dacă logarea a reușit.</returns>
         [Test]
         public void Login_WithValidCredentials_Test()
         {
@@ -81,10 +134,13 @@ namespace MediaStore
 
             _registerPage.Login(email, password);
 
-            Thread.Sleep(2000); 
-            Assert.IsTrue(_driver.Url.Contains("https://www.itgalaxy.ro/cont")); 
+            Thread.Sleep(2000);
+            Assert.IsTrue(_driver.Url.Contains("https://www.itgalaxy.ro/cont"));
         }
-
+        /// <summary>
+        /// Testează autentificarea unui utilizator cu date invalide. 
+        /// </summary>
+        /// <returns>True dacă logarea nu a reușit.</returns>
         [Test]
         public void Login_WithInvalidCredentials_Test()
         {
@@ -93,11 +149,14 @@ namespace MediaStore
 
             _registerPage.Login(email, password);
 
-            Thread.Sleep(2000); 
+            Thread.Sleep(2000);
             Assert.IsFalse(_driver.Url.Contains("Parola sau username-ul sunt gresite. Accesul va fi blocat dupa mai multe incercari nereusite."));
-            
-        }
 
+        }
+        /// <summary>
+        /// Testează autentificarea unui utilizator cu format invalid al adresei de email.
+        /// </summary>
+        /// <returns>False dacă logarea nu a reușit.</returns>
         [Test]
         public void Login_WithInvalidEmailFormat_Test()
         {
@@ -110,5 +169,6 @@ namespace MediaStore
             Assert.IsFalse(_driver.Url.Contains("Adresa de e-mail nu este valida!"));
 
         }
+        #endregion
     }
 }

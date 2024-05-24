@@ -65,6 +65,7 @@ namespace MediaStore
             searchResultsListBox = new ListBox();
             label1 = new Label();
             label2 = new Label();
+            button_Help = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -369,7 +370,6 @@ namespace MediaStore
             name0.Size = new Size(433, 64);
             name0.TabIndex = 49;
             name0.Text = "Se incarca...";
-            name0.TextChanged += name0_TextChanged;
             // 
             // pictureBox1
             // 
@@ -429,6 +429,17 @@ namespace MediaStore
             label2.TabIndex = 58;
             label2.Text = "🔍";
             // 
+            // button_Help
+            // 
+            button_Help.Location = new Point(1423, 49);
+            button_Help.Margin = new Padding(3, 4, 3, 4);
+            button_Help.Name = "button_Help";
+            button_Help.Size = new Size(86, 46);
+            button_Help.TabIndex = 59;
+            button_Help.Text = "Help";
+            button_Help.UseVisualStyleBackColor = true;
+            button_Help.Click += button_Help_Click;
+            // 
             // Store
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -436,6 +447,7 @@ namespace MediaStore
             AutoScroll = true;
             AutoScrollMinSize = new Size(0, 300);
             ClientSize = new Size(1699, 912);
+            Controls.Add(button_Help);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(searchResultsListBox);
@@ -470,7 +482,7 @@ namespace MediaStore
             Controls.Add(pictureBox2);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Store";
-            Text = "Form1";
+            Text = "Scape Master - Store";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -518,5 +530,6 @@ namespace MediaStore
         private ListBox searchResultsListBox;
         private Label label1;
         private Label label2;
+        private Button button_Help;
     }
 }

@@ -5803,19 +5803,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IoanC\\.nuget\\packages\\": {}
+    "C:\\Users\\qwert\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\Export.csproj",
+      "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\Export\\Export.csproj",
       "projectName": "Export",
-      "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\Export.csproj",
-      "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
-      "outputPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\Export\\obj\\",
+      "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\Export\\Export.csproj",
+      "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
+      "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\Export\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5829,8 +5829,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\FACULTATE\\AN III\\SEM II\\IP\\MediaStore\\DataAccess\\DataAccess.csproj"
+            "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -5875,7 +5875,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

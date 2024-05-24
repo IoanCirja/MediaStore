@@ -37,6 +37,7 @@
             buttonExit = new Button();
             labelWelcome = new Label();
             buttonLogin = new Button();
+            button_Help = new Button();
             SuspendLayout();
             // 
             // labelEmail
@@ -124,12 +125,24 @@
             buttonLogin.UseVisualStyleBackColor = false;
             buttonLogin.Click += buttonLogin_Click;
             // 
+            // button_Help
+            // 
+            button_Help.Location = new Point(900, 13);
+            button_Help.Margin = new Padding(3, 4, 3, 4);
+            button_Help.Name = "button_Help";
+            button_Help.Size = new Size(86, 46);
+            button_Help.TabIndex = 61;
+            button_Help.Text = "Help";
+            button_Help.UseVisualStyleBackColor = true;
+            button_Help.Click += button_Help_Click;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(998, 693);
+            Controls.Add(button_Help);
             Controls.Add(buttonLogin);
             Controls.Add(labelWelcome);
             Controls.Add(buttonExit);
@@ -155,6 +168,7 @@
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonLogin;
+        private Button button_Help;
     }
 }
 

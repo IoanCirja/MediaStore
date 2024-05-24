@@ -41,6 +41,7 @@
             name2 = new TextBox();
             name3 = new TextBox();
             Return = new Button();
+            button_Help = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -48,7 +49,7 @@
             // 
             // pictureBox0
             // 
-            pictureBox0.Location = new Point(51, 28);
+            pictureBox0.Location = new Point(139, 28);
             pictureBox0.Margin = new Padding(3, 4, 3, 4);
             pictureBox0.Name = "pictureBox0";
             pictureBox0.Size = new Size(421, 205);
@@ -58,7 +59,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(589, 28);
+            pictureBox1.Location = new Point(614, 28);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(421, 213);
@@ -68,7 +69,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(1153, 28);
+            pictureBox2.Location = new Point(1101, 28);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(421, 213);
@@ -81,7 +82,7 @@
             price1.BackColor = SystemColors.Control;
             price1.BorderStyle = BorderStyle.None;
             price1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            price1.Location = new Point(51, 213);
+            price1.Location = new Point(139, 213);
             price1.Margin = new Padding(3, 4, 3, 4);
             price1.Multiline = true;
             price1.Name = "price1";
@@ -93,7 +94,7 @@
             price2.BackColor = SystemColors.Control;
             price2.BorderStyle = BorderStyle.None;
             price2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            price2.Location = new Point(589, 200);
+            price2.Location = new Point(614, 200);
             price2.Margin = new Padding(3, 4, 3, 4);
             price2.Multiline = true;
             price2.Name = "price2";
@@ -105,7 +106,7 @@
             price3.BackColor = SystemColors.Control;
             price3.BorderStyle = BorderStyle.None;
             price3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            price3.Location = new Point(1153, 190);
+            price3.Location = new Point(1101, 190);
             price3.Margin = new Padding(3, 4, 3, 4);
             price3.Multiline = true;
             price3.Name = "price3";
@@ -117,7 +118,7 @@
             textBox1.BackColor = SystemColors.Control;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 9F);
-            textBox1.Location = new Point(51, 343);
+            textBox1.Location = new Point(139, 343);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(421, 253);
@@ -128,7 +129,7 @@
             textBox2.BackColor = SystemColors.Control;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 9F);
-            textBox2.Location = new Point(589, 364);
+            textBox2.Location = new Point(614, 364);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(421, 232);
@@ -139,7 +140,7 @@
             textBox3.BackColor = SystemColors.Control;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 9F);
-            textBox3.Location = new Point(1153, 354);
+            textBox3.Location = new Point(1101, 354);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(421, 242);
@@ -150,7 +151,7 @@
             name1.BackColor = SystemColors.Control;
             name1.BorderStyle = BorderStyle.None;
             name1.Font = new Font("Segoe UI", 9F);
-            name1.Location = new Point(51, 272);
+            name1.Location = new Point(139, 272);
             name1.Margin = new Padding(3, 4, 3, 4);
             name1.Multiline = true;
             name1.Name = "name1";
@@ -163,7 +164,7 @@
             name2.BackColor = SystemColors.Control;
             name2.BorderStyle = BorderStyle.None;
             name2.Font = new Font("Segoe UI", 9F);
-            name2.Location = new Point(589, 272);
+            name2.Location = new Point(614, 272);
             name2.Margin = new Padding(3, 4, 3, 4);
             name2.Multiline = true;
             name2.Name = "name2";
@@ -176,7 +177,7 @@
             name3.BackColor = SystemColors.Control;
             name3.BorderStyle = BorderStyle.None;
             name3.Font = new Font("Segoe UI", 9F);
-            name3.Location = new Point(1153, 272);
+            name3.Location = new Point(1101, 272);
             name3.Margin = new Padding(3, 4, 3, 4);
             name3.Multiline = true;
             name3.Name = "name3";
@@ -186,20 +187,32 @@
             // 
             // Return
             // 
-            Return.Location = new Point(1553, 637);
+            Return.Location = new Point(24, 82);
             Return.Margin = new Padding(3, 4, 3, 4);
             Return.Name = "Return";
-            Return.Size = new Size(86, 31);
+            Return.Size = new Size(86, 48);
             Return.TabIndex = 45;
             Return.Text = "Return";
             Return.UseVisualStyleBackColor = true;
             Return.Click += Return_Click;
             // 
+            // button_Help
+            // 
+            button_Help.Location = new Point(24, 28);
+            button_Help.Margin = new Padding(3, 4, 3, 4);
+            button_Help.Name = "button_Help";
+            button_Help.Size = new Size(86, 46);
+            button_Help.TabIndex = 61;
+            button_Help.Text = "Help";
+            button_Help.UseVisualStyleBackColor = true;
+            button_Help.Click += button_Help_Click;
+            // 
             // CompareForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1651, 681);
+            ClientSize = new Size(1589, 696);
+            Controls.Add(button_Help);
             Controls.Add(Return);
             Controls.Add(name3);
             Controls.Add(name2);
@@ -214,7 +227,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox0);
             Name = "CompareForm";
-            Text = "CompareForm";
+            Text = "Compare";
             Load += CompareForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox0).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -238,5 +251,6 @@
         private TextBox name2;
         private TextBox name3;
         private Button Return;
+        private Button button_Help;
     }
 }

@@ -47,6 +47,7 @@
             labelRePassword = new Label();
             label1 = new Label();
             label2 = new Label();
+            button_Help = new Button();
             SuspendLayout();
             // 
             // labelWelcome
@@ -63,7 +64,7 @@
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(856, 105);
+            buttonExit.Location = new Point(860, 105);
             buttonExit.Margin = new Padding(2, 3, 2, 3);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(111, 53);
@@ -234,12 +235,24 @@
             label2.TabIndex = 25;
             label2.Text = "account for ScrapeMaster** ↓";
             // 
+            // button_Help
+            // 
+            button_Help.Location = new Point(885, 165);
+            button_Help.Margin = new Padding(3, 4, 3, 4);
+            button_Help.Name = "button_Help";
+            button_Help.Size = new Size(86, 46);
+            button_Help.TabIndex = 60;
+            button_Help.Text = "Help";
+            button_Help.UseVisualStyleBackColor = true;
+            button_Help.Click += button_Help_Click;
+            // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(998, 693);
+            Controls.Add(button_Help);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBoxRePassword);
@@ -259,7 +272,7 @@
             Controls.Add(labelUserLastName);
             Controls.Add(labelUserFirstName);
             Name = "RegisterForm";
-            Text = "RegisterForm";
+            Text = "Register";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -285,5 +298,6 @@
         private Label labelRePassword;
         private Label label1;
         private Label label2;
+        private Button button_Help;
     }
 }

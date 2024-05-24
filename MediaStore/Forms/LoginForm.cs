@@ -101,6 +101,18 @@ namespace MediaStore
             Application.Exit();
         }
 
+        /// <summary>
+        /// Metodă care deschide un help pentru utilizator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Help_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
+
+
     }
 }

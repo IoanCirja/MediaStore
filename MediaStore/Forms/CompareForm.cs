@@ -155,7 +155,7 @@ namespace MediaStore
                 {
                     TextBox? nameBox = this.Controls.Find($"name{id + 1}", true).FirstOrDefault() as TextBox;
                     TextBox? priceBox = this.Controls.Find($"price{id + 1}", true).FirstOrDefault() as TextBox;
-                    TextBox? descriptionBox = this.Controls.Find($"textBox{id +1}", true).FirstOrDefault() as TextBox;
+                    TextBox? descriptionBox = this.Controls.Find($"textBox{id + 1}", true).FirstOrDefault() as TextBox;
 
                     // Find the PictureBox control
                     PictureBox? pictureBox = this.Controls.Find($"pictureBox{id}", true).FirstOrDefault() as PictureBox;
@@ -168,6 +168,12 @@ namespace MediaStore
                     // Clear the PictureBox image
                     if (pictureBox != null) pictureBox.Image = null;
 
+                    // Elimină produsul din lista de comparare
+                    if (id < Store._comparedList.Count)
+                    {
+                        Store._comparedList.RemoveAt(id);
+                    }
+
                 };
 
                 contextMenuStrip.Items.Add(removeMenuItem);
@@ -175,7 +181,19 @@ namespace MediaStore
                 contextMenuStrip.Show((Control)sender, e.Location);
             }
         }
+
+        /// <summary>
+        /// Metodă care deschide un help pentru utilizator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Help_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
     }
 
-    #endregion
+
 }

@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\",
+  "WorkspaceRootPath": "C:\\An3_SEM2\\IP-M\\PRO3\\MediaStore\\MediaStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\ioanc\\desktop\\latest versioin\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\an3_sem2\\ip-m\\pro3\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A2E85C1-BF76-455A-9915-539AF6F74FB7}|..\\SiteManipulation\\WebNavigator.csproj|c:\\users\\ioanc\\desktop\\latest versioin\\mediastore\\sitemanipulation\\webnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|C:\\An3_SEM2\\IP-M\\PRO3\\MediaStore\\MediaStore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|c:\\users\\ioanc\\desktop\\latest versioin\\mediastore\\mediastore\\forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FB19E79-1AB2-47F3-B112-6D0F59F1AEB5}|MediaStore.csproj|solutionrelative:forms\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\ioanc\\desktop\\latest versioin\\mediastore\\sitemanipulation\\webnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,49 +21,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 241,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Store.cs",
-              "DocumentMoniker": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PRO3\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
-              "ToolTip": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "ToolTip": "C:\\An3_SEM2\\IP-M\\PRO3\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeToolTip": "Forms\\Store.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAiwL8AAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T10:29:37.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Store.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\Forms\\Store.cs",
+              "DocumentMoniker": "C:\\An3_SEM2\\IP-M\\PRO3\\MediaStore\\MediaStore\\Forms\\Store.cs",
               "RelativeDocumentMoniker": "Forms\\Store.cs",
               "ToolTip": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\Forms\\Store.cs [Design]",
-              "RelativeToolTip": "Forms\\Store.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\Forms\\Store.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T10:29:34.059Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-26T10:29:34.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WebNavigator.cs",
               "DocumentMoniker": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\SiteManipulation\\WebNavigator.cs",
-              "RelativeDocumentMoniker": "..\\SiteManipulation\\WebNavigator.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\SiteManipulation\\WebNavigator.cs",
               "ToolTip": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\SiteManipulation\\WebNavigator.cs",
-              "RelativeToolTip": "..\\SiteManipulation\\WebNavigator.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\SiteManipulation\\WebNavigator.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAAwDkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T10:29:17.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T10:29:17.467Z"
             }
           ]
         }

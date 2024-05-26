@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebNavigator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35f1af6d84cdcd13252afe379fa432cb41befb21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08d2a6ee08c88626830e43dd8bb89c708bc95958")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebNavigator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebNavigator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

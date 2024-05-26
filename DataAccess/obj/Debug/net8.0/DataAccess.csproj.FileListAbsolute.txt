@@ -126,3 +126,19 @@ C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\Da
 C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\An3_SEM2\IP-M\PRO3\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

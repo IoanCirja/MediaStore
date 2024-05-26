@@ -110,3 +110,19 @@ D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\DataAccess\obj\Debu
 D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

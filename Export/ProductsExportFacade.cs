@@ -32,12 +32,12 @@ namespace ExportLibrary
         /// <summary>
         /// Exportator pentru formatul Excel.
         /// </summary>
-        private readonly IExporter excelExporter;
+        private readonly IExporter _excelExporter;
 
         /// <summary>
         /// Exportator pentru formatul PDF.
         /// </summary>
-        private readonly IExporter pdfExporter;
+        private readonly IExporter _pdfExporter;
 
         #endregion
 
@@ -50,8 +50,8 @@ namespace ExportLibrary
         /// <param name="pdfExporter">Instanța exportatorului pentru formatul PDF.</param>
         public ProductExportFacade(IExporter excelExporter, IExporter pdfExporter)
         {
-            this.excelExporter = excelExporter;
-            this.pdfExporter = pdfExporter;
+            this._excelExporter = excelExporter;
+            this._pdfExporter = pdfExporter;
         }
 
         #endregion
@@ -65,7 +65,7 @@ namespace ExportLibrary
         /// <param name="filePath">Calea fișierului Excel de generat.</param>
         public void ExportToExcel(List<Product> products, string filePath)
         {
-            excelExporter.Export(products, filePath);
+            _excelExporter.Export(products, filePath);
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace ExportLibrary
         /// <param name="filePath">Calea fișierului PDF de generat.</param>
         public void ExportToPdf(List<Product> products, string filePath)
         {
-            pdfExporter.Export(products, filePath);
+            _pdfExporter.Export(products, filePath);
         }
         
         #endregion

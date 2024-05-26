@@ -88,6 +88,7 @@ namespace SiteManipulation
         /// Reprezintă câmpul de formular pentru termenii și condițiile.
         /// </summary>
         public IWebElement TermsAndConditionsForm => _driver.FindElement(By.XPath("//*[@id=\"terms_conditions\"]"));
+        //*[@id="terms_conditions"]
 
         /// <summary>
         /// Reprezintă câmpul de formular pentru abonarea la newsletter.
@@ -110,6 +111,11 @@ namespace SiteManipulation
         /// Reprezintă butonul pentru logare.
         /// </summary>
         public IWebElement LoginButton => _driver.FindElement(By.XPath("//*[@id=\"login\"]/fieldset/div[1]/div/button"));
+        /// <summary>
+        /// Reprezintă butonul pentru cookies.
+        /// </summary>
+        public IWebElement CookieButton => _driver.FindElement(By.XPath("//*[@id=\"alert-cookies-warning\"]/div[1]/button[2]"));
+
 
         /// <summary>
         /// Metodă care înregistrează un nou utilizator cu detaliile furnizate.
@@ -121,23 +127,54 @@ namespace SiteManipulation
         /// <param name="password">Parola pentru contul utilizatorului.</param>
         public void Register(string firstName, string lastName, string phoneNumber, string email, string password)
         {
-            Thread.Sleep(3000);
+            try
+            {
+                //asteptam sa se incarce pagina
+                Thread.Sleep(3000);
 
-            _driver.Manage().Window.Maximize();
+                // apasam pe cookie daca exista
+                if (CookieButton != null)
+                {
+                    CookieButton.Click();
+                    Thread.Sleep(3000);
+                }
 
-            FirstNameForm.SendKeys(firstName);
-            LastNameForm.SendKeys(lastName);
-            PhoneForm.SendKeys(phoneNumber);
-            EmailForm.SendKeys(email);
-            PasswordForm.SendKeys(password);
-            RepeatPasswordForm.SendKeys(password);
-            TermsAndConditionsForm.Click();
-            NewsletterForm.Click();
-            Thread.Sleep(1000);
+                // marim window-ul
+                _driver.Manage().Window.Maximize();
 
-            CreateAccountBtn.Click();
+                // completam datele
+                FirstNameForm.SendKeys(firstName);
+                LastNameForm.SendKeys(lastName);
+                PhoneForm.SendKeys(phoneNumber);
+                EmailForm.SendKeys(email);
+                PasswordForm.SendKeys(password);
+                RepeatPasswordForm.SendKeys(password);
+
+
+                // Scroll 600 pixels
+                ((IJavaScriptExecutor)_driver).ExecuteScript("window.scrollBy(0, 600);");
+
+
+                Thread.Sleep(1000);
+
+                // Terms and Conditions and Newsletter 
+                TermsAndConditionsForm.Click();
+                NewsletterForm.Click();
+                Thread.Sleep(1500);
+
+                // Create Account button
+                CreateAccountBtn.Click();
+            }
+            finally
+            {
+                Thread.Sleep(5000);
+
+                // inchidem WebDriver (pentru testing)
+                //_driver.Quit();
+            }
         }
-        
+
+
         /// <summary>
         /// Metodă care autentifică un utilizator cu email-ul și parola furnizate.
         /// </summary>
@@ -148,7 +185,19 @@ namespace SiteManipulation
 
             _driver.Manage().Window.Maximize();
 
+
             Thread.Sleep(3000);
+            if (CookieButton != null)
+            {
+                CookieButton.Click();
+
+                Thread.Sleep(1000);
+
+            }
+            ((IJavaScriptExecutor)_driver).ExecuteScript("window.scrollBy(0, 800);");
+
+            Thread.Sleep(3000);
+
             EmailLoginForm.SendKeys(email);
             PasswordLoginForm.SendKeys(password);
             Thread.Sleep(2000);

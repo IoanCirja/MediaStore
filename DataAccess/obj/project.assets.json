@@ -5783,19 +5783,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\qwert\\.nuget\\packages\\": {}
+    "C:\\Users\\IoanC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
-      "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5939,7 +5939,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

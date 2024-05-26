@@ -6,7 +6,7 @@
  *                                           Popa Andrei                   *
  *                                           Sandu Delia-Andreea           *
  * Descriere:   Acest fișier definește clasa WebNavigator, care            *
- *              inițializează un driver Chrome pentru navigarea pe site-ul *
+ *              inițializează un _driver Chrome pentru navigarea pe site-ul *
  *              "itgalaxy.ro" și oferă metode pentru autentificarea și     *
  *              înregistrarea utilizatorilor, utilizând instanțe ale       *
  *              claselor HomePage și RegisterPage.                         *
@@ -58,11 +58,11 @@ namespace SiteManipulation
             ChromeOptions options = new ChromeOptions();
 
             var chromeDriverService = ChromeDriverService.CreateDefaultService();
-            chromeDriverService.HideCommandPromptWindow = true;
+            chromeDriverService.HideCommandPromptWindow = true; //inchidere fereastra cmd
 
             _driver = new ChromeDriver(chromeDriverService, options);
             _driver.Manage().Window.Maximize();
-            _driver.Navigate().GoToUrl("https://www.itgalaxy.ro/");
+            _driver.Navigate().GoToUrl("https://www.itgalaxy.ro/"); //setup
 
             _homePage = new HomePage(_driver);
             _registerPage = new RegisterPage(_driver);

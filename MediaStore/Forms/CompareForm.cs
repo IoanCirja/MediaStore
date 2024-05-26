@@ -158,15 +158,12 @@ namespace MediaStore
                     TextBox? priceBox = this.Controls.Find($"price{id + 1}", true).FirstOrDefault() as TextBox;
                     TextBox? descriptionBox = this.Controls.Find($"textBox{id + 1}", true).FirstOrDefault() as TextBox;
 
-                    // Find the PictureBox control
                     PictureBox? pictureBox = this.Controls.Find($"pictureBox{id}", true).FirstOrDefault() as PictureBox;
 
-                    // Clear the TextBox controls
                     if (nameBox != null) nameBox.Text = "";
                     if (priceBox != null) priceBox.Text = "";
                     if (descriptionBox != null) descriptionBox.Text = "";
 
-                    // Clear the PictureBox image
                     if (pictureBox != null) pictureBox.Image = null;
 
                     // Elimină produsul din lista de comparare

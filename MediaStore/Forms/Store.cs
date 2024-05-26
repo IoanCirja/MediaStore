@@ -239,10 +239,10 @@ namespace MediaStore
                 htmlDocument.LoadHtml(html);
 
                 int cnt = 1;
-                var imageNodes = htmlDocument.DocumentNode.SelectNodes("//img[@class='img-fluid inline-block img-animate']");
+                var imageNodes = htmlDocument.DocumentNode.SelectNodes("//img[@class='img-fluid inline-block img-animate']"); // selectez toate imaginile din aceasta pagina web
                 if (imageNodes != null)
                 {
-                    int startIndex = (page - 1) * 6; // Calculate the starting index based on the _page number
+                    int startIndex = (page - 1) * 6; 
 
                     foreach (var imageNode in imageNodes.Skip(startIndex).Take(6))
                     {
@@ -259,15 +259,14 @@ namespace MediaStore
 
                             using (MemoryStream imageStream = new MemoryStream(imageBytes))
                             {
-                                image = Image.FromStream(imageStream);
+                                image = Image.FromStream(imageStream); //obtin imaginea
                             }
 
-                            // Resize the image to 140x150 pixels
+                            
                             image = ResizeImage(image, 140, 150);
                         }
                         catch
                         {
-                            // Load the fallback image if there's an error
                             try
                             {
                                 image = Image.FromFile("notfound.jpg");
@@ -316,7 +315,7 @@ namespace MediaStore
                         {
                             technical_details = "";
                         }
-
+                        //adaugam restul datelor despre produs
                         var priceElement = htmlDocument.DocumentNode.SelectSingleNode($"(//span[@class='fw-bold mb-3 mb-md-0 color-secondary'])[{startIndex + cnt}]");
                         var price = priceElement?.InnerText.Trim() ?? "";
 
@@ -356,7 +355,7 @@ namespace MediaStore
                         Product product = new Product(image, text, price, technical_details, Regex.Match(url, @"galaxy\.ro/([^/]+)").Groups[1].Value);
                         if (!_productList.Any(p => p.name == text))
                         {
-                            // Add the new product to the list
+                            // adaugam produsul in lista
                             _productList.Add(product);
                         }
                     }
@@ -402,7 +401,7 @@ namespace MediaStore
         /// <returns>O imagine redimensionată cu fundal transparent.</returns>
         private Image ResizeImage(Image image, int width, int height)
         {
-            // Create a new bitmap with the specified size and a transparent background
+            // cream un bitmap
             var destImage = new Bitmap(width, height, PixelFormat.Format32bppArgb);
 
             using (var graphics = Graphics.FromImage(destImage))
@@ -420,13 +419,13 @@ namespace MediaStore
                 }
             }
 
-            // Make the white background transparent
+            // background transparent
             for (int y = 0; y < destImage.Height; y++)
             {
                 for (int x = 0; x < destImage.Width; x++)
                 {
                     Color pixelColor = destImage.GetPixel(x, y);
-                    if (pixelColor.R > 240 && pixelColor.G > 240 && pixelColor.B > 240) // adjust the threshold as needed
+                    if (pixelColor.R > 240 && pixelColor.G > 240 && pixelColor.B > 240) // threshold
                     {
                         destImage.SetPixel(x, y, Color.Transparent);
                     }
@@ -507,8 +506,14 @@ namespace MediaStore
                 goToWebsite.Click += (menuItemSender, menuItemEventArgs) =>
                 {
                     TextBox nameBox = this.Controls.Find($"name{id - 1}", true).FirstOrDefault() as TextBox;
+                    ChromeOptions options = new ChromeOptions();
 
-                    IWebDriver driver = new ChromeDriver();
+                    var chromeDriverService = ChromeDriverService.CreateDefaultService();
+                    chromeDriverService.HideCommandPromptWindow = true; //inchidere fereastra cmd
+
+                    IWebDriver driver = new ChromeDriver(chromeDriverService, options);
+
+
                     driver.Navigate().GoToUrl("https://www.itgalaxy.ro/");
                     driver.Manage().Window.Maximize();
 
@@ -527,7 +532,7 @@ namespace MediaStore
                     {
                         if (!_comparedList.Any(p => p.name == nameBox.Text))
                         {
-                            // Add the new product to the list
+                            //adaugam la comparat
                             _comparedList.Add(searchProduct(nameBox.Text));
                         }
                         else
@@ -555,20 +560,22 @@ namespace MediaStore
 
                         try
                         {
-                            IWebDriver driver = new ChromeDriver();
+                            ChromeOptions options = new ChromeOptions();
+
+                            var chromeDriverService = ChromeDriverService.CreateDefaultService();
+                            chromeDriverService.HideCommandPromptWindow = true; //inchidere fereastra cmd
+
+                            IWebDriver driver = new ChromeDriver(chromeDriverService, options);
                             driver.Navigate().GoToUrl(searchUrl);
 
-                            // Wait for the page to load and display the search results
-                            await Task.Delay(3000);
+                            await Task.Delay(3000); //asteptam pagina sa se incarce
 
-                            // Find the first search result link (adjust the selector as needed)
-                            var firstResultLink = driver.FindElement(By.CssSelector(".product-item a"));
+                            var firstResultLink = driver.FindElement(By.CssSelector(".product-item a")); //primul rezultat de cautare
                             string productLink = firstResultLink.GetAttribute("href");
 
                             driver.Quit();
 
-                            // Construct WhatsApp URL
-                            string whatsappUrl = $"https://api.whatsapp.com/send?text={Uri.EscapeDataString(productLink)}";
+                            string whatsappUrl = $"https://api.whatsapp.com/send?text={Uri.EscapeDataString(productLink)}"; //contruim linkul pentru whatsapp
 
                             Process.Start(new ProcessStartInfo(whatsappUrl) { UseShellExecute = true });
                         }
@@ -615,7 +622,7 @@ namespace MediaStore
                 {
                     if (pictureBox != pictureBox7)
                     {
-                        pictureBox.Image = null; // Clear the image
+                        pictureBox.Image = null; //stergem imaginea
                     }
                 }
             }

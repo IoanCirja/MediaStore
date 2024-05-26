@@ -37,7 +37,7 @@ namespace SiteManipulation
         /// <summary>
         /// Driver-ul folosit pentru navigare.
         /// </summary>
-        private IWebDriver driver;
+        private IWebDriver _driver;
 
         #endregion
 
@@ -49,16 +49,16 @@ namespace SiteManipulation
         /// <param name="browser">Driver-ul de browser folosit pentru navigare.</param>
         public HomePage(IWebDriver browser)
         {
-            driver = browser;
+            _driver = browser;
         }
         /// <summary>
         /// Reprezintă butonul de redirecționare pentru pagina de înregistrare. 
         /// </summary>
-        public IWebElement GoToRegister => driver.FindElement(By.XPath("//*[@id=\"account-dropdown\"]"));
+        public IWebElement GoToRegister => _driver.FindElement(By.XPath("//*[@id=\"account-dropdown\"]"));
         /// <summary>
         /// Reprezintă checkbox-ul de consent.
         /// </summary>
-        public IWebElement BtnConsent => driver.FindElement(By.XPath("//*[@id=\"uHNac_close\"]"));
+        public IWebElement BtnConsent => _driver.FindElement(By.XPath("//*[@id=\"uHNac_close\"]"));
         /// <summary>
         /// Metodă pentru interacțiunea cu butonul de consent.
         /// </summary>

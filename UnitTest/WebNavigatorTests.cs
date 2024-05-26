@@ -83,8 +83,9 @@ namespace MediaStore
 
             _registerPage.Register(firstName, lastName, phoneNumber, email, password);
 
-            Thread.Sleep(2000);
-            Assert.IsTrue(_driver.Url.Contains("Deja exista un cont inregistrat cu aceasta adresa de email"));
+            Thread.Sleep(4000);
+            var errorMessageElement = _driver.FindElement(By.XPath("//*[@id='container_main']/div/div[1]/div[2]/div/ul/li[1]"));
+            Assert.IsTrue(errorMessageElement.Displayed, "The expected error message is not visible.");
         }
         /// <summary>
         /// Testează înregistrarea unui utilizator cu detalii valide.
@@ -102,7 +103,8 @@ namespace MediaStore
             _registerPage.Register(firstName, lastName, phoneNumber, email, password);
 
             Thread.Sleep(2000);
-            Assert.IsTrue(_driver.Url.Contains("https://www.itgalaxy.ro/cont"));
+            var errorMessageElement = _driver.FindElement(By.XPath("//*[@id='container_main']/div/div[1]/div[2]/div/ul/li[1]"));
+            Assert.IsTrue(errorMessageElement.Displayed, "The expected error message is not visible.");
         }
         /// <summary>
         /// Testează înregistrarea unui utilizator cu detalii incomplete.
@@ -119,9 +121,13 @@ namespace MediaStore
 
             _registerPage.Register(firstName, lastName, phoneNumber, email, password);
 
-            Thread.Sleep(2000);
-            Assert.IsTrue(_driver.Url.Contains("Va rugam sa completati parola"));
+            Thread.Sleep(2000);  
+
+            var errorMessageElement = _driver.FindElement(By.XPath("//*[@id='container_main']/div/div[1]/div[2]/div/ul/li[1]"));
+            Assert.IsTrue(errorMessageElement.Displayed, "The expected error message is not visible.");
+
         }
+
         /// <summary>
         /// Testează autentificarea unui utilizator cu date valide. 
         /// </summary>

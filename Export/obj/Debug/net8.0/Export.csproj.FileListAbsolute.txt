@@ -131,3 +131,22 @@ D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\Export\obj\Debug\ne
 D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
 D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\Export\obj\Debug\net8.0\Export.pdb
 D:\An3_Sem2\IP - Ingineria programarii\Ip_Proiect\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\Export.deps.json
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\Export.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\Export.pdb
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\DataAccess.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.csproj.AssemblyReference.cache
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfoInputs.cache
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.AssemblyInfo.cs
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.csproj.CoreCompileInputs.cache
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.sourcelink.json
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.csproj.Up2Date
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\refint\Export.dll
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\Export.pdb
+C:\Users\IoanC\Desktop\latest versioin\MediaStore\Export\obj\Debug\net8.0\ref\Export.dll

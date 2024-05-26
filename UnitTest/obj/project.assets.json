@@ -5520,19 +5520,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\qwert\\.nuget\\packages\\": {}
+    "C:\\Users\\IoanC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\UnitTest\\UnitTest.csproj",
-      "packagesPath": "C:\\Users\\qwert\\.nuget\\packages\\",
-      "outputPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\UnitTest\\obj\\",
+      "projectPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\UnitTest\\UnitTest.csproj",
+      "packagesPath": "C:\\Users\\IoanC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\qwert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IoanC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5546,17 +5546,17 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\DataAccess\\DataAccess.csproj"
             },
-            "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\Export\\Export.csproj": {
-              "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\Export\\Export.csproj"
+            "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\Export\\Export.csproj": {
+              "projectPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\Export\\Export.csproj"
             },
-            "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\MediaStore\\MediaStore.csproj": {
-              "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\MediaStore\\MediaStore.csproj"
+            "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\MediaStore.csproj": {
+              "projectPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\MediaStore\\MediaStore.csproj"
             },
-            "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
-              "projectPath": "D:\\An3_Sem2\\IP - Ingineria programarii\\Ip_Proiect\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
+            "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\SiteManipulation\\WebNavigator.csproj": {
+              "projectPath": "C:\\Users\\IoanC\\Desktop\\latest versioin\\MediaStore\\SiteManipulation\\WebNavigator.csproj"
             }
           }
         }
@@ -5613,7 +5613,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
